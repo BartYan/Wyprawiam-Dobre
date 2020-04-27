@@ -1,0 +1,119 @@
+/*MEDIA QUERIES*/
+@media (min-width: 300px) and (orientation: landscape) {
+	.image {
+		max-width: 40%;
+		margin-top: 5%;
+	}
+
+	.stars {
+		margin-top: 5% !important;
+	}
+}
+
+@media (min-width: 300px) {}
+
+@media (min-width: 576px) and (orientation: landscape) {}
+
+@media (min-width: 576px) {
+	.infoBox_bottom-cat {
+		height: 200px;
+	}
+}
+
+@media (min-width: 768px) and (orientation: landscape) {}
+
+@media (min-width: 768px) {
+	.infoBox {
+		height: 800px;
+
+		&_top {
+			&-head {
+				font-size: 55px;
+			}
+
+			&-span {
+				font-size: 35px;
+				top: -20px;
+			}
+
+			&-instruction {
+				font-size: 27px;
+
+			}
+
+			&-description {
+				font-size: 27px;
+			}
+		}
+
+		&_bottom {
+			&-shapes {
+				display: flex;
+				height: 200px;
+			}
+		}
+	}
+
+	.sectionHeader {
+		&-head {
+			font-size: 55px;
+		}
+
+		&-span {
+			font-size: 35px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.image {
+		max-width: 75%;
+	}
+
+	.stars {
+		margin-top: 15% !important;
+	}
+
+	.infoBox {
+		height: 100vh;
+	}
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+	.welcome {
+		height: 100vh;
+	}
+
+	.infoBox {
+		&_top {
+			&-head {
+				font-size: 75px;
+			}
+
+			&-span {
+				font-size: 50px;
+				top: -30px;
+			}
+		}
+	}
+
+	.sectionHeader {
+		&-head {
+			font-size: 75px;
+		}
+
+		&-span {
+			font-size: 50px;
+			top: -30px;
+			left: 48%;
+		}
+	}
+}
+
+@media (min-width: 1200px) and (orientation: portrait) {}
+
+@media (min-width: 1600px) {}
+
+@media (min-width: 1600px) and (orientation: portrait) {}

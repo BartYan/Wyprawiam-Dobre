@@ -1,0 +1,449 @@
+body {
+	width: 100% !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	background-color: $bg-color;
+	font-family: 'Lato', sans-serif;
+}
+
+section {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+.section {
+	margin-top: 100px;
+}
+
+.row-width {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.newsLetter {
+	margin-top: 5%;
+}
+
+@mixin bg-pattern {
+	background-image: url("../img/foodpattern.png");
+	background-repeat: cover;
+	background-size: 40%;
+	width: 100%;
+	height: 100vh;
+}
+
+@mixin centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9;
+}
+
+@mixin patternDBlock {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@mixin shapesFlexBox {
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-start;
+	flex-wrap: wrap-reverse;
+	flex-direction: row;
+}
+
+//PATTERN SECTION
+.patternBox {
+	@include bg-pattern;
+	position: relative;
+
+	&_white {
+		@include centered;
+		background-color: $bg-color;
+		width: 60%;
+		height: 80%;
+
+		&-items {
+			@include centered;
+			width: 100%;
+
+			.image {
+				@include patternDBlock;
+				width: 70%;
+			}
+
+			.stars {
+				@include patternDBlock;
+				margin-top: 15%;
+			}
+
+			h4 {
+				color: $orange-color;
+				text-align: center;
+				margin-top: 20px;
+				text-transform: uppercase;
+				font-size: 18px;
+				font-weight: bold;
+				letter-spacing: 5px;
+			}
+		}
+	}
+}
+
+//INFO SECTION next to the pattern
+.infoBox {
+	width: 100%;
+	height: 600px;
+
+	&_top {
+		margin-top: 15%;
+		margin-right: auto;
+		margin-left: auto;
+		width: 80%;
+		position: relative;
+
+		&-head {
+			display: block;
+			font-size: 30px;
+			font-family: $fontSerif;
+			font-weight: 500;
+			color: $orange-color;
+			margin-top: -30px;
+			text-align: center;
+		}
+
+		&-span {
+			position: absolute;
+			left: 50%;
+			top: -10px;
+			font-family: $fontWrite;
+			font-size: 20px;
+			color: $navyBlue-color;
+		}
+
+		&-instruction {
+			font-size: 20px;
+			font-weight: bold;
+			padding-top: 30px;
+		}
+
+		&-search {
+			font-size: 15px;
+		}
+
+		&-description {
+			font-size: 18px;
+			font-weight: lighter;
+			padding-top: 30px;
+		}
+	}
+
+	&_bottom {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+
+		&-cat {
+			width: 50%;
+			height: 150px;
+			border: $border-width solid $blue-color;
+			background-color: $bg-color;
+			/*background hover*/
+			background-image: radial-gradient(circle at center, $orange-color 50%, transparent 50%);
+			background-repeat: no-repeat;
+			transition: background-size .5s, transform 0.2s ease-in-out;
+			background-size: 0 0;
+			background-position: 50% 50%;
+			/*background hover*/
+
+			.cat-image {
+				width: 40%;
+				@include centered;
+				margin-top: -2%;
+			}
+
+			.cat-txt {
+				@include centered;
+				color: $navyBlue-color;
+				margin-top: 22%;
+				font-size: 12px;
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: 5px;
+			}
+		}
+
+		&-shapes {
+			@include shapesFlexBox;
+			display: none;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+	}
+}
+
+.infoBox_bottom-cat:hover {
+	background-size: 200% 200%;
+	transform: scale(1.1);
+	z-index: 10;
+	cursor: pointer;
+
+	.cat-txt {
+		color: white;
+		font-size: 15px;
+	}
+}
+
+//GEOMETRIC SHAPES CLASSES
+.square {
+	width: 80px;
+	height: 80px;
+	border: $border-width solid $navyBlue-color;
+	margin: 0px;
+}
+
+.diamond {
+	width: 60px;
+	height: 60px;
+	border: $border-width solid $orange-color;
+	-ms-transform: rotate(45deg);
+	/* IE 9 */
+	transform: rotate(45deg);
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+
+.circle {
+	width: 80px;
+	height: 80px;
+	border: $border-width solid $orange-color;
+	border-radius: 50%;
+	margin: 0px;
+}
+
+//GEOMETRIC SHAPES IN NEWSLETTER SECTION
+.infobox_newsletter-shapes {
+	@include shapesFlexBox;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+}
+
+.circle-nl {
+	margin-bottom: -24px;
+	margin-right: 5px;
+}
+
+.diamond-nl {
+	-ms-transform: rotate(35deg);
+	/* IE 9 */
+	transform: rotate(35deg);
+}
+
+.square-nl {
+	margin-right: -7px;
+}
+
+.invisibleBox {
+	width: 80px;
+	height: 80px;
+	border: $border-width solid;
+	margin: 0px;
+	visibility: hidden;
+}
+
+/* RECIPES CARD OVERLAY */
+.recipe {
+	width: 100%;
+	position: relative;
+	margin-top: 30px;
+	border: $border-width solid $blue-color;
+	transition: 0.5s ease;
+
+	&_photo {
+		width: 50%;
+
+		&-img {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+	}
+
+	&_overlay {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		right: 0;
+		background-color: $bg-color;
+		width: 50%;
+		height: 100%;
+		transition: .5s ease;
+	}
+
+	&_content {
+		display: none;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		right: 0;
+		background-color: transparent;
+		overflow: hidden;
+		width: 50%;
+		height: 100%;
+		transition: .5s ease;
+	}
+	.recipe_title {
+		@include centered;
+		font-size: 30px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	.recipe_text {
+		
+		display: none;
+		padding: 15px;
+		font-weight: 300;
+	}
+	
+	.recipe_icons1 {
+		position: absolute;
+		bottom: 0;
+	}
+	
+	.recipe_icons {
+		padding: 0px;
+		float: left;
+		font-weight: 400;
+		margin-top: -25px;
+		border-top: 2px solid $navyBlue-color;
+		.icon {
+			width: 50px;
+			margin-right: -5px;
+			margin-top: -5px;
+		}
+	}
+}
+
+.recipe:hover {
+	transform: scale(1.05);
+	border: $border-width solid $orange-color;
+	cursor: pointer;
+}
+
+.recipe:hover .recipe_content {
+	display: block;
+	-webkit-animation: fadein 2s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 2s;
+	/* Internet Explorer */
+	-o-animation: fadein 2s;
+	/* Opera < 12.1 */
+	animation: fadein 2s;
+}
+
+.recipe:hover .recipe_overlay {
+	left: 0;
+	background: rgba(225, 102, 37, 0.3);
+	//background: rgba(208, 232, 242, 0.2);
+}
+
+.recipe:hover .recipe_title {
+	color: $bg-color;
+	font-weight: 400;
+}
+
+.recipe:hover .recipe_text {
+	display: block;
+}
+
+.dish_cat {
+	display: inline-block;
+	text-transform: uppercase;
+	color: $navyBlue-color;
+	padding-left: 15px;
+	margin-top: 15px;
+	font-size: 12px;
+	font-weight: bold;
+}
+/* RECIPES OVERLAY THE END */
+
+
+/* INPUT CSS */
+.input-container {
+	position: relative;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.input-roll {
+	width: 40%;
+	height: 40px;
+	border: none;
+	border-bottom: 2px solid $grey-color;
+	/*transition: all 0.5s ease-in-out;*/
+	outline: none;
+	margin: 0;
+	padding-left: 50px;
+}
+
+.input-btn {
+	position: absolute;
+	bottom: 2px;
+	left: 0px;
+	width: 40px;
+	height: 40px;
+	border: 4px solid $navyBlue-color;
+	border-radius: 50%;
+	margin: 0px;
+	//transition: all 1s ease-in;
+	background-color: white;
+}
+
+.input-btn:active {
+	top: 1px;
+}
+
+.input-btn:focus {
+	outline: none;
+}
+
+.input-btnImg {
+	width: 30px;
+	height: 30px;
+	padding: 3px;
+	float: left;
+}
+
+.input-btnText {
+	display: none;
+	color: $navyBlue-color;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 2px;
+}
+
+.input-roll:focus {
+	border: none;
+	border-bottom: 3px solid $orange-color;
+}
+
+.input-animate {
+	-webkit-animation: spin 0.7s linear, moveLeftToRight 1s linear;
+	-moz-animation: spin 0.7s linear, moveLeftToRight 1s linear;
+	animation: spin 0.7s linear, moveLeftToRight 1s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
