@@ -23,6 +23,7 @@ section {
 
 .newsLetter {
 	margin-top: 5%;
+	border-bottom: 4px solid $orange-color;
 }
 
 @mixin bg-pattern {
@@ -301,6 +302,7 @@ section {
 		height: 100%;
 		transition: .5s ease;
 	}
+
 	.recipe_title {
 		@include centered;
 		font-size: 30px;
@@ -308,25 +310,26 @@ section {
 		text-align: center;
 		text-transform: uppercase;
 	}
-	
+
 	.recipe_text {
-		
+
 		display: none;
 		padding: 15px;
 		font-weight: 300;
 	}
-	
+
 	.recipe_icons1 {
 		position: absolute;
 		bottom: 0;
 	}
-	
+
 	.recipe_icons {
 		padding: 0px;
 		float: left;
 		font-weight: 400;
 		margin-top: -25px;
 		border-top: 2px solid $navyBlue-color;
+
 		.icon {
 			width: 50px;
 			margin-right: -5px;
@@ -378,6 +381,7 @@ section {
 	font-size: 12px;
 	font-weight: bold;
 }
+
 /* RECIPES OVERLAY THE END */
 
 
@@ -446,4 +450,59 @@ section {
 	animation: spin 0.7s linear, moveLeftToRight 1s linear;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
+}
+
+//FOOTER CSS
+.footer {
+	position: relative;
+	text-align: center;
+
+	&-box {
+		height: 250px;
+		&_social {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+	}
+
+	&-logo {
+		width: 40%;
+		margin-top: 50px;
+		margin-bottom: 25px;
+	}
+
+	&-stars {
+		@include centered;
+	}
+
+	&-txt {
+		color: $navyBlue-color;
+		font-size: 17px;
+		&_margin {
+			margin-top:-15px;
+		}
+	}
+
+	&-link {
+		color: $orange-color;
+	}
+	&-social {
+		width: 60px;
+		height: 60px;
+		border: 5px solid $orange-color;
+		border-radius: 50%;
+		margin: -30px 5px 5px 5px;
+		padding: 0px;
+	}
+	&-bar {
+		color: white;
+		font-size: 12px;
+		background-color: $grey-color;
+		margin: 0px;
+	}
+	&-bar p{
+		margin: 0px;
+	}
 }
