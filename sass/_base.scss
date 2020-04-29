@@ -288,10 +288,11 @@ section {
 		width: 50%;
 		height: 100%;
 		transition: .5s ease;
+		z-index: 10;
 	}
 
 	&_content {
-		display: none;
+		display: block;
 		position: absolute;
 		bottom: 0;
 		left: 50%;
@@ -301,6 +302,7 @@ section {
 		width: 50%;
 		height: 100%;
 		transition: .5s ease;
+		z-index: 9;
 	}
 
 	.recipe_title {
@@ -459,6 +461,7 @@ section {
 
 	&-box {
 		height: 250px;
+
 		&_social {
 			display: flex;
 			justify-content: center;
@@ -480,14 +483,16 @@ section {
 	&-txt {
 		color: $navyBlue-color;
 		font-size: 17px;
+
 		&_margin {
-			margin-top:-15px;
+			margin-top: -15px;
 		}
 	}
 
 	&-link {
 		color: $orange-color;
 	}
+
 	&-social {
 		width: 60px;
 		height: 60px;
@@ -496,13 +501,64 @@ section {
 		margin: -30px 5px 5px 5px;
 		padding: 0px;
 	}
+
 	&-bar {
 		color: white;
 		font-size: 12px;
-		background-color: $grey-color;
+		background-color: $navyBlue-color;
 		margin: 0px;
 	}
-	&-bar p{
+
+	&-bar p {
 		margin: 0px;
 	}
+}
+
+
+
+
+//DO POPRAWIENIA 
+.recipe:hover {
+	transform: scale(1.05);
+	border: $border-width solid $orange-color;
+	cursor: pointer;
+}
+
+.hover {
+	transform: scale(1.05);
+	border: $border-width solid $orange-color;
+	cursor: pointer;
+}
+
+.recipe:hover .recipe_content {
+	display: block;
+	-webkit-animation: fadein 2s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 2s;
+	/* Internet Explorer */
+	-o-animation: fadein 2s;
+	/* Opera < 12.1 */
+	animation: fadein 2s;
+}
+
+
+.recipe_overlay-mobile {
+	left: 0;
+	background: rgba(225, 102, 37, 0.3);
+	//background: rgba(208, 232, 242, 0.2);
+}
+
+.recipe_title-mobile {
+	color: $bg-color;
+	font-weight: 400;
+}
+
+.recipe_content-mobile {
+	display: block;
+}
+
+.recipe:hover .recipe_text {
+	display: block;
 }
