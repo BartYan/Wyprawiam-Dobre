@@ -562,3 +562,15 @@ section {
 .recipe:hover .recipe_text {
 	display: block;
 }
+
+.mobileRightOverlay {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	right: 0;
+	background-color: $bg-color;
+	width: 50%;
+	height: 100%;
+	transition: .5s ease;
+	z-index: 10;
+}
