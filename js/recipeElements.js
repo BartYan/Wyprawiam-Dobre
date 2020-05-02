@@ -1,88 +1,68 @@
-var currentItem = 0;
-var items;
-var container = document.querySelector(".recipe");
+let currentItem = 0;
+let items;
+let container = document.getElementsByClassName("recipe");
 
-function setup() {
-  items = document.querySelectorAll(".recipe_overlay");
+// convert HTML collection to array
+let recipeElementsArray = [].slice.call(container);
 
-  for (var i = 0; i < items.length; i++) {
-    var item = items[i]; //do usunuiecia
-    item.style.zIndex = 1000 - i; //do usuniecia
+
+//forEach element with recipe class
+recipeElementsArray.forEach(function (element) {
+
+  function setup() {
+    items = document.getElementsByClassName("recipe_overlay");
   }
-}
-setup();
+  setup();
 
-container.addEventListener("keydown", navigateCarousel, false);
-container.addEventListener("touchstart", startTouch, false);
-container.addEventListener("touchmove", moveTouch, false);
+  element.addEventListener("touchstart", startTouch, false);
+  element.addEventListener("touchmove", moveTouch, false);
 
-// Keyboard
-function navigateCarousel(e) {
-  var key = e.keyCode;
-  if (key === 37) {
-    previousItem();
-  } else if (key === 39) {
-    nextItem();
-  }
-}
+  // Swipe Left / Right
+  let initialX = null;
 
-// Swipe Left / Right
-var initialX = null;
-
-function startTouch(e) {
-  initialX = e.touches[0].clientX;
-}
-
-function moveTouch(e) {
-  if (initialX === null) {
-    return;
+  function startTouch(e) {
+    initialX = e.touches[0].clientX;
   }
 
-  var currentX = e.touches[0].clientX;
-  var diffX = initialX - currentX;
+  function moveTouch(e) {
+    if (initialX === null) {
+      return;
+    }
 
-  if (diffX > 0) {
-    nextItem();
-  } else {
-    previousItem();
+    let currentX = e.touches[0].clientX;
+    let diffX = initialX - currentX;
+
+    if (diffX > 0) {
+      nextItem();
+    } else {
+      previousItem();
+    }
+
+    initialX = null;
+
+    e.preventDefault();
   }
 
-  initialX = null;
-
-  e.preventDefault();
-}
-
-function previousItem() {
-  if (currentItem > 0) {
-    currentItem--;
-
-    var item = items[currentItem];
-
-    item.classList.remove('recipe_overlay-mobile');
-
-  } else {
-    currentItem = 0;
+  function nextItem() {
+    let itemsArray = [].slice.call(items);
+    itemsArray.forEach(function (element) {
+      element.classList.add('recipe_overlay-mobile');
+    });
   }
-}
-
-function nextItem() {
-  if (currentItem < items.length - 1) {
-    var item = items[currentItem];
-
-    item.classList.add('recipe_overlay-mobile');
+  //currentItem++;
 
 
-    currentItem++;
-  } else {
-    currentItem = items.length - 1;
+  function previousItem() {
+    if (currentItem >= 0) {
+      //currentItem--; ---- if  (currentItem < 0)
+
+      let item = items[currentItem];
+
+      item.classList.remove('recipe_overlay-mobile');
+    }
   }
-}
 
-//do usunięcia
-function getRotation() {
-  return Math.round(-3 + Math.random() * 7);
-}
-
+});
 
 
 
