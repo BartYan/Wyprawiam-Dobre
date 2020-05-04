@@ -6,15 +6,6 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-section {
-	padding-right: 0px !important;
-	padding-left: 0px !important;
-}
-
-.section {
-	margin-top: 100px;
-}
-
 .row-width {
 	width: 100%;
 	margin: 0px;
@@ -24,6 +15,10 @@ section {
 .newsLetter {
 	margin-top: 5%;
 	border-bottom: 4px solid $orange-color;
+}
+
+.image_newsletter {
+	margin-top: 0px;
 }
 
 @mixin bg-pattern {
@@ -103,12 +98,12 @@ section {
 		margin-top: 15%;
 		margin-right: auto;
 		margin-left: auto;
-		width: 80%;
+		width: 100%;
 		position: relative;
 
 		&-head {
 			display: block;
-			font-size: 30px;
+			font-size: 40px;
 			font-family: $fontSerif;
 			font-weight: 500;
 			color: $orange-color;
@@ -118,10 +113,10 @@ section {
 
 		&-span {
 			position: absolute;
-			left: 50%;
-			top: -10px;
+			right: 10%;
+			top: -15px;
 			font-family: $fontWrite;
-			font-size: 20px;
+			font-size: 30px;
 			color: $navyBlue-color;
 		}
 
@@ -383,7 +378,6 @@ section {
 	font-size: 12px;
 	font-weight: bold;
 }
-
 /* RECIPES OVERLAY THE END */
 
 
@@ -395,14 +389,15 @@ section {
 }
 
 .input-roll {
-	width: 40%;
+	width: 70%;
 	height: 40px;
 	border: none;
 	border-bottom: 2px solid $grey-color;
 	/*transition: all 0.5s ease-in-out;*/
 	outline: none;
 	margin: 0;
-	padding-left: 50px;
+	margin-left:20px;
+	padding-left:25px;
 }
 
 .input-btn {

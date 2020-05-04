@@ -18,6 +18,132 @@
 	.infoBox_bottom-cat {
 		height: 200px;
 	}
+
+	.infoBox {
+		&_top {
+			&-head {
+				font-size: 50px;
+			}
+
+			&-span {
+				font-size: 40px;
+				top: -20px;
+				right: 20%;
+			}
+		}
+	}
+
+	.sectionHeader {
+		&-head {
+			font-size: 50px;
+		}
+
+		&-span {
+			font-size: 40px;
+			left: 50%;
+		}
+	}
+
+	.input-roll {
+		width: 40%;
+	}
+
+	/*MOVE sphere from left to right */
+	@-moz-keyframes moveLeftToRight {
+		0% {
+			left: 0px;
+		}
+
+		70% {
+			left: 40%;
+			width: inherit;
+		}
+
+		71% {
+			width: 40px;
+			border: 4px solid $navyBlue-color;
+		}
+
+		100% {
+			left: 40%;
+			width: 115px;
+			border: 4px solid $orange-color;
+			box-shadow: 0 2px $grey-color;
+			border-radius: 25px;
+		}
+	}
+
+	@-ms-keyframes moveLeftToRight {
+		0% {
+			left: 0px;
+		}
+
+		70% {
+			left: 40%;
+			width: inherit;
+		}
+
+		71% {
+			width: 40px;
+			border: 4px solid $navyBlue-color;
+		}
+
+		100% {
+			left: 40%;
+			width: 115px;
+			border: 4px solid $orange-color;
+			box-shadow: 0 2px $grey-color;
+			border-radius: 25px;
+		}
+	}
+
+	@keyframes moveLeftToRight {
+		0% {
+			left: 0px;
+		}
+
+		70% {
+			left: 40%;
+			width: inherit;
+		}
+
+		71% {
+			width: 40px;
+			border: 4px solid $navyBlue-color;
+		}
+
+		100% {
+			left: 40%;
+			width: 115px;
+			border: 4px solid $orange-color;
+			box-shadow: 0 2px $grey-color;
+			border-radius: 25px;
+		}
+	}
+
+	@-webkit-keyframes moveLeftToRight {
+		0% {
+			left: 0px;
+		}
+
+		70% {
+			left: 40%;
+			width: inherit;
+		}
+
+		71% {
+			width: 40px;
+			border: 4px solid $navyBlue-color;
+		}
+
+		100% {
+			left: 40%;
+			width: 115px;
+			border: 4px solid $orange-color;
+			box-shadow: 0 2px $grey-color;
+			border-radius: 25px;
+		}
+	}
 }
 
 @media (min-width: 768px) and (orientation: landscape) {}
@@ -27,13 +153,14 @@
 		height: 800px;
 
 		&_top {
+			width: 90%;
+
 			&-head {
-				font-size: 55px;
+				font-size: 65px;
 			}
 
 			&-span {
-				font-size: 35px;
-				top: -20px;
+				font-size: 45px;
 			}
 
 			&-instruction {
@@ -56,11 +183,11 @@
 
 	.sectionHeader {
 		&-head {
-			font-size: 55px;
+			font-size: 65px;
 		}
 
 		&-span {
-			font-size: 35px;
+			font-size: 45px;
 		}
 	}
 }
@@ -68,6 +195,10 @@
 @media (min-width: 992px) {
 	.image {
 		max-width: 75%;
+	}
+
+	.image_newsletter {
+		margin-top: -50px;
 	}
 
 	.stars {
@@ -111,7 +242,7 @@
 			}
 
 			&-span {
-				font-size: 50px;
+				font-size: 55px;
 				top: -30px;
 			}
 		}
@@ -123,7 +254,7 @@
 		}
 
 		&-span {
-			font-size: 50px;
+			font-size: 55px;
 			top: -30px;
 			left: 48%;
 		}
