@@ -95,7 +95,7 @@ body {
 	height: 600px;
 
 	&_top {
-		margin-top: 15%;
+		margin-top: 70px;
 		margin-right: auto;
 		margin-left: auto;
 		width: 100%;
@@ -103,7 +103,7 @@ body {
 
 		&-head {
 			display: block;
-			font-size: 40px;
+			font-size: 35px;
 			font-family: $fontSerif;
 			font-weight: 500;
 			color: $orange-color;
@@ -116,12 +116,12 @@ body {
 			right: 10%;
 			top: -15px;
 			font-family: $fontWrite;
-			font-size: 30px;
+			font-size: 25px;
 			color: $navyBlue-color;
 		}
 
 		&-instruction {
-			font-size: 20px;
+			font-size: 22px;
 			font-weight: bold;
 			padding-top: 30px;
 		}
@@ -302,7 +302,7 @@ body {
 
 	.recipe_title {
 		@include centered;
-		font-size: 30px;
+		font-size: 22px;
 		font-weight: 300;
 		text-align: center;
 		text-transform: uppercase;
@@ -389,7 +389,7 @@ body {
 }
 
 .input-roll {
-	width: 70%;
+	width: 62%;
 	height: 40px;
 	border: none;
 	border-bottom: 2px solid $grey-color;
@@ -453,15 +453,22 @@ body {
 .footer {
 	position: relative;
 	text-align: center;
+	margin: 0px;
+	padding: 0px !important;
+	width: 100%;
 
 	&-box {
-		height: 250px;
-
+		height: 170px;
+		padding: 0px !important;
+		margin: 0px;
+		width: 100%;
 		&_social {
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
 			flex-direction: row;
+			padding: 0px !important;
+			width: 100%;
 		}
 	}
 
@@ -473,6 +480,7 @@ body {
 
 	&-stars {
 		@include centered;
+		margin-top: 80px;
 	}
 
 	&-txt {
@@ -495,6 +503,7 @@ body {
 		border-radius: 50%;
 		margin: -30px 5px 5px 5px;
 		padding: 0px;
+		margin-top: 60px;
 	}
 
 	&-bar {
@@ -502,15 +511,13 @@ body {
 		font-size: 12px;
 		background-color: $navyBlue-color;
 		margin: 0px;
+		padding: 0px;
 	}
 
 	&-bar p {
 		margin: 0px;
 	}
 }
-
-
-
 
 //DO POPRAWIENIA 
 .recipe:hover {

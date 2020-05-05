@@ -48,6 +48,10 @@
 		width: 40%;
 	}
 
+	.recipe_title {
+		font-size: 30px !important;
+	}
+
 	/*MOVE sphere from left to right */
 	@-moz-keyframes moveLeftToRight {
 		0% {
@@ -153,6 +157,7 @@
 		height: 800px;
 
 		&_top {
+			margin-top: 100px;
 			width: 90%;
 
 			&-head {
@@ -208,6 +213,9 @@
 	.infoBox {
 		height: 100vh;
 	}
+	.recipe_title {
+		font-size: 35px !important;
+	}
 
 	//FOOTER CSS
 	.footer {
@@ -237,6 +245,7 @@
 
 	.infoBox {
 		&_top {
+			margin-top: 150px;
 			&-head {
 				font-size: 75px;
 			}
