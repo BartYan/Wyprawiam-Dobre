@@ -195,6 +195,18 @@
 			font-size: 45px;
 		}
 	}
+
+	.footer {
+		&-box {
+			height: 270px;
+			&_social {
+				margin-top: 5%;
+			}
+		}
+		&-stars {
+			display: block;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -224,7 +236,6 @@
 		}
 
 		&-logo {
-			width: 20%;
 			margin-top: 60px;
 		}
 

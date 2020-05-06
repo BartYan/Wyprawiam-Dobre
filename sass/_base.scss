@@ -473,14 +473,14 @@ body {
 	}
 
 	&-logo {
-		width: 40%;
+		width: 30%;
 		margin-top: 50px;
 		margin-bottom: 25px;
 	}
 
 	&-stars {
 		@include centered;
-		margin-top: 80px;
+		display: none;
 	}
 
 	&-txt {
