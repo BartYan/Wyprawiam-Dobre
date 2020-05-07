@@ -12,6 +12,13 @@
 
 @media (min-width: 300px) {}
 
+@media (min-width: 450px) {
+	.recipe_text {
+		padding: 12px;
+		font-size: 17px !important;
+	}
+}
+
 @media (min-width: 576px) and (orientation: landscape) {}
 
 @media (min-width: 576px) {
@@ -47,9 +54,13 @@
 	.input-roll {
 		width: 40%;
 	}
-
+	
 	.recipe_title {
 		font-size: 30px !important;
+	}
+
+	.dish_cat {
+		display: inline-block;
 	}
 
 	/*MOVE sphere from left to right */
