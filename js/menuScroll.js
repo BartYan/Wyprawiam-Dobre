@@ -10,10 +10,10 @@ function scrollFunction() {
     // navbar.style = true;
     logo.style.display = "none";
   } else if (window.pageYOffset >= sticky) {
-    navbar.style.display = "block"
+    navbar.style.display = "block";
     logo.style.display = "block";
   } else if (window.pageYOffset >= sticky) {
-    navbar.style.display = "block"
+    navbar.style.display = "block";
     logo.style.display = "block";
   } else {
     navbar.style.display = "none";

@@ -63,6 +63,14 @@
 		display: inline-block;
 	}
 
+	.recipe_icon {
+		font-size: 15px !important;
+
+		.icon {
+			width: 40px !important;
+		}
+	}
+
 	/*MOVE sphere from left to right */
 	@-moz-keyframes moveLeftToRight {
 		0% {

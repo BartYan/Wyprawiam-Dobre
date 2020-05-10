@@ -314,20 +314,19 @@ body {
 		font-size: 10px;
 	}
 
-	.recipe_icons1 {
+	.recipe_icons {
 		position: absolute;
 		bottom: 0;
 	}
 
-	.recipe_icons {
-		display: none;
+	.recipe_icon {
 		padding: 0px;
 		float: left;
 		font-weight: 400;
-		margin-top: -25px;
+		font-size: 10px;
 
 		.icon {
-			width: 50px;
+			width: 30px;
 			margin-right: -5px;
 			margin-top: -5px;
 		}
@@ -524,17 +523,6 @@ body {
 }
 
 //DO POPRAWIENIA 
-.recipe:hover {
-	transform: scale(1.05);
-	border: $border-width solid $orange-color;
-	cursor: pointer;
-}
-
-.hover {
-	transform: scale(1.05);
-	border: $border-width solid $orange-color;
-	cursor: pointer;
-}
 
 .recipe:hover .recipe_content {
 	display: block;
@@ -549,7 +537,6 @@ body {
 	animation: fadein 2s;
 }
 
-
 .recipe_overlay-mobile {
 	left: 0;
 	background: rgba(225, 102, 37, 0.3);
@@ -559,10 +546,6 @@ body {
 .recipe_title-mobile {
 	color: $bg-color;
 	font-weight: 400;
-}
-
-.recipe_content-mobile {
-	display: block;
 }
 
 .recipe:hover .recipe_text {
