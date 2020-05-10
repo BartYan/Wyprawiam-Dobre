@@ -3,7 +3,7 @@ let container = document.getElementsByClassName("recipe_overlay");
 //Convert HTML collection to array
 let recipeElementsArray = [].slice.call(container);
 
-//forEach element with recipe class
+//forEach element with recipe_overlay class
 recipeElementsArray.forEach(element => {
 
   //Swipe Left / Right

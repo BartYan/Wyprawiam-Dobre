@@ -284,6 +284,11 @@ body {
 		height: 100%;
 		transition: .5s ease;
 		z-index: 10;
+		//without recipe_title
+		font-size: 22px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
 	}
 
 	&_content {
@@ -545,21 +550,4 @@ body {
 
 .recipe_title-mobile {
 	color: $bg-color;
-	font-weight: 400;
-}
-
-.recipe:hover .recipe_text {
-	display: block;
-}
-
-.mobileRightOverlay {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	right: 0;
-	background-color: $bg-color;
-	width: 50%;
-	height: 100%;
-	transition: .5s ease;
-	z-index: 10;
 }
