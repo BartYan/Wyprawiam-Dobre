@@ -1,4 +1,28 @@
-let container = document.getElementsByClassName("recipe_overlay");
+let container = document.getElementsByClassName("recipe");
+
+//Convert HTML collection to array
+let recipesArray = [].slice.call(container);
+
+let overlay = recipesArray.getElementsByClassName("recipe_overlay");
+
+
+for (let i = 0; i < btns.length; i++) {
+  overlay[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+}
+
+element.addEventListener("touchstart", startTouch, false);
+  element.addEventListener("touchmove", moveTouch, false);
+/*let container = document.getElementsByClassName("recipe_overlay");
 
 //Convert HTML collection to array
 let recipeElementsArray = [].slice.call(container);
@@ -36,4 +60,4 @@ recipeElementsArray.forEach(element => {
 
   element.addEventListener("touchstart", startTouch, false);
   element.addEventListener("touchmove", moveTouch, false);
-});
+});*/
