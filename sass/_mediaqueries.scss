@@ -54,7 +54,7 @@
 	.input-roll {
 		width: 40%;
 	}
-	
+
 	.recipe_title {
 		font-size: 30px !important;
 	}
@@ -189,7 +189,6 @@
 
 			&-instruction {
 				font-size: 27px;
-
 			}
 
 			&-description {
@@ -218,10 +217,12 @@
 	.footer {
 		&-box {
 			height: 270px;
+
 			&_social {
 				margin-top: 5%;
 			}
 		}
+
 		&-stars {
 			display: block;
 		}
@@ -244,6 +245,7 @@
 	.infoBox {
 		height: 100vh;
 	}
+
 	.recipe_title {
 		font-size: 35px !important;
 	}
@@ -276,6 +278,7 @@
 	.infoBox {
 		&_top {
 			margin-top: 150px;
+
 			&-head {
 				font-size: 75px;
 			}
@@ -302,6 +305,24 @@
 
 @media (min-width: 1200px) and (orientation: portrait) {}
 
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+	.infoBox {
+		&_top {
+
+			&-head {
+				font-size: 80px;
+			}
+
+			&-span {
+				font-size: 60px;
+			}
+
+			&-instruction {
+				margin-top: 5%;
+				font-size: 30px;
+			}
+		}
+	}
+}
 
 @media (min-width: 1600px) and (orientation: portrait) {}

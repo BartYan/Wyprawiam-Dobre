@@ -24,7 +24,7 @@ body {
 @mixin bg-pattern {
 	background-image: url("../img/foodpattern.png");
 	background-repeat: cover;
-	background-size: 40%;
+	background-size: 50%;
 	width: 100%;
 	height: 100vh;
 }
@@ -61,6 +61,9 @@ body {
 		background-color: $bg-color;
 		width: 60%;
 		height: 80%;
+		-webkit-box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
+		box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
 
 		&-items {
 			@include centered;
@@ -143,10 +146,15 @@ body {
 		bottom: 0;
 
 		&-cat {
-			width: 50%;
+			position: relative;
+			margin-bottom: 15px;
+			width: 99%;
 			height: 150px;
-			border: $border-width solid $blue-color;
+			//border: $border-width solid $blue-color;
 			background-color: $bg-color;
+			-webkit-box-shadow: 0px 0px 35px -20px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0px 0px 35px -20px rgba(0, 0, 0, 0.75);
+			box-shadow: 0px 0px 35px -20px rgba(0, 0, 0, 0.75);
 			/*background hover*/
 			background-image: radial-gradient(circle at center, $orange-color 50%, transparent 50%);
 			background-repeat: no-repeat;
@@ -178,6 +186,10 @@ body {
 			width: 100%;
 			margin: 0px;
 			padding: 0px;
+		}
+
+		.blueBerry {
+			width: 90%;
 		}
 	}
 }
