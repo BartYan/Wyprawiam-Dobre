@@ -8,7 +8,7 @@ let overlay = recipesArray.getElementsByClassName("recipe_overlay");
 
 for (let i = 0; i < btns.length; i++) {
   overlay[i].addEventListener("click", function() {
-    let current = document.getElementsByClassName("active");
+    var current = document.getElementsByClassName("active");
 
     // If there's no active class
     if (current.length > 0) {
@@ -20,8 +20,8 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-recipesArray.addEventListener("touchstart", startTouch, false);
-recipesArray.addEventListener("touchmove", moveTouch, false);
+element.addEventListener("touchstart", startTouch, false);
+element.addEventListener("touchmove", moveTouch, false);
 /*let container = document.getElementsByClassName("recipe_overlay");
 
 //Convert HTML collection to array

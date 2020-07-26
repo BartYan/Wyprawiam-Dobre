@@ -563,3 +563,152 @@ body {
 .recipe_title-mobile {
 	color: $bg-color;
 }
+
+
+
+
+/* RECIPES CARD OVERLAY */
+.recipeBox {
+	position: relative;
+	width: 300px;
+	height: 450px;
+	padding: 25px;
+	border: 9px solid $blue-color;
+	transition: 0.5s ease;
+
+	&_photo {
+		width: 100%;
+		transition: .5s ease;
+
+		&-img {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+	}
+
+	&_content {
+		position: absolute;
+		display: none;
+		top: 50%;
+		transition: .5s ease;
+		z-index: 10;
+	}
+
+	.recipeBox_title {
+		margin-top: 25px;
+		font-size: 20px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.recipeBox_text {
+		padding: 5px 10px;
+		font-weight: 300;
+		font-size: 15x;
+	}
+
+	.recipeBox_icons {
+		margin-top: 15px;
+	}
+
+	.recipeBox_icon {
+		float: left;
+		font-weight: 400;
+		font-size: 15px;
+
+		.icon {
+			width: 40px;
+			margin-right: -5px;
+			margin-top: -5px;
+		}
+	}
+}
+
+.recipeBox_button {
+	position: absolute;
+	display: block;
+	bottom: 4%;
+	width: 80%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	font-weight: 300;
+	border: none;
+	background-color: $bg-color;
+	border-radius: 25px;
+	transition: .5s ease;
+}
+
+.slideArrow {
+	display: none;
+	margin-left: 5px;
+}
+
+.recipeBox_button:hover .slideArrow {
+	display: inline-block;
+	animation: slideArrow 1s ease-in-out infinite, fadein 0.5s;
+}
+
+.recipeBox:hover {
+	transform: scale(1.05);
+	border: $border-width solid $orange-color;
+	-webkit-box-shadow: 0px 0px 49px -20px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 0px 49px -20px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 49px -20px rgba(0, 0, 0, 0.4);
+}
+
+.recipeBox:hover .recipeBox_photo {
+	margin-top: -130px;
+	transition: .5s ease;
+}
+
+.recipeBox:hover .recipe_title {
+	color: $bg-color;
+}
+
+.recipeBox:hover .recipeBox_content {
+	display: block;
+	-webkit-animation: fadein 0.5s;
+	/* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 0.5s;
+	/* Firefox < 16 */
+	-ms-animation: fadein 0.5s;
+	/* Internet Explorer */
+	-o-animation: fadein 0.5s;
+	/* Opera < 12.1 */
+	animation: fadein 0.5s;
+}
+
+.dish_cat {
+	display: none;
+	text-transform: uppercase;
+	color: $navyBlue-color;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.dish_cat:hover {
+	color: $orange-color;
+	text-decoration: none;
+}
+
+
+@keyframes slideArrow {
+	0% {
+		margin-right: 0px;
+	}
+
+	50% {
+		margin-right: -20px;
+	}
+
+	100% {
+		margin-right: 0px;
+	}
+}
+
+
+/* RECIPES OVERLAY THE END */
