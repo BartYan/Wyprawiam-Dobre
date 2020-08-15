@@ -629,7 +629,7 @@ body {
 	position: absolute;
 	display: block;
 	bottom: 4%;
-	width: 80%;
+	width: 70%;
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -638,11 +638,16 @@ body {
 	font-weight: 300;
 	border: none;
 	background-color: $bg-color;
-	border-radius: 25px;
+	transition: .5s ease;
+}
+
+.recipeBox_button:hover{
+	left: -20px;
 	transition: .5s ease;
 }
 
 .slideArrow {
+	position: absolute;
 	display: none;
 	margin-left: 5px;
 }
@@ -650,6 +655,20 @@ body {
 .recipeBox_button:hover .slideArrow {
 	display: inline-block;
 	animation: slideArrow 1s ease-in-out infinite, fadein 0.5s;
+}
+
+@keyframes slideArrow {
+	0% {
+		padding-left: 0px;
+	}
+
+	50% {
+		padding-left: 7px;
+	}
+
+	100% {
+		padding-left: 0px;
+	}
 }
 
 .recipeBox:hover {
@@ -693,21 +712,6 @@ body {
 .dish_cat:hover {
 	color: $orange-color;
 	text-decoration: none;
-}
-
-
-@keyframes slideArrow {
-	0% {
-		margin-right: 0px;
-	}
-
-	50% {
-		margin-right: -20px;
-	}
-
-	100% {
-		margin-right: 0px;
-	}
 }
 
 
