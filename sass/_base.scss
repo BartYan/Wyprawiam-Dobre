@@ -540,7 +540,6 @@ body {
 }
 
 //DO POPRAWIENIA 
-
 .recipe:hover .recipe_content {
 	display: block;
 	-webkit-animation: fadein 2s;
@@ -564,9 +563,6 @@ body {
 	color: $bg-color;
 }
 
-
-
-
 /* RECIPES CARD OVERLAY */
 .recipeBox {
 	position: relative;
@@ -575,6 +571,9 @@ body {
 	padding: 25px;
 	border: 9px solid $blue-color;
 	transition: 0.5s ease;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
 
 	&_photo {
 		width: 100%;
@@ -590,7 +589,7 @@ body {
 	&_content {
 		position: absolute;
 		display: none;
-		top: 50%;
+		top: 62%;
 		transition: .5s ease;
 		z-index: 10;
 	}
@@ -606,10 +605,6 @@ body {
 		padding: 5px 10px;
 		font-weight: 300;
 		font-size: 15x;
-	}
-
-	.recipeBox_icons {
-		margin-top: 15px;
 	}
 
 	.recipeBox_icon {
@@ -641,7 +636,7 @@ body {
 	transition: .5s ease;
 }
 
-.recipeBox_button:hover{
+.recipeBox_button:hover {
 	left: -20px;
 	transition: .5s ease;
 }
@@ -680,7 +675,7 @@ body {
 }
 
 .recipeBox:hover .recipeBox_photo {
-	margin-top: -130px;
+	margin-top: -80px;
 	transition: .5s ease;
 }
 
