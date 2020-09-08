@@ -6,11 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--CSS -->
   <link rel="stylesheet" href="css\style.min.css">
 
+  <!--FONTS-->
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
 
@@ -25,243 +24,130 @@
 <body>
   <!--HEADER SECTION-->
   <header class="header">
-    <nav id="navbar" class="nav container-fluid">
-      <div class="row">
-        <div class="col-md-5 col-sm-12">
-          <img src="img/logo.png" id="logo" alt="logo">
-        </div>
-        <div class="col-md-7 col-sm-12 navbar-menu">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">główna</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">przepisy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">o nas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">główna</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">przepisy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">o nas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">kontakt</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
-  <!--WELCOME TOP SECTION-->
-  <section class="container-fluid">
-    <div class="row row-width">
-      <div class="col-lg-5 col-sm-12 patternBox">
-        <div class="patternBox_white">
-          <div class="patternBox_white-items">
-            <img class="image img-fluid" src="img/logo.png" alt="logo">
-            <img class="stars img-fluid " src="img/stars.png" alt="">
-            <h4>blog kulinarny</h4>
-          </div>
+  <!--WELCOME SECTION-->
+  <section class="welcome">
+    <div class="patternBox">
+      <div class="patternBox_white">
+        <div class="patternBox_white-items">
+          <img class="image img-fluid" src="img/logo.png" alt="logo">
+          <img class="stars img-fluid" src="img/stars.png" alt="stars icon">
+          <h4 class="blogTitle">blog kulinarny</h4>
         </div>
       </div>
-      <div class="col-lg-7 col-sm-12 infoBox">
-        <div class="infoBox_top">
-          <span class="infoBox_top-head">Z czym to się je?</span>
-          <h1 class="infoBox_top-span">Wyprawiam Dobre</h1>
-          <p class="infoBox_top-instruction">Wpisz frazę która Cię interesuje:</p>
-          <div class="input-container">
-            <input class="input-roll" type="search" id="search" name="search" placeholder="Co dziś ugotujemy?">
-            <button class="input-btn">
-              <img class="input-btnImg img-fluid" src="img/loupe.png" alt="search icon">
-              <span class="input-btnText">szukaj</span>
-            </button>
-          </div>
-          <p class="infoBox_top-description">Znajdziesz tu pyszne przepisy, ciekawe informacje oraz artykuły. Wybierz
-            kategorię i zobacz co dla Ciebie przygotowaliśmy :)</p>
+    </div>
+    <div class="infoBox">
+      <div class="section_title">
+        <span class="section_title-span">Z czym to się je?</span>
+        <h1 class="section_title-head">Wyprawiam Dobre</h1>
+      </div>
+      <p class="infoBox-instruction">Wpisz frazę która Cię interesuje:</p>
+      <div class="input-container">
+        <input class="input-roll" type="search" id="search" name="search" placeholder="Co dziś ugotujemy?">
+        <button class="input-btn">
+          <img class="input-btnImg" src="img/loupe.png" alt="search icon">
+          <span class="input-btnText">szukaj</span>
+        </button>
+      </div>
+      <p class="infoBox-description">Lub wybierz
+        kategorię i zobacz co dla Ciebie przygotowaliśmy!
+        Znajdziesz tu pyszne przepisy, ciekawe informacje oraz artykuły!</p>
+
+      <div class="infoBox_bottom">
+        <div class="infoBox_bottom-cat">
+          <img class="infoBox_bottom-cat--image" src="img/chef.png" alt="chef icon">
+          <p class="infoBox_bottom-cat--txt">przepisy</p>
         </div>
-        <div class="row infoBox_bottom">
-          <div class="col-xs-6 col-md-4">
-            <div class="infoBox_bottom-cat circle2">
-              <img class="cat-image img-fluid" src="img/chef.png" alt="chef icon">
-              <p class="cat-txt">przepisy</p>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="infoBox_bottom-cat circle2">
-              <img class="cat-image img-fluid" src="img/article.png" alt="article icon">
-              <p class="cat-txt">blog</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 infoBox_bottom-shapes">
-            <img class="img-fluid blueBerry" src="img/blueBerry.png" alt="blueberry">
-          </div>
+        <div class="infoBox_bottom-cat">
+          <img class="infoBox_bottom-cat--image" src="img/article.png" alt="article icon">
+          <p class="infoBox_bottom-cat--txt">blog</p>
+        </div>
+        <div class="">
+          <img class="blueBerry" src="img/blueBerry.png" alt="blueberry">
         </div>
       </div>
     </div>
   </section>
 
   <!--RECIPES SECTION-->
-  <section id="section" class="section">
-    <div class="sectionHeader">
-      <span class="sectionHeader-span">Najnowsze</span>
-      <h2 class="sectionHeader-head">Przepisy</h2>
-      <img class="sectionHeader-stars img-fluid " src="img/stars.png" alt="">
+  <section>
+    <div class="section_title">
+      <span class="section_title-span">Najnowsze</span>
+      <h2 class="section_title-head">Przepisy</h2>
+      <img class="section_title-stars" src="img/stars.png" alt="stars icon">
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-4">
-          <div class="recipeBox">
-            <div class="recipeBox_photo">
-              <img class="recipeBox_photo-img" src="img/photos/owsianka.jpg" alt="pancakes">
-              <h5 class="recipeBox_title">owsianka</h5>
-              <div class="recipeBox_icon"><img class="icon" src="img/level.png" id="level"
-                  alt="level icon"><span>proste</span>
-              </div>
-              <div class="recipeBox_icon"><img class="icon" src="img/clock.png" id="level"
-                  alt="clock icon"><span>10min</span>
-              </div>
-              <div class="recipeBox_icon"><img class="icon" src="img/serve.png" id="level" alt="serve icon">
-                <span>1 os.</span>
-              </div>
-            </div>
-            <div>
-              <button class="recipeBox_button" type="button">zobacz przepis <i class="slideArrow"
-                  aria-hidden="true">&#8594</i></button>
-            </div>
-            <div class="recipeBox_content">
-              <!--
-              <a href="#" class="dish_cat">śniadania</a>-->
-              <p class="recipeBox_text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-            </div>
-          </div>
-        </div>
+    <div class="recipe">
+      <!--RECIPE CARD-->
+      <div class="recipe_box">
+        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
 
-        <div class="col-sm-12 col-lg-4">
-          <div class="recipeBox">
-            <div class="recipeBox_photo">
-              <img class="recipeBox_photo-img" src="img/photos/egg.jpg" alt="pancakes">
-              <h5 class="recipeBox_title">jajko w koszulce</h5>
-              <div class="recipeBox_icon"><img class="icon" src="img/level.png" id="level"
-                  alt="level icon"><span>proste</span></div>
-              <div class="recipeBox_icon"><img class="icon" src="img/clock.png" id="level"
-                  alt="clock icon"><span>10min</span></div>
-              <div class="recipeBox_icon"><img class="icon" src="img/serve.png" id="level" alt="serve icon">
-                <span>1 os.</span>
-              </div>
-            </div>
-            <div>
-              <button class="recipeBox_button" type="button">zobacz przepis <i class="slideArrow"
-                  aria-hidden="true">&#8594</i></button>
-            </div>
-            <div class="recipeBox_content">
-              <!--
-              <a href="#" class="dish_cat">śniadania</a>
-              <a href="#" class="dish_cat">przystawki</a>-->
-              <p class="recipeBox_text">Pyszne jajko z płynnym żółtkiem? Jajko w koszulce to fajny dodatek do śniadań,
-                przystawek oraz dań głównych.</p>
-            </div>
-          </div>
-        </div>
+        <h5 class="recipe_box-title">owsianka</h5>
+
+        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
+        <span class="recipe_box-iconTxt">proste</span>
+
+        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
+        <span class="recipe_box-iconTxt">10min</span>
+
+        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
+        <span class="recipe_box-iconTxt">1os.</span>
+
+        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+            aria-hidden="true">&#8594</i></button>
+            
+        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
       </div>
+      <!--RECIPE CARD THE END-->
+      <!--RECIPE CARD-->
+      <div class="recipe_box">
+        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
 
+        <h5 class="recipe_box-title">owsianka</h5>
+
+        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
+        <span class="recipe_box-iconTxt">proste</span>
+
+        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
+        <span class="recipe_box-iconTxt">10min</span>
+
+        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
+        <span class="recipe_box-iconTxt">1os.</span>
+
+        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+            aria-hidden="true">&#8594</i></button>
+            
+        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+      </div>
+      <!--RECIPE CARD THE END-->
     </div>
+
+    <img class="leaf-left" src="img/leaf-left.png" alt="leaf icon">
+    <img class="leaf-right" src="img/leaf-right.png" alt="leaf icon">
   </section>
 
-  <!--NEWSLETTER SECTION-->
-  <section class="container-fluid newsLetter section">
-    <div class="row row-width">
-      <div class="col-lg-7 col-sm-12 infoBox">
-        <div class="infoBox_top">
-          <h2 class="infoBox_top-head">Małe co nieco!</h2>
-          <span class="infoBox_top-span">Załap się na</span>
-          <p class="infoBox_top-instruction">Dziękujemy, że jesteś razem nami!</p>
-          <div class="input-container">
-            <input class="input-roll" type="email" id="email" name="email" placeholder="Twój adres e-mail">
-            <button class="input-btn">
-              <img class="input-btnImg img-fluid" src="img/email.png" alt="search icon">
-              <span class="input-btnText">wyślij</span>
-            </button>
-          </div>
-          <p class="infoBox_top-description">Podając adres e-mail złapiesz świeże inspiracje do swoich posiłków, gotowe
-            przepisy, oraz ciekawe artykuły!
-            <b>Wyprawiaj</b> to co <b>Dobre</b> dla siebie i swoich bliskich! :)</p>
-        </div>
-        <div class="infobox_newsletter-shapes">
-          <div class="square square-nl"></div>
-          <div class="invisibleBox"></div>
-          <div class="square"></div>
-          <div class="circle circle-nl"></div>
-          <div class="diamond diamond-nl"></div>
-        </div>
-      </div>
-      <div class="col-lg-5 col-sm-12 d-none d-lg-block patternBox">
-        <div class="patternBox_white">
-          <div class="patternBox_white-items">
-            <img class="image img-fluid image_newsletter" src="img/newsletter.png" alt="newsletter">
-            <img class="stars img-fluid " src="img/stars.png" alt="">
-            <h4>newsletter</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!--FOOTER SECTION-->
-  <section class="footer">
-    <div class="container-fluid ">
-      <div class="row">
-        <div class="col-sm-12 col-md-4 footer-box">
-          <img class="footer-logo img-fluid" src="img/logo.png" alt="logo">
-          <div class="footer-txt">
-            <p>Masz pytania?</p>
-            <p class="footer-txt_margin">Wyślij nam wiadomość na:</p>
-            <a class="footer-link footer-txt_margin" href="#">wyprawiamdobre@wd.pl</a>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 footer-box">
-          <img class="footer-stars img-fluid " src="img/stars.png" alt="">
-        </div>
-        <div class="col-sm-12 col-md-4 footer-box">
-          <div class="container-fluid footer-box_social">
-            <div class="row">
-              <div class="footer-social"></div>
-              <div class="footer-social"></div>
-              <div class="footer-social"></div>
-            </div>
-          </div>
-          <div class="footer-txt">
-            <p>Jesteśmy blisko Ciebie!</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 footer-bar">
-          <p>Copyright 2020 Wyprawiam Dobre - Web Design by <a class="footer-link" href="#">BartYan.com</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--BootstrapCDN: JS, Popper.js, and jQuery-->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-
-  <!--Menu scroll show-->
-  <script src="js/menuScroll.js"></script>
   <!--btn roller-->
   <script src="js/buttonRoller.js"></script>
-
-
-  <!-- DO POPRAWIENIA RECIPE JS HOVER Touch on mobile-->
-  <script src="js/recipeElements.js"></script>
 </body>
 
 </html>
