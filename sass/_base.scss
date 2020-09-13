@@ -23,14 +23,23 @@ body {
 	z-index: 9;
 }
 
-@mixin patternDBlock {
+@mixin centerBlock {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.welcome {
+@mixin stars {
+	width: 80px;
+	margin-top: 15px;
+}
+
+.section {
 	width: 100%;
+}
+
+.patternNewsletter {
+	display: none;
 }
 
 .patternBox {
@@ -48,26 +57,26 @@ body {
 
 		&-items {
 			@include centered;
-			width: 100%;
 
 			.image {
-				@include patternDBlock;
-				width: 70%;
+				@include centerBlock;
+				margin-top: 5px;
+				width: 140px;
 			}
 
 			.stars {
-				@include patternDBlock;
-				margin-top: 15%;
+				@include centerBlock;
+				@include stars;
 			}
 
 			.blogTitle {
 				color: $orange-color;
 				text-align: center;
-				margin-top: 20px;
+				margin-top: 15px;
 				text-transform: uppercase;
-				font-size: 18px;
+				font-size: 14px;
 				font-weight: bold;
-				letter-spacing: 5px;
+				letter-spacing: 3px;
 			}
 		}
 	}
@@ -84,7 +93,7 @@ body {
 		font-weight: 500;
 		color: $orange-color;
 		text-align: center;
-		margin-top: 25px;
+		margin-top: 70px;
 		padding-top: 10px;
 	}
 
@@ -98,7 +107,8 @@ body {
 	}
 
 	&-stars {
-		@include patternDBlock;
+		@include centerBlock;
+		@include stars;
 	}
 }
 
@@ -110,7 +120,7 @@ body {
 	&-instruction {
 		font-size: 23px;
 		font-weight: bold;
-		padding-top: 30px;
+		padding-top: 40px;
 		text-align: center;
 	}
 
@@ -142,20 +152,26 @@ body {
 			/*background hover*/
 
 			&--image {
-				width: 40%;
+				width: 70px;
 				@include centered;
-				margin-top: -2%;
+				margin-top: -10px;
 			}
 
 			&--txt {
 				@include centered;
 				color: $navyBlue-color;
-				margin-top: 22%;
+				margin-top: 40px;
 				font-size: 12px;
 				font-weight: bold;
 				text-transform: uppercase;
 				letter-spacing: 5px;
 			}
+		}
+
+		//newsletter section
+		&-img {
+			width: 200px;
+			margin: 0 auto 0 auto;
 		}
 
 		.blueBerry {
@@ -184,15 +200,14 @@ body {
 }
 
 .input-roll {
-	width: 62%;
+	width: 60%;
 	height: 40px;
 	border: none;
 	border-bottom: 2px solid $grey-color;
-	/*transition: all 0.5s ease-in-out;*/
+	//transition: all 0.5s ease-in-out;
 	outline: none;
-	margin: 0;
-	margin-left: 20px;
-	padding-left: 25px;
+	margin-left: 25px;
+	padding: 0 0 0 25px;
 }
 
 .input-btn {
@@ -203,6 +218,7 @@ body {
 	height: 40px;
 	border: 4px solid $navyBlue-color;
 	border-radius: 50%;
+	margin-left: 5px;
 	//transition: all 1s ease-in;
 	background-color: white;
 }
@@ -235,6 +251,7 @@ body {
 	border-bottom: 3px solid $orange-color;
 }
 
+/* class added in buttonRoller.js */
 .input-animate {
 	-webkit-animation: spin 0.7s linear, moveLeftToRight 1s linear;
 	-moz-animation: spin 0.7s linear, moveLeftToRight 1s linear;
@@ -265,17 +282,17 @@ body {
 /* RECIPES CARD */
 .recipe {
 	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 
 	&_box {
 		position: relative;
-		width: 250px;
+		width: 230px;
 		height: 400px;
 		padding: 25px;
 		border: 9px solid $lightGrey-color;
 		transition: 0.5s ease;
-		margin-top: 100px;
-		margin-right: auto;
-		margin-left: auto;
+		margin: 70px auto 0 auto;
 		cursor: default;
 
 		&-img {
@@ -301,7 +318,7 @@ body {
 			float: left;
 			margin: 12px 5px 0px -5px;
 			font-weight: 400;
-			font-size: 15px;
+			font-size: 14px;
 		}
 
 		&-text {
@@ -360,19 +377,74 @@ body {
 
 .recipe_box:hover .recipe_box-text {
 	display: block;
-	-webkit-animation: fadein .5s;
-	/* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein .5s;
-	/* Firefox < 16 */
-	-ms-animation: fadein .5s;
-	/* Internet Explorer */
-	-o-animation: fadein .5s;
-	/* Opera < 12.1 */
-	animation: fadein .5s;
 }
 
 .recipe_box-button:hover .recipe_box-button--arrow {
 	display: inline-block;
-	animation: slideArrow 1s ease-in-out infinite, fadein 0.5s;
+	animation: slideArrow 1s ease-in-out infinite;
 }
+
 /* RECIPES OVERLAY THE END */
+
+/*FOOTER CSS*/
+.footer {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px !important;
+	border-top: 2px solid $orange-color;
+
+	&_box {
+		height: 150px;
+		padding: 0px !important;
+		margin: 0px;
+		width: 100%;
+
+		&-logo {
+			width: 30%;
+			margin-top: 50px;
+			margin-bottom: 25px;
+		}
+
+		&-txt {
+			color: $navyBlue-color;
+			font-size: 17px;
+		}
+
+		&-stars {
+			@include centered;
+			display: none;
+		}
+
+		&-social {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+			width: 100%;
+
+			&--link {
+				width: 50px;
+				padding: 20px !important;
+			}
+		}
+	}
+
+	&-bar {
+		width: 100%;
+		color: white;
+		font-size: 12px;
+		background-color: $navyBlue-color;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	&-linkColor {
+		color: $orange-color;
+		border: none;
+		text-decoration: none;
+	}
+}
