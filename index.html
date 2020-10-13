@@ -26,20 +26,20 @@
   <header class="header">
     <nav>
       <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">główna</a>
+        <li class="nav_item">
+          <a class="nav_item-link" href="#">główna</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">przepisy</a>
+        <li class="nav_item">
+          <a class="nav_item-link" href="#">przepisy</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">blog</a>
+        <li class="nav_item">
+          <a class="nav_item-link" href="#">blog</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">o nas</a>
+        <li class="nav_item">
+          <a class="nav_item-link" href="#">o nas</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">kontakt</a>
+        <li class="nav_item">
+          <a class="nav_item-link" href="#">kontakt</a>
         </li>
       </ul>
     </nav>
@@ -57,22 +57,23 @@
       </div>
     </div>
     <div class="infoBox">
-      <div class="section_title">
-        <span class="section_title-span">Z czym to się je?</span>
-        <h1 class="section_title-head">Wyprawiam Dobre</h1>
+      <div class="infoBox_top">
+        <div class="section_title">
+          <span class="section_title-span">Z czym to się je?</span>
+          <h1 class="section_title-head">Wyprawiam Dobre</h1>
+        </div>
+        <p class="infoBox-instruction">Wpisz frazę która Cię interesuje:</p>
+        <div class="input-container">
+          <input class="input-roll" type="search" id="search" name="search" placeholder="Co dziś ugotujemy?">
+          <button class="input-btn">
+            <img class="input-btnImg" src="img/loupe.png" alt="search icon">
+            <span class="input-btnText">szukaj</span>
+          </button>
+        </div>
+        <p class="infoBox-description">Lub wybierz
+          kategorię i zobacz co dla Ciebie przygotowaliśmy!
+          Znajdziesz tu pyszne przepisy, ciekawe informacje oraz artykuły!</p>
       </div>
-      <p class="infoBox-instruction">Wpisz frazę która Cię interesuje:</p>
-      <div class="input-container">
-        <input class="input-roll" type="search" id="search" name="search" placeholder="Co dziś ugotujemy?">
-        <button class="input-btn">
-          <img class="input-btnImg" src="img/loupe.png" alt="search icon">
-          <span class="input-btnText">szukaj</span>
-        </button>
-      </div>
-      <p class="infoBox-description">Lub wybierz
-        kategorię i zobacz co dla Ciebie przygotowaliśmy!
-        Znajdziesz tu pyszne przepisy, ciekawe informacje oraz artykuły!</p>
-
       <div class="infoBox_bottom">
         <div class="infoBox_bottom-cat">
           <img class="infoBox_bottom-cat--image" src="img/chef.png" alt="chef icon">
@@ -82,7 +83,7 @@
           <img class="infoBox_bottom-cat--image" src="img/article.png" alt="article icon">
           <p class="infoBox_bottom-cat--txt">blog</p>
         </div>
-        <div class="">
+        <div class="infoBox_bottom-bb">
           <img class="blueBerry" src="img/blueBerry.png" alt="blueberry">
         </div>
       </div>
@@ -90,7 +91,7 @@
   </section>
 
   <!--RECIPES SECTION-->
-  <section>
+  <section class="recipe_section">
     <div class="section_title">
       <span class="section_title-span">Najnowsze</span>
       <h2 class="section_title-head">Przepisy</h2>
@@ -143,6 +144,68 @@
       <div class="recipe_box">
         <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
 
+        <h5 class="recipe_box-title">owsianka z owocami</h5>
+
+        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
+        <span class="recipe_box-iconTxt">proste</span>
+
+        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
+        <span class="recipe_box-iconTxt">10min</span>
+
+        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
+        <span class="recipe_box-iconTxt">1os.</span>
+
+        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+            aria-hidden="true">&#8594</i></button>
+
+        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+      </div>
+      <!--RECIPE CARD THE END-->
+      <div class="recipe_box">
+        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
+
+        <h5 class="recipe_box-title">owsianka</h5>
+
+        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
+        <span class="recipe_box-iconTxt">proste</span>
+
+        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
+        <span class="recipe_box-iconTxt">10min</span>
+
+        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
+        <span class="recipe_box-iconTxt">1os.</span>
+
+        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+            aria-hidden="true">&#8594</i></button>
+
+        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+      </div>
+      <!--RECIPE CARD THE END-->
+      <!--RECIPE CARD-->
+      <div class="recipe_box">
+        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
+
+        <h5 class="recipe_box-title">owsianka</h5>
+
+        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
+        <span class="recipe_box-iconTxt">proste</span>
+
+        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
+        <span class="recipe_box-iconTxt">10min</span>
+
+        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
+        <span class="recipe_box-iconTxt">1os.</span>
+
+        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+            aria-hidden="true">&#8594</i></button>
+
+        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+      </div>
+      <!--RECIPE CARD THE END-->
+      <!--RECIPE CARD-->
+      <div class="recipe_box">
+        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
+
         <h5 class="recipe_box-title">owsianka</h5>
 
         <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
@@ -161,13 +224,35 @@
       </div>
       <!--RECIPE CARD THE END-->
     </div>
-
     <img class="leaf-left" src="img/leaf-left.png" alt="leaf icon">
     <img class="leaf-right" src="img/leaf-right.png" alt="leaf icon">
+
   </section>
 
   <!--NEWSLETTER SECTION-->
   <section class="section">
+    <div class="infoBox">
+      <div class="infoBox_top">
+        <div class="section_title">
+          <span class="section_title-span">Załap się na</span>
+          <h1 class="section_title-head">Małe co nieco!</h1>
+        </div>
+        <p class="infoBox-instruction">Dziękujemy, że jesteś tu razem z nami!</p>
+        <div class="input-container">
+          <input class="input-roll" type="email" id="email" name="email" placeholder="Twój adres email">
+          <button class="input-btn">
+            <img class="input-btnImg" src="img/email.png" alt="email icon">
+            <span class="input-btnText">wyślij</span>
+          </button>
+        </div>
+        <p class="infoBox-description">Złap świeże inspiracje do swoich posiłków, gotowe przepisy, oraz ciekawe
+          artykuły!
+          <b>Wyprawiaj</b> to co <b>Dobre</b> dla siebie i swoich bliskich! :)</p>
+      </div>
+      <div class="infoBox_bottom">
+        <img class="infoBox_bottom-img" src="img/orange.png" alt="orange icon">
+      </div>
+    </div>
     <div class="patternBox patternNewsletter">
       <div class="patternBox_white">
         <div class="patternBox_white-items">
@@ -177,48 +262,34 @@
         </div>
       </div>
     </div>
-    <div class="infoBox">
-      <div class="section_title">
-        <span class="section_title-span">Załap się na</span>
-        <h1 class="section_title-head">Małe co nieco!</h1>
-      </div>
-      <p class="infoBox-instruction">Dziękujemy, że jesteś tu razem z nami!</p>
-      <div class="input-container">
-        <input class="input-roll" type="email" id="email" name="email" placeholder="Twój adres email">
-        <button class="input-btn">
-          <img class="input-btnImg" src="img/email.png" alt="email icon">
-          <span class="input-btnText">wyślij</span>
-        </button>
-      </div>
-      <p class="infoBox-description">Złap świeże inspiracje do swoich posiłków, gotowe przepisy, oraz ciekawe artykuły!
-        <b>Wyprawiaj</b> to co <b>Dobre</b> dla siebie i swoich bliskich! :)</p>
-
-      <div class="infoBox_bottom">
-        <img class="infoBox_bottom-img" src="img/orange.png" alt="orange icon">
-      </div>
-    </div>
   </section>
 
   <!--FOOTER SECTION-->
   <section class="footer">
-    <div class="footer_box">
-      <img class="footer_box-logo" src="img/logo.png" alt="logo">
-      <div class="footer_box-txt">
-        <p>Masz pytania?</p>
-        <p>Wyślij nam wiadomość na:</p>
-        <a class="footer-linkColor" href="#">wyprawiamdobre@wd.pl</a>
+    <div class="footer_top">
+      <div class="footer_box">
+        <div class="footer_boxCenter">
+          <img class="footer_box-logo" src="img/logo.png" alt="logo">
+          <div class="footer_box-txt">
+            <p>Masz pytania?</p>
+            <p>Wyślij nam wiadomość na:</p>
+            <a class="footer-linkColor" href="#">wyprawiamdobre@wd.pl</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="footer_box">
-      <img class="footer_box-stars" src="img/stars.png" alt="">
-    </div>
-    <div class="footer_box">
-      <div class="footer_box-social">
-        <a href="#" class="footer_box-social--link"><img src="img/facebook-logo.svg" alt="facebook logo"></a>
-        <a href="#" class="footer_box-social--link"><img src="img/instagram-logo.svg" alt="instagram logo"></a>
+      <div class="footer_box">
+        <img class="footer_box-stars" src="img/stars.png" alt="">
       </div>
-      <div class="footer_box-txt">
-        <p>Jesteśmy blisko Ciebie!</p>
+      <div class="footer_box">
+        <div class="footer_boxCenter">
+          <div class="footer_box-social">
+            <a href="#" class="footer_box-social--link"><img src="img/facebook-logo.svg" alt="facebook logo"></a>
+            <a href="#" class="footer_box-social--link"><img src="img/instagram-logo.svg" alt="instagram logo"></a>
+          </div>
+          <div class="footer_box-txt">
+            <p>Jesteśmy blisko Ciebie!</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer-bar">

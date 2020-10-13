@@ -61,7 +61,7 @@ body {
 			.image {
 				@include centerBlock;
 				margin-top: 5px;
-				width: 140px;
+				width: 100px;
 			}
 
 			.stars {
@@ -82,7 +82,7 @@ body {
 	}
 }
 
-//Sections Titles
+//Titles - all sections 
 .section_title {
 	position: relative;
 
@@ -112,28 +112,32 @@ body {
 	}
 }
 
-//INFO BOX (next to the pattern)
+//INFO BOX (Hello section & newsletter)
 .infoBox {
 	width: 100%;
+	height: 550px;
 	position: relative;
 
 	&-instruction {
-		font-size: 23px;
+		font-size: 18px;
 		font-weight: bold;
 		padding-top: 40px;
 		text-align: center;
 	}
 
 	&-description {
-		font-size: 22px;
+		font-size: 16px;
 		font-weight: lighter;
 		padding: 30px 20px;
 	}
 
 	&_bottom {
+		position: absolute;
 		display: flex;
 		width: 100%;
-		margin-top: 25px;
+		margin: 25px 0 0 0;
+		padding: 0;
+		bottom: 0;
 
 		&-cat {
 			position: relative;
@@ -168,15 +172,25 @@ body {
 			}
 		}
 
+		&-bb {
+			display: none;
+			position: relative;
+			width: 100%;
+
+			.blueBerry {
+				position: absolute;
+				width: 80%;
+				bottom: 0;
+				right: 0;
+			}
+		}
+
 		//newsletter section
 		&-img {
 			width: 200px;
 			margin: 0 auto 0 auto;
 		}
 
-		.blueBerry {
-			display: none;
-		}
 	}
 
 	&_bottom-cat:hover {
@@ -200,7 +214,7 @@ body {
 }
 
 .input-roll {
-	width: 60%;
+	width: 50%;
 	height: 40px;
 	border: none;
 	border-bottom: 2px solid $grey-color;
@@ -261,30 +275,17 @@ body {
 }
 
 /* RECIPES SECTION */
-.leaf-left {
-	display: none;
-	position: absolute;
-	width: 200px;
-	top: 15%;
-	left: 0;
-	margin-left: -20px;
+.recipe_section {
+	position: relative;
 }
 
-.leaf-right {
-	display: none;
-	position: absolute;
-	width: 200px;
-	bottom: 0;
-	right: 0;
-	margin-right: -20px;
-}
-
-/* RECIPES CARD */
 .recipe {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 
+	/* RECIPES CARD */
 	&_box {
 		position: relative;
 		width: 230px;
@@ -294,6 +295,7 @@ body {
 		transition: 0.5s ease;
 		margin: 70px auto 0 auto;
 		cursor: default;
+		background-color: $white-color;
 
 		&-img {
 			width: 100%;
@@ -323,12 +325,13 @@ body {
 
 		&-text {
 			position: absolute;
-			display: none;
+			visibility: hidden;
+			opacity: 0;
 			top: 67%;
 			padding: 0px 10px;
 			font-weight: 300;
 			font-size: 18px;
-			transition: .5s ease;
+			transition: 0.3s ease;
 			z-index: 10;
 		}
 
@@ -376,7 +379,8 @@ body {
 }
 
 .recipe_box:hover .recipe_box-text {
-	display: block;
+	visibility: visible;
+	opacity: 10;
 }
 
 .recipe_box-button:hover .recipe_box-button--arrow {
@@ -384,13 +388,33 @@ body {
 	animation: slideArrow 1s ease-in-out infinite;
 }
 
-/* RECIPES OVERLAY THE END */
+.leaf-left {
+	display: none;
+	position: absolute;
+	width: 150px;
+	top: 15%;
+	left: 0;
+	margin-left: -20px;
+	z-index: -1;
+	overflow-x: hidden;
+}
+
+.leaf-right {
+	display: none;
+	position: absolute;
+	width: 150px;
+	bottom: 0;
+	right: 0;
+	margin-right: -20px;
+	z-index: -1;
+	overflow-x: hidden;
+}
+
+/* RECIPES THE END */
 
 /*FOOTER CSS*/
 .footer {
 	position: relative;
-	display: flex;
-	flex-wrap: wrap;
 	text-align: center;
 	width: 100%;
 	margin: 0px;
@@ -398,14 +422,19 @@ body {
 	border-top: 2px solid $orange-color;
 
 	&_box {
-		height: 150px;
+		position: relative;
+		height: 180px;
 		padding: 0px !important;
 		margin: 0px;
 		width: 100%;
 
+		.footer_boxCenter {
+			@include centered;
+		}
+
 		&-logo {
-			width: 30%;
-			margin-top: 50px;
+			width: 100px;
+			margin-top: 100px;
 			margin-bottom: 25px;
 		}
 
@@ -416,15 +445,14 @@ body {
 
 		&-stars {
 			@include centered;
-			display: none;
+			@include stars;
 		}
 
 		&-social {
 			display: flex;
 			justify-content: center;
-			flex-wrap: wrap;
-			flex-direction: row;
 			width: 100%;
+			margin-top: -100px;
 
 			&--link {
 				width: 50px;
@@ -434,12 +462,14 @@ body {
 	}
 
 	&-bar {
+		position: absolute;
 		width: 100%;
+		bottom: 0;
 		color: white;
 		font-size: 12px;
 		background-color: $navyBlue-color;
 		margin: 0px;
-		padding: 0px;
+		padding-top: 0px;
 	}
 
 	&-linkColor {

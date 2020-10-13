@@ -7,7 +7,7 @@ let overlay = recipesArray.getElementsByClassName("recipe_overlay");
 
 
 for (let i = 0; i < btns.length; i++) {
-  overlay[i].addEventListener("click", function() {
+  overlay[i].addEventListener("click", () => {
     let current = document.getElementsByClassName("active");
 
     // If there's no active class
