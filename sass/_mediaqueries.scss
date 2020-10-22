@@ -78,10 +78,14 @@
 }
 
 @media (min-width: 1024px) {
+	.nav_hamburger {
+		display: none;
+	}
 
 	.menu {
 		display: flex;
 	}
+	
 	.menu_social {
 		display: flex;
 	}
