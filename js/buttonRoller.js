@@ -1,6 +1,6 @@
-const animeInput = document.getElementsByClassName("input-roll");
-    const animeBtn = document.getElementsByClassName("input-btn");
-    const animeTxt = document.getElementsByClassName("input-btnText");
+const animeInput = document.getElementsByClassName("input_container-roll");
+    const animeBtn = document.getElementsByClassName("input_container-btn");
+    const animeTxt = document.getElementsByClassName("input_container-btn--text");
 
     //change btnTxt class display
     const showTxt = () => {

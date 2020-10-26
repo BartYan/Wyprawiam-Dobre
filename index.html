@@ -87,14 +87,18 @@
           <span class="section_title-span">Z czym to się je?</span>
           <h1 class="section_title-head">Wyprawiam Dobre</h1>
         </div>
-        <p class="infoBox-instruction">Wpisz frazę która Cię interesuje:</p>
-        <div class="input-container">
-          <input class="input-roll" type="search" id="search" name="search" placeholder="Co dziś ugotujemy?">
-          <button class="input-btn">
-            <img class="input-btnImg" src="img/loupe.png" alt="search icon">
-            <span class="input-btnText">szukaj</span>
-          </button>
-        </div>
+
+        <form class="input_container search" method="get" action="">
+          <label for="search" class="input_container-label"> Wpisz frazę która Cię interesuje:</label>
+          <fieldset>
+            <input class="input_container-roll" type="search" id="search" name="search" placeholder="Co dziś ugotujemy?">
+            <button class="input_container-btn">
+              <img class="input_container-btn--img" src="img/loupe.png" alt="search icon">
+              <span class="input_container-btn--text">szukaj</span>
+            </button>
+          </fieldset>
+        </form>
+
         <p class="infoBox-description">Lub wybierz
           kategorię i zobacz co dla Ciebie przygotowaliśmy!
           Znajdziesz tu pyszne przepisy, ciekawe informacje oraz artykuły!</p>
@@ -262,14 +266,18 @@
           <span class="section_title-span">Załap się na</span>
           <h1 class="section_title-head">Małe co nieco!</h1>
         </div>
-        <p class="infoBox-instruction">Dziękujemy, że jesteś tu razem z nami!</p>
-        <div class="input-container">
-          <input class="input-roll" type="email" id="email" name="email" placeholder="Twój adres email">
-          <button class="input-btn">
-            <img class="input-btnImg" src="img/email.png" alt="email icon">
-            <span class="input-btnText">wyślij</span>
-          </button>
-        </div>
+        
+        <form class="input_container" method="" action="">
+          <label for="" class="input_container-label"> Dziękujemy, że jesteś tu razem z nami!</label>
+          <fieldset>
+            <input class="input_container-roll" type="email" id="email" name="email" placeholder="Twój adres email">
+            <button class="input_container-btn">
+              <img class="input_container-btn--img" src="img/email.png" alt="email icon">
+            <span class="input_container-btn--text">wyślij</span>
+            </button>
+          </fieldset>
+        </form>
+        
         <p class="infoBox-description">Złap świeże inspiracje do swoich posiłków, gotowe przepisy, oraz ciekawe
           artykuły!
           <b>Wyprawiaj</b> to co <b>Dobre</b> dla siebie i swoich bliskich! :)</p>
@@ -281,8 +289,8 @@
     <div class="patternBox patternNewsletter">
       <div class="patternBox_white">
         <div class="patternBox_white-items">
-          <img class="image img-fluid" src="img/newsletter.png" alt="logo">
-          <img class="stars img-fluid" src="img/stars.png" alt="stars icon">
+          <img class="image" src="img/newsletter.png" alt="logo">
+          <img class="stars" src="img/stars.png" alt="stars icon">
           <h4 class="blogTitle">newsletter</h4>
         </div>
       </div>

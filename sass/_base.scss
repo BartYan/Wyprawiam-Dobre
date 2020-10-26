@@ -118,13 +118,6 @@ body {
 	height: 550px;
 	position: relative;
 
-	&-instruction {
-		font-size: 18px;
-		font-weight: bold;
-		padding-top: 40px;
-		text-align: center;
-	}
-
 	&-description {
 		font-size: 16px;
 		font-weight: lighter;
@@ -187,10 +180,9 @@ body {
 
 		//newsletter section
 		&-img {
-			width: 200px;
+			width: 40%;
 			margin: 0 auto 0 auto;
 		}
-
 	}
 
 	&_bottom-cat:hover {
@@ -207,63 +199,76 @@ body {
 }
 
 /* INPUT CSS */
-.input-container {
+.input_container {
 	position: relative;
 	padding: 0;
 	margin-top: 30px;
-}
 
-.input-roll {
-	width: 50%;
-	height: 40px;
-	border: none;
-	border-bottom: 2px solid $lightGrey-color;
-	//transition: all 0.5s ease-in-out;
-	outline: none;
-	margin-left: 25px;
-	padding: 0 0 0 25px;
-}
+	&-label {
+		display: inline-block;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 40px 0 20px 20px;
+		text-align: center;
+	}
 
-.input-btn {
-	position: absolute;
-	bottom: 2px;
-	left: 0px;
-	width: 40px;
-	height: 40px;
-	border: 4px solid $navyBlue-color;
-	border-radius: 50%;
-	margin-left: 5px;
-	//transition: all 1s ease-in;
-	background-color: white;
-	cursor: pointer;
-}
+	//input field
+	fieldset {
+		border: none;
+	}
 
-.input-btn:active {
-	top: 1px;
-}
+	&-roll {
+		width: 50%;
+		height: 40px;
+		border: none;
+		border-bottom: 2px solid $lightGrey-color;
+		//transition: all 0.5s ease-in-out;
+		outline: none;
+		margin-left: 25px;
+		padding: 0 0 0 25px;
+	}
 
-.input-btn:focus {
-	outline: none;
-}
+	&-roll:focus {
+		border: none;
+		border-bottom: 3px solid $orange-color;
+	}
 
-.input-btnImg {
-	width: 25px;
-	height: 25px;
-	padding: 3px;
-	float: left;
-}
+	&-btn {
+		position: absolute;
+		bottom: 2px;
+		left: 0px;
+		width: 40px;
+		height: 40px;
+		border: 4px solid $navyBlue-color;
+		border-radius: 50%;
+		margin-left: 5px;
+		//transition: all 1s ease-in;
+		background-color: white;
+		cursor: pointer;
 
-.input-btnText {
-	display: none;
-	color: $navyBlue-color;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 8px 8px 0 0;
-}
+		&--img {
+			width: 25px;
+			height: 25px;
+			padding: 3px;
+			float: left;
+		}
 
-.input-roll:focus {
-	border: none;
-	border-bottom: 3px solid $orange-color;
+		&--text {
+			display: none;
+			color: $navyBlue-color;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 8px 8px 0 0;
+		}
+	}
+
+	&-btn:active {
+		margin-bottom: -5px;
+	}
+
+	&-btn:focus {
+		outline: none;
+	}
 }
 
 /* class added in buttonRoller.js */
