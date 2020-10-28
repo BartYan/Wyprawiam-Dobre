@@ -7,6 +7,10 @@ body {
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+  }
+
 @mixin bg-pattern {
 	background-image: url("../img/foodpattern.png");
 	background-repeat: cover;
@@ -134,9 +138,9 @@ body {
 			position: relative;
 			//width: 48%;
 			width: 98%;
-			height: 220px;
+			height: 200px;
 			margin: 20px auto 0 auto;
-			
+
 			background-image: url("../img/photos/4.jpg");
 			background-repeat: cover;
 			background-size: 100%;
@@ -149,7 +153,7 @@ body {
 			position: relative;
 			//width: 48%;
 			width: 98%;
-			height: 220px;
+			height: 200px;
 			margin: 20px auto 0 auto;
 			background-image: url("../img/photos/44.jpg");
 			background-repeat: cover;
@@ -510,4 +514,32 @@ body {
 		border: none;
 		text-decoration: none;
 	}
+}
+
+//BACK TO TOP BUTTON
+
+#topBtn {
+	width: 50px;
+	opacity: 0;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 100;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: $navyBlue-color;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 50%;
+	-webkit-transition: 0.3s ease-in-out, ;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+#topBtn:hover {
+	background-color: $orange-color;
 }
