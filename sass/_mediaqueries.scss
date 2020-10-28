@@ -22,7 +22,7 @@
 	.section_title {
 		&-head {
 			font-size: 50px;
-			margin-top: 70px;
+			margin-top: 50px;
 			padding-top: 20px;
 		}
 
@@ -33,10 +33,10 @@
 
 	//INFO BOX (first welcome section & newsletter)
 	.infoBox {
-
+		height: 600px;
 		&_top {
 			width: 90%;
-			margin: 0 auto 0 auto;
+			margin: 100px auto 0 auto;
 		}
 
 		&-instruction {
@@ -44,16 +44,31 @@
 		}
 
 		&_bottom {
-			margin-top: 120px;
+			margin: 120px 0 0 0;
+			display: flex;
+
+			&-box--1 {
+				width: 48%;
+			}
+
+			&-box--2 {
+				width: 48%;
+			}
 
 			&--txt {
 				font-size: 20px;
 			}
+
 			&-img {
 				width: 200px;
 			}
 		}
 	}
+
+	.recipe_section {
+		margin-top: 80px;
+	}
+
 
 	/*FOOTER CSS*/
 	.footer {
@@ -88,7 +103,7 @@
 	.menu {
 		display: flex;
 	}
-	
+
 	.menu_social {
 		display: flex;
 	}
@@ -115,8 +130,18 @@
 		display: block;
 	}
 
-	.infoBox_bottom-bb {
-		display: block;
+	.infoBox {
+	
+		&_bottom {
+	
+			&-box--1 {
+				height: 180px;
+			}
+	
+			&-box--2 {
+				height: 180px;
+			}
+		}
 	}
 
 	.recipe {
@@ -133,22 +158,39 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1290px) {
 	.infoBox {
 		height: 100vh;
+
+	
+	
+			&_bottom {
+		
+				&-box--1 {
+					height: 220px;
+				}
+		
+				&-box--2 {
+					height: 220px;
+				}
+			}
+		
 
 		&_top {
 			/*position: absolute;
 			top: 10%;
 			left: 0;
 			right: 0;*/
-			margin: 150px auto 0 auto;
+			margin: 120px auto 0 auto;
 			width: 80%;
 		}
 
 		&-description {
 			font-size: 20px;
 		}
+	}
+	.infoBox_newsLetter {
+		height: 100vh;
 	}
 
 	.recipe {
@@ -166,6 +208,7 @@
 				.image {
 					width: 300px;
 				}
+
 				.blogTitle {
 					font-size: 22px;
 				}
@@ -197,28 +240,6 @@
 
 		&-description {
 			font-size: 25px;
-		}
-
-		&_bottom {
-
-			&-cat {
-				position: relative;
-				width: 99%;
-				height: 250px;
-
-				&--image {
-					width: 100px;
-					margin-top: -10px;
-				}
-
-				&--txt {
-					font-size: 20px;
-					padding-top: 30px;
-				}
-			}
-			&-img {
-				width: 350px;
-			}
 		}
 	}
 }

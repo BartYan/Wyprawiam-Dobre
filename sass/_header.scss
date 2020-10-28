@@ -69,6 +69,10 @@
 	}
 }
 
+.menu_active {
+	color: $orange-color !important;
+}
+
 .menu_social {
 	display: none;
 	z-index: 100;

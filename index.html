@@ -32,7 +32,7 @@
       <!--THE OVERLAY-->
       <div id="overlay_menu" class="nav_overlay">
         <div class="nav_overlay-content">
-          <!--<a href="#" class="nav_overlay-content--link">główna</a>-->
+          <a href="#" class="nav_overlay-content--link">główna</a>
           <a href="#" class="nav_overlay-content--link">przepisy</a>
           <a href="#" class="nav_overlay-content--link">blog</a>
           <a href="#" class="nav_overlay-content--link">o nas</a>
@@ -42,7 +42,7 @@
       <!--DESKTOP HEADER-->
       <ul class="menu">
         <li class="menu_item">
-          <a class="menu_item-link" href="#">główna</a>
+          <a class="menu_item-link menu_active" href="#">główna</a>
         </li>
         <li class="menu_item">
           <a class="menu_item-link" href="#">przepisy</a>
@@ -72,6 +72,7 @@
 
   <!--WELCOME SECTION-->
   <section class="section">
+
     <div class="patternBox">
       <div class="patternBox_white">
         <div class="patternBox_white-items">
@@ -81,41 +82,45 @@
         </div>
       </div>
     </div>
+
     <div class="infoBox">
+
       <div class="infoBox_top">
         <div class="section_title">
           <span class="section_title-span">Z czym to się je?</span>
           <h1 class="section_title-head">Wyprawiam Dobre</h1>
         </div>
-
         <form class="input_container search" method="get" action="">
           <label for="search" class="input_container-label"> Wpisz frazę która Cię interesuje:</label>
           <fieldset>
-            <input class="input_container-roll" type="search" id="search" name="search" placeholder="Co dziś ugotujemy?">
+            <input class="input_container-roll" type="search" id="search" name="search"
+              placeholder="Co dziś ugotujemy?">
             <button class="input_container-btn">
               <img class="input_container-btn--img" src="img/loupe.png" alt="search icon">
               <span class="input_container-btn--text">szukaj</span>
             </button>
           </fieldset>
         </form>
-
         <p class="infoBox-description">Lub wybierz
           kategorię i zobacz co dla Ciebie przygotowaliśmy!
-          Znajdziesz tu pyszne przepisy, ciekawe informacje oraz artykuły!</p>
+          Znajdziesz tu pyszne przepisy, przydatne informacje oraz ciekawe artykuły!</p>
       </div>
+
       <div class="infoBox_bottom">
-        <div class="infoBox_bottom-cat">
-          <img class="infoBox_bottom-cat--image" src="img/chef.png" alt="chef icon">
-          <p class="infoBox_bottom-cat--txt">przepisy</p>
+        <div class="infoBox_bottom-box--1">
+          <div class="infoBox_bottom-cat">
+            <img class="infoBox_bottom-cat--image" src="img/chef.png" alt="chef icon">
+            <p class="infoBox_bottom-cat--txt">przepisy</p>
+          </div>
         </div>
-        <div class="infoBox_bottom-cat">
-          <img class="infoBox_bottom-cat--image" src="img/article.png" alt="article icon">
-          <p class="infoBox_bottom-cat--txt">blog</p>
-        </div>
-        <div class="infoBox_bottom-bb">
-          <img class="blueBerry" src="img/blueBerry.png" alt="blueberry">
+        <div class="infoBox_bottom-box--2">
+          <div class="infoBox_bottom-cat">
+            <img class="infoBox_bottom-cat--image" src="img/article.png" alt="article icon">
+            <p class="infoBox_bottom-cat--txt">blog</p>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -260,24 +265,24 @@
 
   <!--NEWSLETTER SECTION-->
   <section class="section">
-    <div class="infoBox">
+    <div class="infoBox infoBox_newsLetter">
       <div class="infoBox_top">
         <div class="section_title">
           <span class="section_title-span">Załap się na</span>
           <h1 class="section_title-head">Małe co nieco!</h1>
         </div>
-        
+
         <form class="input_container" method="" action="">
           <label for="" class="input_container-label"> Dziękujemy, że jesteś tu razem z nami!</label>
           <fieldset>
             <input class="input_container-roll" type="email" id="email" name="email" placeholder="Twój adres email">
             <button class="input_container-btn">
               <img class="input_container-btn--img" src="img/email.png" alt="email icon">
-            <span class="input_container-btn--text">wyślij</span>
+              <span class="input_container-btn--text">wyślij</span>
             </button>
           </fieldset>
         </form>
-        
+
         <p class="infoBox-description">Złap świeże inspiracje do swoich posiłków, gotowe przepisy, oraz ciekawe
           artykuły!
           <b>Wyprawiaj</b> to co <b>Dobre</b> dla siebie i swoich bliskich! :)</p>
