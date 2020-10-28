@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	width: 100% !important;
 	margin: 0px !important;
@@ -6,10 +10,6 @@ body {
 	font-family: 'Lato', sans-serif;
 	box-sizing: border-box;
 }
-
-html {
-	scroll-behavior: smooth;
-  }
 
 @mixin bg-pattern {
 	background-image: url("../img/foodpattern.png");
@@ -516,8 +516,38 @@ html {
 	}
 }
 
-//BACK TO TOP BUTTON
+//SVG FOOTER SOCIAL MEDIA ICONS
+.footer-icon {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-ms-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+}
 
+.facebook_footer-icon {
+	background-image: url("../img/facebook_footer.svg");
+}
+
+.facebook_footer-icon:hover,
+.facebook_footer-icon:focus {
+	background-image: url("../img/facebook_footer-orange.svg");
+}
+
+.insta_footer-icon {
+	background-image: url("../img/instagram_footer.svg");
+}
+
+.insta_footer-icon:hover,
+.insta_footer-icon:focus {
+	background-image: url("../img/instagram_footer-orange.svg");
+}
+
+//BACK TO TOP BUTTON
 #topBtn {
 	width: 50px;
 	opacity: 0;
@@ -533,11 +563,11 @@ html {
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 50%;
-	-webkit-transition: 0.3s ease-in-out, ;
-	-moz-transition: 0.3s ease-in-out;
-	-ms-transition: 0.3s ease-in-out;
-	-o-transition: 0.3s ease-in-out;
-	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out, ;
+	-moz-transition: 0.2s ease-in-out;
+	-ms-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 
 #topBtn:hover {

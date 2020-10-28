@@ -26,7 +26,7 @@
 			text-align: left;
 
 			&--link {
-				padding:10px 8px;
+				padding: 10px 8px;
 				text-decoration: none;
 				font-size: 25px;
 				color: $white-color;
@@ -56,10 +56,31 @@
 			cursor: pointer;
 			border: none;
 
-			//social media icons in menu
-			&--img {
+			//social media icons in top menu
+			.menu-icon {
 				width: 12px;
+				height: 12px;
 				margin-right: -10px;
+				display: block;
+				background-size: cover;
+			}
+
+			&--facebook {
+				background-image: url("../img/facebook_menu.svg");
+			}
+
+			&--facebook:hover,
+			&--facebook:focus {
+				background-image: url("../img/facebook_menu-orange.svg");
+			}
+
+			&--insta {
+				background-image: url("../img/instagram_menu.svg");
+			}
+
+			&--insta:hover,
+			&--insta:focus {
+				background-image: url("../img/instagram_menu-orange.svg");
 			}
 		}
 

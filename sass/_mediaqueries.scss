@@ -34,6 +34,7 @@
 	//INFO BOX (first welcome section & newsletter)
 	.infoBox {
 		height: 600px;
+
 		&_top {
 			width: 90%;
 			margin: 100px auto 0 auto;
@@ -131,13 +132,13 @@
 	}
 
 	.infoBox {
-	
+
 		&_bottom {
-	
+
 			&-box--1 {
 				height: 180px;
 			}
-	
+
 			&-box--2 {
 				height: 180px;
 			}
@@ -162,19 +163,19 @@
 	.infoBox {
 		height: 100vh;
 
-	
-	
-			&_bottom {
-		
-				&-box--1 {
-					height: 220px;
-				}
-		
-				&-box--2 {
-					height: 220px;
-				}
+
+
+		&_bottom {
+
+			&-box--1 {
+				height: 220px;
 			}
-		
+
+			&-box--2 {
+				height: 220px;
+			}
+		}
+
 
 		&_top {
 			/*position: absolute;
@@ -189,6 +190,7 @@
 			font-size: 20px;
 		}
 	}
+
 	.infoBox_newsLetter {
 		height: 100vh;
 	}
