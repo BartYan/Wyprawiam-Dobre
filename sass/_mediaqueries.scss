@@ -97,6 +97,10 @@
 }
 
 @media (min-width: 1024px) {
+	#topBtn {
+		display: block;
+	}
+
 	.nav_hamburger {
 		display: none;
 	}
