@@ -226,6 +226,11 @@ body {
 }
 
 /* INPUT CSS */
+input {
+	-moz-appearance: none;/* older firefox */
+	-webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+	appearance: none; /* rest */
+ }
 .input_container {
 	position: relative;
 	padding: 0;
