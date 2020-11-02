@@ -25,7 +25,17 @@
 			position: absolute;
 			left: 50%;
 			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			/* Safari 4+ */
+			-moz-transform: translate(-50%, -50%);
+			/* Fx 5+ */
+			-o-transform: translate(-50%, -50%);
+			/* Opera 12+ */
+			-ms-transform: translate(-50%, -50%);
+			/*IE11 & Microsoft Edge*/
 			transform: translate(-50%, -50%);
+
+			/* IE 10+, Fx 29+ */
 			background-color: $white-color;
 		}
 
@@ -33,6 +43,14 @@
 			position: absolute;
 			left: 50%;
 			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			/* Safari 4+ */
+			-moz-transform: translate(-50%, -50%);
+			/* Fx 5+ */
+			-o-transform: translate(-50%, -50%);
+			/* Opera 12+ */
+			-ms-transform: translate(-50%, -50%);
+			/*IE11 & Microsoft Edge*/
 			transform: translate(-50%, -50%);
 			text-align: center;
 
@@ -45,11 +63,12 @@
 				display: block;
 				transition: 0.3s;
 			}
+
 			&--social {
 				display: flex;
 				justify-content: center;
 				width: 100%;
-				
+
 				.social_menu-link {
 					width: 40px;
 					padding: 20px !important;
@@ -168,20 +187,55 @@
 
 .nav_hamburger span:before {
 	-webkit-transform: translateY(-0.5em);
+	/* Safari 4+ */
+	-moz-transform: translateY(-0.5em);
+	/* Fx 5+ */
+	-o-transform: translateY(-0.5em);
+	/* Opera 12+ */
+	-ms-transform: translateY(-0.5em);
+	/*IE11 & Microsoft Edge*/
 	transform: translateY(-0.5em);
+	/* IE 10+, Fx 29+ */
 }
 
 .nav_hamburger span:after {
+
 	-webkit-transform: translateY(0.5em);
+	/* Safari 4+ */
+	-moz-transform: translateY(0.5em);
+	/* Fx 5+ */
+	-o-transform: translateY(0.5em);
+	/* Opera 12+ */
+	-ms-transform: translateY(0.5em);
+	/*IE11 & Microsoft Edge*/
 	transform: translateY(0.5em);
+	/* IE 10+, Fx 29+ */
 }
 
 .nav_hamburger.nav_hamburger-open span:before {
-	-webkit-transform: translateY(-0.36em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+
+	-webkit-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+	/* Safari 4+ */
+	-moz-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+	/* Fx 5+ */
+	-o-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+	/* Opera 12+ */
+	-ms-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+	/*IE11 & Microsoft Edge*/
 	transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+	/* IE 10+, Fx 29+ */
 }
 
 .nav_hamburger.nav_hamburger-open span:after {
-	-webkit-transform: translateY(0.36em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+
+	-webkit-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+	/* Safari 4+ */
+	-moz-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+	/* Fx 5+ */
+	-o-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+	/* Opera 12+ */
+	-ms-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+	/*IE11 & Microsoft Edge*/
 	transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+	/* IE 10+, Fx 29+ */
 }

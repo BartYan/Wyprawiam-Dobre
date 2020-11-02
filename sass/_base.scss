@@ -23,7 +23,16 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	/* Safari 4+ */
+	-moz-transform: translate(-50%, -50%);
+	/* Fx 5+ */
+	-o-transform: translate(-50%, -50%);
+	/* Opera 12+ */
+	-ms-transform: translate(-50%, -50%);
+	/*IE11 & Microsoft Edge*/
 	transform: translate(-50%, -50%);
+	/* IE 10+, Fx 29+ */
 	z-index: 9;
 }
 
@@ -167,10 +176,22 @@ body {
 			position: relative;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
 			width: 250px;
 			height: 150px;
 			background-color: rgba(255, 255, 255, 0.85);
+
+			-webkit-transform: translate(-50%, -50%);
+			/* Safari 4+ */
+			-moz-transform: translate(-50%, -50%);
+			/* Fx 5+ */
+			-o-transform: translate(-50%, -50%);
+			/* Opera 12+ */
+			-ms-transform: translate(-50%, -50%);
+			/*IE11 & Microsoft Edge*/
+			transform: translate(-50%, -50%);
+			/* IE 10+, Fx 29+ */
+
+			/*box shadow*/
 			-webkit-box-shadow: 0px 0px 35px -20px rgba(0, 0, 0, 0.75);
 			-moz-box-shadow: 0px 0px 35px -20px rgba(0, 0, 0, 0.75);
 			box-shadow: 0px 0px 35px -20px rgba(0, 0, 0, 0.75);
@@ -202,7 +223,17 @@ body {
 
 		&-cat:hover {
 			background-size: 200% 200%;
+
+			-webkit-transform: translate(-50%, -50%) scale(1.1);
+			/* Safari 4+ */
+			-moz-transform: translate(-50%, -50%) scale(1.1);
+			/* Fx 5+ */
+			-o-transform: translate(-50%, -50%) scale(1.1);
+			/* Opera 12+ */
+			-ms-transform: translate(-50%, -50%) scale(1.1);
+			/*IE11 & Microsoft Edge*/
 			transform: translate(-50%, -50%) scale(1.1);
+			/* IE 10+, Fx 29+ */
 			z-index: 10;
 			cursor: pointer;
 
@@ -227,10 +258,14 @@ body {
 
 /* INPUT CSS */
 input {
-	-moz-appearance: none;/* older firefox */
-	-webkit-appearance: none; /* safari, chrome, edge and ie mobile */
-	appearance: none; /* rest */
- }
+	-moz-appearance: none;
+	/* older firefox */
+	-webkit-appearance: none;
+	/* safari, chrome, edge and ie mobile */
+	appearance: none;
+	/* rest */
+}
+
 .input_container {
 	position: relative;
 	padding: 0;
@@ -304,11 +339,28 @@ input {
 
 /* class added in buttonRoller.js */
 .input-animate {
+
 	-webkit-animation: spin 0.7s linear, moveLeftToRight 1s linear;
+	/* Safari 4+ */
 	-moz-animation: spin 0.7s linear, moveLeftToRight 1s linear;
+	/* Fx 5+ */
+	-o-animation: spin 0.7s linear, moveLeftToRight 1s linear;
+	/* Opera 12+ */
+	-ms-animation: spin 0.7s linear, moveLeftToRight 1s linear;
+	/*IE11 & Microsoft Edge*/
 	animation: spin 0.7s linear, moveLeftToRight 1s linear;
-	animation-fill-mode: forwards;
+	/* IE 10+, Fx 29+ */
+
 	-webkit-animation-fill-mode: forwards;
+	/* Safari 4+ */
+	-moz-animation-fill-mode: forwards;
+	/* Fx 5+ */
+	-o-animation-fill-mode: forwards;
+	/* Opera 12+ */
+	-ms-animation-fill-mode: forwards;
+	/*IE11 & Microsoft Edge*/
+	animation-fill-mode: forwards;
+	/* IE 10+, Fx 29+ */
 }
 
 /* RECIPES SECTION */
@@ -408,7 +460,16 @@ input {
 }
 
 .recipe_box:hover {
+	-webkit-transform: scale(1.05);
+	/* Safari 4+ */
+	-moz-transform: scale(1.05);
+	/* Fx 5+ */
+	-o-transform: scale(1.05);
+	/* Opera 12+ */
+	-ms-transform: scale(1.05);
+	/*IE11 & Microsoft Edge*/
 	transform: scale(1.05);
+	/* IE 10+, Fx 29+ */
 	border: $border-width solid $orange-color;
 	-webkit-box-shadow: 0px 0px 49px -20px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 0px 0px 49px -20px rgba(0, 0, 0, 0.4);
@@ -427,7 +488,17 @@ input {
 
 .recipe_box-button:hover .recipe_box-button--arrow {
 	display: inline-block;
+
+	-webkit-animation: slideArrow 1s ease-in-out infinite;
+	/* Safari 4+ */
+	-moz-animation: slideArrow 1s ease-in-out infinite;
+	/* Fx 5+ */
+	-o-animation: slideArrow 1s ease-in-out infinite;
+	/* Opera 12+ */
+	-ms-animation: slideArrow 1s ease-in-out infinite;
+	/*IE11 & Microsoft Edge*/
 	animation: slideArrow 1s ease-in-out infinite;
+	/* IE 10+, Fx 29+ */
 }
 
 .leaf-left {
