@@ -1,5 +1,4 @@
 /*MEDIA QUERIES*/
-
 @media (min-width: 768px) {
 
 	.patternBox {
@@ -167,20 +166,6 @@
 	.infoBox {
 		height: 100vh;
 
-
-
-		&_bottom {
-
-			&-box--1 {
-				height: 220px;
-			}
-
-			&-box--2 {
-				height: 220px;
-			}
-		}
-
-
 		&_top {
 			/*position: absolute;
 			top: 10%;
@@ -192,6 +177,17 @@
 
 		&-description {
 			font-size: 20px;
+		}
+
+		&_bottom {
+
+			&-box--1 {
+				height: 220px;
+			}
+
+			&-box--2 {
+				height: 220px;
+			}
 		}
 	}
 
@@ -212,7 +208,7 @@
 			&-items {
 
 				.image {
-					width: 300px;
+					width: 250px;
 				}
 
 				.blogTitle {
@@ -237,6 +233,7 @@
 	//INFO BOX (first welcome section & newsletter)
 	.infoBox {
 		&_top {
+			width: 65%;
 			margin: 200px auto 0 auto;
 		}
 
@@ -247,5 +244,59 @@
 		&-description {
 			font-size: 25px;
 		}
+
+		&_bottom {
+
+			&-box--1 {
+				height: 300px;
+			}
+
+			&-box--2 {
+				height: 300px;
+			}
+
+			&-img {
+				width: 250px;
+			}
+		}
+	}
+}
+
+@media (min-width: 2048px) {
+	.patternBox {
+		height: 1080px;
+	}
+
+	.infoBox {
+		height: 1080px;
+	}
+	.infoBox_newsLetter {
+		height: 1080px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.patternBox {
+		height: 1200px;
+	}
+
+	.infoBox {
+		height: 1200px;
+	}
+	.infoBox_newsLetter {
+		height: 1200px;
+	}
+}
+
+@media (min-width: 2560px) and (device-height: 1080px) {
+	.patternBox {
+		height: 1080px;
+	}
+
+	.infoBox {
+		height: 1080px;
+	}
+	.infoBox_newsLetter {
+		height: 1080px;
 	}
 }
