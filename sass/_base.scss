@@ -7,7 +7,7 @@ body {
 	margin: 0px !important;
 	padding: 0px !important;
 	overflow-x: hidden;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	box-sizing: border-box;
 }
 
@@ -103,8 +103,8 @@ body {
 		display: block;
 		font-size: 35px;
 		font-family: $fontSerif;
-		font-weight: 300;
-		color: $orange-color;
+		font-weight: 500;
+		color: $navyBlue-color;
 		text-align: center;
 		margin-top: 70px;
 		padding-top: 10px;
@@ -116,7 +116,8 @@ body {
 		left: 50%;
 		font-family: $fontWrite;
 		font-size: 25px;
-		color: $navyBlue-color;
+
+		color: $orange-color;
 	}
 
 	&-stars {
@@ -131,11 +132,46 @@ body {
 	height: 750px;
 	position: relative;
 
-	&-description {
-		font-size: 16px;
-		font-weight: lighter;
-		padding: 20px 20px;
+	&_top {
+		&-description {
+			font-size: 16px;
+			font-weight: lighter;
+			padding: 25px 20px;
+		}
+
+		&-list {
+			margin: 25px 0 0 20px;
+
+			&--item {
+				list-style-type: none;
+				height: 20px;
+				padding-top: 10px;
+			}
+
+			&--link {
+				text-decoration: none;
+				border: none;
+			}
+
+			&--txt {
+				display: block;
+				font-size: 16px;
+				font-weight: 500;
+				color: black;
+				margin: -15px 0 0 40px;
+				text-transform: uppercase;
+			}
+
+			&--txtSpan {
+				font-size: 16px;
+				font-weight: 200;
+				text-transform: lowercase;
+				color: $grey-color !important;
+			}
+		}
+
 	}
+
 
 	&_bottom {
 		position: absolute;
@@ -249,8 +285,72 @@ body {
 			margin: 0 auto 0 auto;
 			padding: 0;
 		}
+
+		.blueberry {
+			position: absolute;
+			width: 150px;
+			right: 0;
+			bottom: 0;
+		}
+
+		.greenbox {
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			left: 0px;
+			bottom: 25px;
+			background-color: $white-color;
+			//border: 6px solid $navyBlue-color;
+		}
+
+		.greenbox2 {
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			left: 50px;
+			bottom: 25px;
+			background-color: $white-color;
+			//border: 6px solid $navyBlue-color;
+		}
+
+		&_social {
+
+			&-item {
+				display: inline-block;
+				list-style-type: none;
+				margin: 0 0 30px 0;
+			}
+			&-link {
+				text-decoration: none;
+				margin: 0 0 0 15px;
+			}
+			&-facebook {
+				width: 14px;
+			}
+			&-insta {
+				width: 14px;
+			}
+			&-txt {
+				font-size: 14px;
+				font-weight: 500;
+				margin: 0 0 0 30px;
+			}
+		}
 	}
 }
+
+.bla {
+	display: block;
+	width: 8px;
+}
+.blabla {
+	display: block;
+	width: 16px;
+	@include centered();
+}
+
+//infoBox social media line
+
 
 .infoBox_newsLetter {
 	height: 500px;
@@ -269,6 +369,7 @@ input {
 .input_container {
 	position: relative;
 	padding: 0;
+	margin-top: 20px;
 
 	&-label {
 		display: inline-block;
@@ -377,14 +478,18 @@ input {
 	/* RECIPES CARD */
 	&_box {
 		position: relative;
-		width: 230px;
-		height: 400px;
-		padding: 25px;
-		border: 4px solid $lightGrey-color;
+		width: 280px;
+		height: 480px;
+		//padding: 25px;
+		//border: 4px solid $lightGrey-color;
 		transition: 0.5s ease;
-		margin: 70px auto 0 auto;
+		margin: 100px auto 0 auto;
 		cursor: default;
 		background-color: $white-color;
+
+		box-shadow: -1px 0px 21px -13px rgba(0, 0, 0, 0.47);
+		-webkit-box-shadow: -1px 0px 21px -13px rgba(0, 0, 0, 0.47);
+		-moz-box-shadow: -1px 0px 21px -13px rgba(0, 0, 0, 0.47);
 
 		&-img {
 			width: 100%;
@@ -394,34 +499,52 @@ input {
 		}
 
 		&-title {
-			margin-top: 25px;
-			font-size: 20px;
+			margin-top: 15px;
+			padding: 0 20px 0 20px;
+			font-size: 25px;
 			text-align: center;
-			text-transform: uppercase;
+			//text-transform: uppercase;
+			font-family: $fontSerif;
+			font-weight: 300;
 		}
 
 		&-icon {
 			float: left;
-			width: 40px;
+			margin: 10px auto 0 18px;
+		}
+
+		.level {
+			height: 18px;
+			width: 18px;
+
+		}
+
+		.clock {
+			width: 18px;
+			height: 18px;
+		}
+
+		.serve {
+			width: 24px;
+			height: 18px;
 		}
 
 		&-iconTxt {
 			float: left;
-			margin: 12px 5px 0px -5px;
+			margin: 12px 15px 0px 5px;
 			font-weight: 400;
 			font-size: 14px;
 		}
 
 		&-text {
-			position: absolute;
 			visibility: hidden;
 			opacity: 0;
-			top: 67%;
-			padding: 0px 10px;
+			padding: 50px 20px 0 20px;
 			font-weight: 300;
 			font-size: 18px;
 			transition: 0.3s ease;
 			z-index: 10;
+			color: $grey-color;
 		}
 
 		&-button {
@@ -433,8 +556,9 @@ input {
 			right: 0;
 			margin-left: auto;
 			margin-right: auto;
-			font-size: 20px;
-			font-weight: 300;
+			font-size: 18px;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 500;
 			border: none;
 			background-color: $white-color;
 			transition: .5s ease;
@@ -470,7 +594,7 @@ input {
 	/*IE11 & Microsoft Edge*/
 	transform: scale(1.05);
 	/* IE 10+, Fx 29+ */
-	border: $border-width solid $orange-color;
+
 	-webkit-box-shadow: 0px 0px 49px -20px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 0px 0px 49px -20px rgba(0, 0, 0, 0.4);
 	box-shadow: 0px 0px 49px -20px rgba(0, 0, 0, 0.4);

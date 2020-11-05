@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="css\style.min.css">
 
   <!--FONTS-->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-    rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
     rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <title>Wyprawiam Dobre</title>
 
@@ -73,6 +73,9 @@
           <a class="menu_item-link" href="#">kontakt</a>
         </li>
       </ul>
+
+      <!--Top Menu Social Media on other sites-->
+      <!--
       <ul class="menu_social">
         <li class="menu_item">
           <a class="menu_item-link" href="#">
@@ -85,6 +88,7 @@
           </a>
         </li>
       </ul>
+      -->
     </nav>
   </header>
 
@@ -119,12 +123,62 @@
             </button>
           </fieldset>
         </form>
-        <p class="infoBox-description">Lub wybierz
+        <p class="infoBox_top-description">Lub wybierz
           kategorię i zobacz co dla Ciebie przygotowaliśmy :)
           Znajdziesz tu pyszne przepisy, przydatne informacje oraz ciekawe artykuły!</p>
+
+        <ul class="infoBox_top-list">
+          <li class="infoBox_top-list--item">
+            <a class="infoBox_top-list--link" href="#">
+              <img class="bla" src="img/orange-star.png" alt="chef icon">
+              <p class="infoBox_top-list--txt">przepisy
+                <span class="infoBox_top-list--txtSpan">
+                  - Kliknij i zobacz wszystkie nasze przepisy
+                </span></p>
+            </a>
+          </li>
+          <li class="infoBox_top-list--item">
+            <a class="infoBox_top-list--link" href="#">
+              <img class="bla" src="img/blue-star.png" alt="article icon">
+              <p class="infoBox_top-list--txt">Blog
+                <span class="infoBox_top-list--txtSpan">
+                  - Odkrywaj świat kuchni razem z nami
+                </span></p>
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div class="infoBox_bottom">
+        <ul class="infoBox_bottom_social">
+          <li class="infoBox_bottom_social-item">
+            <a class="infoBox_bottom_social-link" href="#">
+              <img class="infoBox_bottom_social-facebook" src="img/facebook_menu.svg" alt="">
+            </a>
+          </li>
+          <li class="infoBox_bottom_social-item">
+            <a class="infoBox_bottom_social-link" href="#">
+              <img class="infoBox_bottom_social-insta" src="img/instagram_menu.svg" alt="">
+            </a>
+          </li>
+          <li class="infoBox_bottom_social-item">
+            <p class="infoBox_bottom_social-txt">Dowiedz się więcej na portalach społecznościowych!</p>
+          </li>
+        </ul>
+
+        <img class=" blueberry" src="img/blueBerry.png" alt="blueberry icon">
+
+
+<!--
+       <div class=" greenbox">
+        <img class="blabla" src="img/facebook_menu.svg" alt="">
+       </div>
+        <div class=" greenbox2">
+          <img class="blabla" src="img/instagram_menu.svg" alt="">
+        </div>
+        <p class="blablabla">Dowiedz się więcej na portalach społecznościowych!</p>
+        
+        
         <div class="infoBox_bottom-box--1">
           <div class="infoBox_bottom-cat">
             <img class="infoBox_bottom-cat--image" src="img/chef.png" alt="chef icon">
@@ -136,8 +190,9 @@
             <img class="infoBox_bottom-cat--image" src="img/article.png" alt="article icon">
             <p class="infoBox_bottom-cat--txt">blog</p>
           </div>
-        </div>
+        -->
       </div>
+    </div>
 
     </div>
   </section>
@@ -152,129 +207,70 @@
     <div class="recipe">
       <!--RECIPE CARD-->
       <div class="recipe_box">
-        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
+        <img class="recipe_box-img" src="img/photos/orangepancake.jpg" alt="pancakes">
 
-        <h5 class="recipe_box-title">owsianka</h5>
+        <h5 class="recipe_box-title">Naleśniki Pomarańczowe</h5>
 
-        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
+        <img class="recipe_box-icon level" src="img/chefLvl.png" alt="level icon">
         <span class="recipe_box-iconTxt">proste</span>
 
-        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
+        <img class="recipe_box-icon clock" src="img/clock.png" alt="clock icon">
         <span class="recipe_box-iconTxt">10min</span>
 
-        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
+        <img class="recipe_box-icon serve" src="img/serve.png" alt="serve icon">
         <span class="recipe_box-iconTxt">1os.</span>
+
+        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
 
         <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
             aria-hidden="true">&#8594</i></button>
+      </div>
+      <!--RECIPE CARD THE END-->
+      <!--RECIPE CARD-->
+      <div class="recipe_box">
+        <img class="recipe_box-img" src="img/photos/egg.jpg" alt="pancakes">
+
+        <h5 class="recipe_box-title">Jajko w Koszulce</h5>
+
+        <img class="recipe_box-icon level" src="img/chefLvl.png" alt="level icon">
+        <span class="recipe_box-iconTxt">proste</span>
+
+        <img class="recipe_box-icon clock" src="img/clock.png" alt="clock icon">
+        <span class="recipe_box-iconTxt">10min</span>
+
+        <img class="recipe_box-icon serve" src="img/serve.png" alt="serve icon">
+        <span class="recipe_box-iconTxt">1os.</span>
 
         <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+
+        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+            aria-hidden="true">&#8594</i></button>
       </div>
       <!--RECIPE CARD THE END-->
       <!--RECIPE CARD-->
       <div class="recipe_box">
         <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
 
-        <h5 class="recipe_box-title">owsianka</h5>
+        <h5 class="recipe_box-title">Owsianka z Owocami</h5>
 
-        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
+        <img class="recipe_box-icon level" src="img/chefLvl.png" alt="level icon">
         <span class="recipe_box-iconTxt">proste</span>
 
-        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
+        <img class="recipe_box-icon clock" src="img/clock.png" alt="clock icon">
         <span class="recipe_box-iconTxt">10min</span>
 
-        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
+        <img class="recipe_box-icon serve" src="img/serve.png" alt="serve icon">
         <span class="recipe_box-iconTxt">1os.</span>
+
+        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
 
         <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
             aria-hidden="true">&#8594</i></button>
 
-        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+
       </div>
       <!--RECIPE CARD THE END-->
-      <!--RECIPE CARD-->
-      <div class="recipe_box">
-        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
 
-        <h5 class="recipe_box-title">owsianka z owocami</h5>
-
-        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
-        <span class="recipe_box-iconTxt">proste</span>
-
-        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
-        <span class="recipe_box-iconTxt">10min</span>
-
-        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
-        <span class="recipe_box-iconTxt">1os.</span>
-
-        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
-            aria-hidden="true">&#8594</i></button>
-
-        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-      </div>
-      <!--RECIPE CARD THE END-->
-      <div class="recipe_box">
-        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
-
-        <h5 class="recipe_box-title">owsianka</h5>
-
-        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
-        <span class="recipe_box-iconTxt">proste</span>
-
-        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
-        <span class="recipe_box-iconTxt">10min</span>
-
-        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
-        <span class="recipe_box-iconTxt">1os.</span>
-
-        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
-            aria-hidden="true">&#8594</i></button>
-
-        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-      </div>
-      <!--RECIPE CARD THE END-->
-      <!--RECIPE CARD-->
-      <div class="recipe_box">
-        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
-
-        <h5 class="recipe_box-title">owsianka</h5>
-
-        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
-        <span class="recipe_box-iconTxt">proste</span>
-
-        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
-        <span class="recipe_box-iconTxt">10min</span>
-
-        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
-        <span class="recipe_box-iconTxt">1os.</span>
-
-        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
-            aria-hidden="true">&#8594</i></button>
-
-        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-      </div>
-      <!--RECIPE CARD THE END-->
-      <!--RECIPE CARD-->
-      <div class="recipe_box">
-        <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="pancakes">
-
-        <h5 class="recipe_box-title">owsianka</h5>
-
-        <img class="recipe_box-icon" src="img/level.png" id="level" alt="level icon">
-        <span class="recipe_box-iconTxt">proste</span>
-
-        <img class="recipe_box-icon" src="img/clock.png" id="clock" alt="clock icon">
-        <span class="recipe_box-iconTxt">10min</span>
-
-        <img class="recipe_box-icon" src="img/serve.png" id="level" alt="serve icon">
-        <span class="recipe_box-iconTxt">1os.</span>
-
-        <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
-            aria-hidden="true">&#8594</i></button>
-
-        <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-      </div>
-      <!--RECIPE CARD THE END-->
     </div>
     <img class="leaf-left" src="img/leaf-left.png" alt="leaf icon">
     <img class="leaf-right" src="img/leaf-right.png" alt="leaf icon">
@@ -301,8 +297,10 @@
           </fieldset>
         </form>
 
-        <p class="infoBox-description">Złap świeże inspiracje do swoich posiłków!</br>Jeśli jesteś głodny apetycznych newsów,  zostaw nam swojego maila a będziesz na bieżąco z naszymi nowinkami. Baw i ciesz się smakiem!
-        </br><b>Wyprawiaj Dobre</b> razem z nami dla siebie i swoich bliskich! :)</p>
+        <p class="infoBox_top-description">Złap świeże inspiracje do swoich posiłków!</br>Jeśli jesteś głodny
+          apetycznych
+          newsów, zostaw nam swojego maila a będziesz na bieżąco z naszymi nowinkami.
+          </br><b>Wyprawiaj Dobre</b> razem z nami dla siebie i swoich bliskich! :)</p>
       </div>
       <div class="infoBox_bottom">
         <img class="infoBox_bottom-img" src="img/orange.png" alt="orange icon">

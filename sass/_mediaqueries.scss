@@ -20,13 +20,13 @@
 	//Titles - all sections 
 	.section_title {
 		&-head {
-			font-size: 50px;
+			font-size: 60px;
 			margin-top: 50px;
-			padding-top: 20px;
+			padding-top: 25px;
 		}
 
 		&-span {
-			font-size: 40px;
+			font-size: 50px;
 		}
 	}
 
@@ -117,14 +117,14 @@
 	}
 
 	.patternBox {
-		width: 80%;
+		width: 70%;
 		height: auto;
 
 		&_white {
 			&-items {
 
 				.image {
-					width: 150px;
+					width: 200px;
 				}
 			}
 		}
@@ -175,10 +175,6 @@
 			width: 80%;
 		}
 
-		&-description {
-			font-size: 20px;
-		}
-
 		&_bottom {
 
 			&-box--1 {
@@ -208,7 +204,7 @@
 			&-items {
 
 				.image {
-					width: 250px;
+					width: 300px;
 				}
 
 				.blogTitle {
