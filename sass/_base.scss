@@ -293,21 +293,25 @@ body {
 			bottom: 0;
 		}
 
+		.quarter-circle-bottom-right{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 250px;
+			height: 250px;
+			background-image: url("../img/photos/4.jpg");
+			background-repeat: cover;
+			background-size: 100%;
+			border-radius: 250px 0 0 0;
+			-moz-border-radius: 250px 0 0 0;
+			-webkit-border-radius: 250px 0 0 0;
+	   }
+
 		.greenbox {
 			position: absolute;
 			width: 25px;
 			height: 25px;
 			left: 0px;
-			bottom: 25px;
-			background-color: $white-color;
-			//border: 6px solid $navyBlue-color;
-		}
-
-		.greenbox2 {
-			position: absolute;
-			width: 25px;
-			height: 25px;
-			left: 50px;
 			bottom: 25px;
 			background-color: $white-color;
 			//border: 6px solid $navyBlue-color;
@@ -775,3 +779,115 @@ input {
 #topBtn:hover {
 	background-color: $orange-color;
 }
+
+
+
+
+
+
+
+
+
+
+
+.carousel_box {
+	position: absolute;
+	right: 0;
+	bottom: 70px;
+	width: 500px;
+	height: 155px;
+	background-color: royalblue;
+}
+
+.o-wrapper {
+	max-width: 500px;
+	margin: auto;
+	overflow: hidden;
+  }
+  
+  .c-slider {
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	width: 770px;
+  }
+  
+  .c-slide {
+	font-weight: normal;
+	margin-right: 20px;
+	background: #FFFFFF;
+	border-radius: 3px;
+	padding: 20px 20px 0 20px; //white sapce
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex: 1;
+	overflow: hidden;
+  }
+  
+  .c-slide__content {
+	width: 100%;
+  }
+  
+  .c-slide__actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+  }
+  
+  .c-slide__image-wrapper {
+	margin: 0;
+	padding: 0;
+	border-radius: 3px;
+	overflow: hidden;
+	height: 0;
+	padding-top: 66%;
+	position: relative;
+  }
+  
+  .c-slide__image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 100%;
+	min-height: 100%;
+	margin: auto;
+	padding: 0;
+	transform: translate3d(-50%, -50%, 0);
+  }
+  
+  .c-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .c-drag {
+	opacity: 0.2;
+  }
+
+
+
+
+  //carusela example
+.carousel-container {
+	width: 400px;
+	margin: auto;
+	overflow: hidden;
+}
+.carousel-slide {
+	display: flex;
+	width: 150px;
+	height: 150px;
+	//transition: transform 0.4s ease-in-out;
+}
+
+.d {
+	width: 150px;
+	padding: 10px;
+}
+
