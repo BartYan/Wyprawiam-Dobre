@@ -112,6 +112,7 @@
           <span class="section_title-span">Z czym to się je?</span>
           <h1 class="section_title-head">Wyprawiam Dobre</h1>
         </div>
+
         <form class="input_container search" method="get" action="">
           <label for="search" class="input_container-label"> Wpisz frazę która Cię interesuje:</label>
           <fieldset>
@@ -123,6 +124,7 @@
             </button>
           </fieldset>
         </form>
+
         <p class="infoBox_top-description">Lub wybierz
           kategorię i zobacz co dla Ciebie przygotowaliśmy :)
           Znajdziesz tu pyszne przepisy, przydatne informacje oraz ciekawe artykuły!</p>
@@ -133,7 +135,7 @@
               <img class="bla" src="img/orange-star.png" alt="chef icon">
               <p class="infoBox_top-list--txt">przepisy
                 <span class="infoBox_top-list--txtSpan">
-                  - Kliknij i zobacz wszystkie nasze przepisy
+                  - Kliknij i zobacz nasze przepisy
                 </span></p>
             </a>
           </li>
@@ -142,46 +144,69 @@
               <img class="bla" src="img/blue-star.png" alt="article icon">
               <p class="infoBox_top-list--txt">Blog
                 <span class="infoBox_top-list--txtSpan">
-                  - Odkrywaj świat kuchni razem z nami
+                  - Zerknij na bloga
                 </span></p>
             </a>
           </li>
         </ul>
       </div>
-      <!--carousel infoBox-->
-      <div class="carousel-container">
-        <button id="prevBtn">
-          <</button> <span>Nasze najnowsze wpisy</span> <button id="nextBtn">>
-            </button>
-            <div class="carousel-slide">
-              <!--clone of last slide (third)  -->
-              <div class="j" id="lastCLone">
-                <img class="d" src="img/photos/owsianka.jpg" alt="stars icon">
-                <img class="d" src="img/photos/44.jpg" alt="stars icon">
+      <!--Carousel infoBox-->
+      <div class="carousel">
+        <button id="prevBtn" class="carousel_btn">
+          &#8592
+        </button>
+        <span>Najświeższe wpisy</span>
+        <button id="nextBtn" class="carousel_btn">&#8594
+        </button>
+        <div class="carousel_slider">
+          <!--clone of last slide (third)-->
+            <a href="#" class="carousel_slider-box"  id="lastCLone">
+              <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="stars icon">
+              <div class="carousel_slider-box--txt">
+                <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
+                <h4 class="carosuel-title">jajko w koszulce</h4>
+                <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
-              <!--first slide-->
-              <div class="j">
-                <img class="d" src="img/photos/orangepancake.jpg" alt="stars icon">
-                <img class="d" src="img/photos/egg.jpg" alt="stars icon">
+            </a>
+          <!--first slide-->
+            <a href="#" class="carousel_slider-box">
+              <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="stars icon">
+              <div class="carousel_slider-box--txt">
+                <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
+                <h4 class="carosuel-title">jajko w koszulce</h4>
+                <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
-              <!--second slide-->
-              <div class="j">
-                <img class="d" src="img/photos/blog.jpg" alt="stars icon">
-                <img class="d" src="img/photos/4.jpg" alt="stars icon">
-              </div>
-              <!--third slide-->
-              <div class="j">
-                <img class="d" src="img/photos/owsianka.jpg" alt="stars icon">
-                <img class="d" src="img/photos/44.jpg" alt="stars icon">
-              </div>
-              <!--clone of first slide-->
-              <div class="j" id="firstCLone">
-                <img class="d" src="img/photos/orangepancake.jpg" alt="stars icon">
-                <img class="d" src="img/photos/egg.jpg" alt="stars icon">
-              </div>
+            </a>
+          <!--second slide-->
+          <a href="#" class="carousel_slider-box">
+            <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="stars icon">
+            <div class="carousel_slider-box--txt">
+              <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
+              <h4 class="carosuel-title">jajko w koszulce</h4>
+              <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
+          </a>
+          <!--third slide-->
+          <a href="#" class="carousel_slider-box">
+            <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="stars icon">
+            <div class="carousel_slider-box--txt">
+              <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
+              <h4 class="carosuel-title">jajko w koszulce</h4>
+              <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </a>
+          <!--clone of first slide-->
+            <a href="#" class="carousel_slider-box" id="firstCLone">
+              <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="stars icon">
+              <div class="carousel_slider-box--txt">
+                <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
+                <h4 class="carosuel-title">jajko w koszulce</h4>
+                <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </a>
+        </div>
       </div>
-
+      <!--Carousel infoBox THE END-->
       <div class="infoBox_bottom">
         <ul class="infoBox_bottom_social">
           <li class="infoBox_bottom_social-item">
@@ -234,7 +259,7 @@
   <!--RECIPES SECTION-->
   <section class="recipe_section">
     <div class="section_title">
-      <span class="section_title-span">Najnowsze</span>
+      <span class="section_title-span">Nasze</span>
       <h2 class="section_title-head">Przepisy</h2>
       <img class="section_title-stars" src="img/stars.png" alt="stars icon">
     </div>

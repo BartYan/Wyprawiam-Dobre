@@ -32,7 +32,7 @@
 
 	//INFO BOX (first welcome section & newsletter)
 	.infoBox {
-		height: 600px;
+		height: 700px;
 
 		&_top {
 			width: 90%;
@@ -63,6 +63,9 @@
 				width: 200px;
 			}
 		}
+	}
+	.carousel {
+		bottom: 50px;
 	}
 
 	.recipe_section {
@@ -135,7 +138,7 @@
 	}
 
 	.infoBox {
-
+		height: 800px;
 		&_bottom {
 
 			&-box--1 {
@@ -162,7 +165,7 @@
 	}
 }
 
-@media (min-width: 1290px) {
+@media (min-width: 1280px) {
 	.infoBox {
 		height: 100vh;
 
@@ -255,6 +258,9 @@
 				width: 250px;
 			}
 		}
+	}
+	.carousel {
+		bottom: 80px;
 	}
 }
 
