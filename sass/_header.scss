@@ -7,6 +7,105 @@
 	height: 30px;
 	z-index: 100;
 
+	//HAMBURGER CLASSES
+	&_hamburger {
+		font-size: 20px;
+		position: fixed;
+		display: inline-block;
+		right: 2%;
+		width: 2em;
+		height: 2em;
+		cursor: pointer;
+		z-index: 100;
+	}
+
+	&_hamburger span {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 0.2em;
+		margin-top: 5px;
+		background-color: $navyBlue-color;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-transition: background-color 0.3s;
+		transition: background-color 0.3s;
+	}
+
+
+	&_hamburger span:after,
+	&_hamburger span:before {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $navyBlue-color;
+		content: '';
+		-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.3s;
+	}
+
+	&_hamburger span:before {
+		-webkit-transform: translateY(-0.5em);
+		/* Safari 4+ */
+		-moz-transform: translateY(-0.5em);
+		/* Fx 5+ */
+		-o-transform: translateY(-0.5em);
+		/* Opera 12+ */
+		-ms-transform: translateY(-0.5em);
+		/*IE11 & Microsoft Edge*/
+		transform: translateY(-0.5em);
+		/* IE 10+, Fx 29+ */
+	}
+
+	&_hamburger span:after {
+
+		-webkit-transform: translateY(0.5em);
+		/* Safari 4+ */
+		-moz-transform: translateY(0.5em);
+		/* Fx 5+ */
+		-o-transform: translateY(0.5em);
+		/* Opera 12+ */
+		-ms-transform: translateY(0.5em);
+		/*IE11 & Microsoft Edge*/
+		transform: translateY(0.5em);
+		/* IE 10+, Fx 29+ */
+	}
+
+	&_hamburger.nav_hamburger-open span:before {
+
+		-webkit-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/* Safari 4+ */
+		-moz-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/* Fx 5+ */
+		-o-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/* Opera 12+ */
+		-ms-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/*IE11 & Microsoft Edge*/
+		transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/* IE 10+, Fx 29+ */
+	}
+
+	&_hamburger.nav_hamburger-open span:after {
+
+		-webkit-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/* Safari 4+ */
+		-moz-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/* Fx 5+ */
+		-o-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/* Opera 12+ */
+		-ms-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/*IE11 & Microsoft Edge*/
+		transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/* IE 10+, Fx 29+ */
+	}
+
 	//MOBILE OVERLAY
 	&_overlay {
 		display: none;
@@ -34,7 +133,6 @@
 			-ms-transform: translate(-50%, -50%);
 			/*IE11 & Microsoft Edge*/
 			transform: translate(-50%, -50%);
-
 			/* IE 10+, Fx 29+ */
 			background-color: $white-color;
 		}
@@ -83,6 +181,10 @@
 	display: none;
 	text-transform: uppercase;
 
+	&_active {
+		color: $orange-color !important;
+	}
+
 	&_item {
 		display: block;
 		list-style: none;
@@ -94,148 +196,10 @@
 			color: $navyBlue-color;
 			cursor: pointer;
 			border: none;
-
-			//social media icons in top menu
-			.menu-icon {
-				width: 12px;
-				height: 12px;
-				margin-right: -10px;
-				display: block;
-				background-size: cover;
-			}
-
-			&--facebook {
-				background-image: url("../img/facebook_menu.svg");
-			}
-
-			&--facebook:hover,
-			&--facebook:focus {
-				background-image: url("../img/facebook_menu-orange.svg");
-			}
-
-			&--insta {
-				background-image: url("../img/instagram_menu.svg");
-			}
-
-			&--insta:hover,
-			&--insta:focus {
-				background-image: url("../img/instagram_menu-orange.svg");
-			}
 		}
 
 		&-link:hover {
 			color: $orange-color;
 		}
 	}
-}
-
-.menu_active {
-	color: $orange-color !important;
-}
-
-.menu_social {
-	display: none;
-	z-index: 100;
-	text-transform: lowercase;
-	z-index: 100;
-}
-
-
-//HAMBURGER CLASSES
-.nav_hamburger {
-	font-size: 20px;
-	position: fixed;
-	display: inline-block;
-	right: 2%;
-	width: 2em;
-	height: 2em;
-	cursor: pointer;
-	z-index: 100;
-}
-
-.nav_hamburger span {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	display: block;
-	width: 100%;
-	height: 0.2em;
-	margin-top: 5px;
-	background-color: $navyBlue-color;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-transition: background-color 0.3s;
-	transition: background-color 0.3s;
-}
-
-
-.nav_hamburger span:after,
-.nav_hamburger span:before {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: $navyBlue-color;
-	content: '';
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-}
-
-.nav_hamburger span:before {
-	-webkit-transform: translateY(-0.5em);
-	/* Safari 4+ */
-	-moz-transform: translateY(-0.5em);
-	/* Fx 5+ */
-	-o-transform: translateY(-0.5em);
-	/* Opera 12+ */
-	-ms-transform: translateY(-0.5em);
-	/*IE11 & Microsoft Edge*/
-	transform: translateY(-0.5em);
-	/* IE 10+, Fx 29+ */
-}
-
-.nav_hamburger span:after {
-
-	-webkit-transform: translateY(0.5em);
-	/* Safari 4+ */
-	-moz-transform: translateY(0.5em);
-	/* Fx 5+ */
-	-o-transform: translateY(0.5em);
-	/* Opera 12+ */
-	-ms-transform: translateY(0.5em);
-	/*IE11 & Microsoft Edge*/
-	transform: translateY(0.5em);
-	/* IE 10+, Fx 29+ */
-}
-
-.nav_hamburger.nav_hamburger-open span:before {
-
-	-webkit-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
-	/* Safari 4+ */
-	-moz-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
-	/* Fx 5+ */
-	-o-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
-	/* Opera 12+ */
-	-ms-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
-	/*IE11 & Microsoft Edge*/
-	transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
-	/* IE 10+, Fx 29+ */
-}
-
-.nav_hamburger.nav_hamburger-open span:after {
-
-	-webkit-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
-	/* Safari 4+ */
-	-moz-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
-	/* Fx 5+ */
-	-o-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
-	/* Opera 12+ */
-	-ms-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
-	/*IE11 & Microsoft Edge*/
-	transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
-	/* IE 10+, Fx 29+ */
 }

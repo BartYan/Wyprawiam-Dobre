@@ -1,4 +1,10 @@
 /*MEDIA QUERIES*/
+@media (max-width: 318px) {
+	.carousel {
+		display: none;
+	}
+}
+
 @media (min-width: 768px) {
 
 	.patternBox {
@@ -39,39 +45,22 @@
 			margin: 100px auto 0 auto;
 		}
 
-		&-instruction {
-			font-size: 25px;
-		}
-
 		&_bottom {
 			margin: 120px 0 0 0;
 			display: flex;
-
-			&-box--1 {
-				width: 48%;
-			}
-
-			&-box--2 {
-				width: 48%;
-			}
-
-			&--txt {
-				font-size: 20px;
-			}
-
+			//infoBox newsletter image
 			&-img {
 				width: 200px;
 			}
 		}
 	}
 	.carousel {
-		bottom: 50px;
+		bottom: 50px !important;
 	}
 
 	.recipe_section {
 		margin-top: 80px;
 	}
-
 
 	/*FOOTER CSS*/
 	.footer {
@@ -111,12 +100,12 @@
 		display: flex;
 	}
 
-	.menu_social {
+	.section {
 		display: flex;
 	}
 
-	.section {
-		display: flex;
+	.infoBox {
+		height: 800px;
 	}
 
 	.patternBox {
@@ -135,20 +124,6 @@
 
 	.patternNewsletter {
 		display: block;
-	}
-
-	.infoBox {
-		height: 800px;
-		&_bottom {
-
-			&-box--1 {
-				height: 180px;
-			}
-
-			&-box--2 {
-				height: 180px;
-			}
-		}
 	}
 
 	.recipe {
@@ -170,23 +145,8 @@
 		height: 100vh;
 
 		&_top {
-			/*position: absolute;
-			top: 10%;
-			left: 0;
-			right: 0;*/
 			margin: 120px auto 0 auto;
 			width: 80%;
-		}
-
-		&_bottom {
-
-			&-box--1 {
-				height: 220px;
-			}
-
-			&-box--2 {
-				height: 220px;
-			}
 		}
 	}
 
@@ -236,24 +196,8 @@
 			margin: 200px auto 0 auto;
 		}
 
-		&-instruction {
-			font-size: 30px;
-		}
-
-		&-description {
-			font-size: 25px;
-		}
-
 		&_bottom {
-
-			&-box--1 {
-				height: 300px;
-			}
-
-			&-box--2 {
-				height: 300px;
-			}
-
+			//newsletter infoBox img
 			&-img {
 				width: 250px;
 			}
@@ -268,7 +212,6 @@
 	.patternBox {
 		height: 1080px;
 	}
-
 	.infoBox {
 		height: 1080px;
 	}
@@ -281,7 +224,6 @@
 	.patternBox {
 		height: 1200px;
 	}
-
 	.infoBox {
 		height: 1200px;
 	}
