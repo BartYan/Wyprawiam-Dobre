@@ -48,12 +48,14 @@
 		&_bottom {
 			margin: 120px 0 0 0;
 			display: flex;
+
 			//infoBox newsletter image
 			&-img {
 				width: 200px;
 			}
 		}
 	}
+
 	.carousel {
 		bottom: 50px !important;
 	}
@@ -138,6 +140,11 @@
 	.leaf-right {
 		display: block;
 	}
+
+	//About site
+	.aboutImg {
+		width: 200px !important;
+	}
 }
 
 @media (min-width: 1280px) {
@@ -197,12 +204,14 @@
 		}
 
 		&_bottom {
+
 			//newsletter infoBox img
 			&-img {
 				width: 250px;
 			}
 		}
 	}
+
 	.carousel {
 		bottom: 80px;
 	}
@@ -212,9 +221,11 @@
 	.patternBox {
 		height: 1080px;
 	}
+
 	.infoBox {
 		height: 1080px;
 	}
+
 	.infoBox_newsLetter {
 		height: 1080px;
 	}
@@ -224,9 +235,11 @@
 	.patternBox {
 		height: 1200px;
 	}
+
 	.infoBox {
 		height: 1200px;
 	}
+
 	.infoBox_newsLetter {
 		height: 1200px;
 	}
@@ -240,6 +253,7 @@
 	.infoBox {
 		height: 1080px;
 	}
+
 	.infoBox_newsLetter {
 		height: 1080px;
 	}

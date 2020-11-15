@@ -37,11 +37,11 @@
       <div id="overlay_menu" class="nav_overlay">
         <div class="nav_overlay-white">
           <div class="nav_overlay-content">
-            <a href="#" class="nav_overlay-content--link">główna</a>
+            <a href="index.html" class="nav_overlay-content--link">główna</a>
             <a href="#" class="nav_overlay-content--link">przepisy</a>
             <a href="#" class="nav_overlay-content--link">blog</a>
             <a href="#" class="nav_overlay-content--link">o nas</a>
-            <a href="about.html" class="nav_overlay-content--link">kontakt</a>
+            <a href="#" class="nav_overlay-content--link">kontakt</a>
             <div class="nav_overlay-content--social">
               <a href="#" class="social_menu-link">
                 <span class="facebook_circle-icon footer-icon"></span>
@@ -56,7 +56,7 @@
       <!--DESKTOP HEADER-->
       <ul class="menu">
         <li class="menu_item">
-          <a class="menu_item-link menu_active" href="#">główna</a>
+          <a class="menu_item-link" href="index.html">główna</a>
         </li>
         <li class="menu_item">
           <a class="menu_item-link" href="#">przepisy</a>
@@ -65,7 +65,7 @@
           <a class="menu_item-link" href="#">blog</a>
         </li>
         <li class="menu_item">
-          <a class="menu_item-link" href="about.html">o nas</a>
+          <a class="menu_item-link menu_active" href="#">o nas</a>
         </li>
         <li class="menu_item">
           <a class="menu_item-link" href="#">kontakt</a>
@@ -80,9 +80,9 @@
     <div class="patternBox">
       <div class="patternBox_white">
         <div class="patternBox_white-items">
-          <img class="image" src="img/logo.png" alt="Wyprawiam Dobre logo">
+          <img class="image aboutImg" src="img/photos/my.JPEG" alt="Zdjęcie Twórców Bloga">
           <img class="stars" src="img/stars.png" alt="ikonka gwiazdek">
-          <h4 class="blogTitle">blog kulinarny</h4>
+          <h4 class="blogTitle">To My</h4>
         </div>
       </div>
     </div>
@@ -90,106 +90,17 @@
     <div class="infoBox">
       <div class="infoBox_top">
         <div class="section_title">
-          <span class="section_title-span">Z czym to się je?</span>
-          <h1 class="section_title-head">Wyprawiam Dobre</h1>
+          <span class="section_title-span">Cześć!</span>
+          <h1 class="section_title-head">Miło Cię poznać!</h1>
         </div>
-
-        <form class="input_container search" method="get" action="">
-          <label for="search" class="input_container-label"> Wpisz frazę która Cię interesuje:</label>
-          <fieldset>
-            <input class="input_container-roll" type="search" id="search" name="search"
-              placeholder="Co dziś ugotujemy?">
-            <button class="input_container-btn">
-              <img class="input_container-btn--img" src="img/loupe.png" alt="ikona lupki">
-              <span class="input_container-btn--text">szukaj</span>
-            </button>
-          </fieldset>
-        </form>
-
-        <p class="infoBox_top-description">Lub wybierz
-          kategorię i zobacz co dla Ciebie przygotowaliśmy :)
-          Znajdziesz tu pyszne przepisy, przydatne informacje oraz ciekawe artykuły!</p>
-
-        <ul class="infoBox_top-subMenu">
-          <li class="infoBox_top-subMenu--item">
-            <a class="infoBox_top-subMenu--link" href="#">
-              <img class="subMenu-starIcon" src="img/orange-star.png" alt="">
-              <p class="infoBox_top-subMenu--txt">przepisy
-                <span class="infoBox_top-subMenu--txtSpan">
-                  - Kliknij i zobacz nasze przepisy
-                </span></p>
-            </a>
-          </li>
-          <li class="infoBox_top-subMenu--item">
-            <a class="infoBox_top-subMenu--link" href="#">
-              <img class="subMenu-starIcon" src="img/blue-star.png" alt="">
-              <p class="infoBox_top-subMenu--txt">Blog
-                <span class="infoBox_top-subMenu--txtSpan">
-                  - Zerknij na bloga
-                </span></p>
-            </a>
-          </li>
-        </ul>
+        <h4 class="infoBox_top-head">Kim jesteśmy?</h4>
+        <p class="infoBox_top-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor dapibus massa eget tempus. Curabitur volutpat lobortis diam in fringilla. Etiam augue est, viverra id nisi quis, molestie elementum velit.
+        </p>
+        <p class="infoBox_top-description">
+          Pellentesque in vestibulum odio. Vivamus congue felis nec mi scelerisque sodales. Sed blandit massa sapien, sit amet tristique mauris bibendum vulputate. Ut at sodales sapien. Nunc tempor nisl eu pretium scelerisque. Phasellus semper tellus libero, at molestie velit dapibus nec. Cras quis congue nisl. Nulla at erat pretium, viverra risus sed, accumsan orci. Pellentesque sagittis leo id rutrum tincidunt. Vestibulum gravida dictum libero non posuere. Ut pellentesque nisl vel lectus vulputate, in maximus turpis volutpat.
+        </p>
       </div>
-
-      <!--Carousel infoBox-->
-      <div class="carousel">
-        <button id="prevBtn" class="carousel_btn">
-          &#8592
-        </button>
-        <span>Jeszcze gorące</span>
-        <button id="nextBtn" class="carousel_btn">&#8594
-        </button>
-        <div class="carousel_slider">
-          <!--clone of last slide (third)-->
-          <a href="#" class="carousel_slider-box" id="lastCLone">
-            <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="Naleśniki Pomarańczowe">
-            <div class="carousel_slider-box--txt">
-              <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
-              <h4 class="carosuel-title">Naleśniki Pomarańczowe</h4>
-              <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </a>
-          <!--first slide-->
-          <a href="#" class="carousel_slider-box">
-            <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="Naleśniki Pomarańczowe">
-            <div class="carousel_slider-box--txt">
-              <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
-              <h4 class="carosuel-title">Naleśniki Pomarańczowe</h4>
-              <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </a>
-          <!--second slide-->
-          <a href="#" class="carousel_slider-box">
-            <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="Naleśniki Pomarańczowe">
-            <div class="carousel_slider-box--txt">
-              <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
-              <h4 class="carosuel-title">Naleśniki Pomarańczowe</h4>
-              <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-          </a>
-          <!--third slide-->
-          <a href="#" class="carousel_slider-box">
-            <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="Naleśniki Pomarańczowe">
-            <div class="carousel_slider-box--txt">
-              <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
-              <h4 class="carosuel-title">Naleśniki Pomarańczowe</h4>
-              <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </a>
-          <!--clone of first slide-->
-          <a href="#" class="carousel_slider-box" id="firstCLone">
-            <img class="carousel_slider-box--img" src="img/photos/orangepancake.jpg" alt="Naleśniki Pomarańczowe">
-            <div class="carousel_slider-box--txt">
-              <h5 class="carosuel-cat"><span>&#x2014;</span>przepis<span>&#x2014;</span></h5>
-              <h4 class="carosuel-title">Naleśniki Pomarańczowe</h4>
-              <p class="carosuel-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!--Carousel infoBox THE END-->
-
       <div class="infoBox_bottom">
         <ul class="infoBox_bottom_social">
           <li class="infoBox_bottom_social-item">
@@ -206,9 +117,21 @@
             <p class="infoBox_bottom_social-txt">Dowiedz się więcej na portalach społecznościowych!</p>
           </li>
         </ul>
+        <img class="blueBerry" src="img/blueBerry.png" alt="">
       </div>
     </div>
   </section>
+
+  <!-- <section class="about">
+    <p class="infoBox_top-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor dapibus massa eget tempus. Curabitur volutpat lobortis diam in fringilla. Etiam augue est, viverra id nisi quis, molestie elementum velit.
+    </p>
+    <p class="infoBox_top-description">
+      Pellentesque in vestibulum odio. Vivamus congue felis nec mi scelerisque sodales. Sed blandit massa sapien, sit amet tristique mauris bibendum vulputate. Ut at sodales sapien. Nunc tempor nisl eu pretium scelerisque. Phasellus semper tellus libero, at molestie velit dapibus nec. Cras quis congue nisl. Nulla at erat pretium, viverra risus sed, accumsan orci. Pellentesque sagittis leo id rutrum tincidunt. Vestibulum gravida dictum libero non posuere. Ut pellentesque nisl vel lectus vulputate, in maximus turpis volutpat.
+    </p>
+    <img class="leaf-left" src="img/leaf-left.png" alt="leaf icon">
+    <img class="leaf-right" src="img/leaf-right.png" alt="leaf icon">
+  </section> -->
 
   <!--RECIPES SECTION-->
   <section class="recipe_section">
@@ -298,7 +221,7 @@
         </div>
 
         <form class="input_container" method="" action="">
-          <label for="" class="input_container-label"> Dziękujemy, że jesteś tu razem z nami!</label>
+          <label for="" class="input_container-label"> Bardzo dziękujęmy, że dalej odkrywasz naszego bloga :)</label>
           <fieldset>
             <input class="input_container-roll" type="email" id="email" name="email" placeholder="Twój adres email">
             <button class="input_container-btn">
@@ -308,10 +231,10 @@
           </fieldset>
         </form>
 
-        <p class="infoBox_top-description">Złap świeże inspiracje do swoich posiłków!</br>Jeśli jesteś głodny
+        <p class="infoBox_top-description">Teraz, jak już nas poznałeś, możesz pozostać z nami w kontakcie!</br>Jeśli jesteś głodny
           apetycznych
-          newsów, zostaw nam swojego maila a będziesz na bieżąco z naszymi nowinkami.
-          </br><b>Wyprawiaj Dobre</b> razem z nami dla siebie i swoich bliskich! :)</p>
+          newsów, zostaw nam swojego maila a będziesz na bieżąco z naszymi tekstami.
+          </br><b>Wyprawiaj Dobre</b> dla siebie i swoich bliskich! :)</p>
       </div>
       <div class="infoBox_bottom">
         <img class="infoBox_bottom-img" src="img/orange.png" alt="ikonka pomarańczy">
@@ -371,7 +294,6 @@
   <!--JS-->
   <script src="js/buttonRoller.js"></script>
   <script src="js/hamburger_overlay.js"></script>
-  <script src="js/carousel.js"></script>
   <script src="js/backToTopButton.js"></script>
 </body>
 
