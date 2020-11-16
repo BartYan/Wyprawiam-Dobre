@@ -203,3 +203,54 @@
 		}
 	}
 }
+
+//DESKTOP CENTER MENU FULL WIDTH
+.menuCenter {
+	display: flex !important;
+	justify-content: space-between;
+	width: 100%;
+	height: 30px;
+	z-index: 100;
+	&_logo {
+		&-img {
+			width: 50px;
+		}
+	}
+	&_list {
+		//display: none;
+		text-transform: uppercase;
+		display: flex;
+	
+		&-active {
+			color: $orange-color !important;
+		}
+	
+		&-item {
+			display: block;
+			list-style: none;
+			padding: 10px 30px 0 5px;
+			font-size: 10px;
+	
+			&--link {
+				text-decoration: none;
+				color: $navyBlue-color;
+				cursor: pointer;
+				border: none;
+			}
+	
+			&--link:hover {
+				color: $orange-color;
+			}
+		}
+	}
+	&_social {
+		&-img {
+			width: 12px;
+			padding: 8px;
+		}
+	}
+	.menuCenter_img-link {
+		text-decoration: none;
+		border: none;
+	}
+}
