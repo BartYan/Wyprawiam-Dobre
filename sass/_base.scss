@@ -310,6 +310,7 @@ body {
 		height: 500px;
 	}
 }
+
 /*INPUT FORM CSS */
 .input_container {
 	position: relative;
@@ -404,7 +405,6 @@ body {
 	/*IE11 & Microsoft Edge*/
 	animation: spin 0.7s linear, moveLeftToRight 1s linear;
 	/* IE 10+, Fx 29+ */
-
 	-webkit-animation-fill-mode: forwards;
 	/* Safari 4+ */
 	-moz-animation-fill-mode: forwards;
@@ -417,21 +417,6 @@ body {
 	/* IE 10+, Fx 29+ */
 }
 
-.fieldset_input-center {
-	position: relative;
-	left: 20%;
-}
-
-.label_center {
-	text-align: center;
-	margin: 0 auto 0 auto;
-	display: block;
-}
-
-.center_infoBox-description {
-	text-align: center;
-	padding-top: 25px;
-}
 /*INPUT FORM CSS THE END*/
 //INFO BOX THE END
 

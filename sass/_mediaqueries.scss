@@ -87,6 +87,35 @@
 			}
 		}
 	}
+
+	.center_infoBox {
+		.input_container-center {
+			width: 50%;
+			margin: 0 auto 0 auto;
+		}
+
+		.fieldset_input-center {
+			position: relative;
+			left: 22%;
+		}
+
+		.label_center {
+			text-align: center;
+			margin: 0 auto 0 auto;
+			display: block;
+		}
+
+		.center_infoBox-description {
+			text-align: center;
+			padding-top: 25px;
+		}
+
+		&-list {
+			width: 80% !important;
+			margin: 30px auto 0 auto;
+			justify-content: center;
+		}
+	}
 }
 
 @media (min-width: 1024px) {
@@ -100,6 +129,10 @@
 
 	.menu {
 		display: flex;
+	}
+
+	.menuCenter {
+		display: flex !important;
 	}
 
 	.section {
@@ -142,9 +175,9 @@
 	}
 
 	//About site
-	 .aboutImg {
-	 	width: 200px !important;
-	 }
+	.aboutImg {
+		width: 200px !important;
+	}
 }
 
 @media (min-width: 1280px) {

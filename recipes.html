@@ -29,7 +29,7 @@
 <body>
     <!--HEADER SECTION-->
     <header>
-        <nav class="menuCenter">
+        <nav>
             <!--MOBILE HEADER-->
             <div class="nav_hamburger">
                 <span></span>
@@ -55,35 +55,37 @@
                 </div>
             </div>
             <!--DESKTOP CENTER MENU FULL WIDTH-->
-            <div class="menuCenter_logo">
-                <a href="index.html" class="menuCenter_img-link">
-                    <img class="menuCenter_logo-img" src="img/logo.png" alt="Wyprawiam Dobre logo">
-                </a>
-            </div>
-            <ul class="menuCenter_list">
-                <li class="menuCenter_list-item">
-                    <a class="menuCenter_list-item--link" href="index.html">główna</a>
-                </li>
-                <li class="menuCenter_list-item">
-                    <a class="menuCenter_list-item--link menuCenter_list-active" href="recipes.html">przepisy</a>
-                </li>
-                <li class="menuCenter_list-item">
-                    <a class="menuCenter_list-item--link" href="blog.html">blog</a>
-                </li>
-                <li class="menuCenter_list-item">
-                    <a class="menuCenter_list-item--link" href="about.html">o nas</a>
-                </li>
-                <li class="menuCenter_list-item">
-                    <a class="menuCenter_list-item--link" href="contact.html">kontakt</a>
-                </li>
-            </ul>
-            <div class="menuCenter_social">
-                <a href="#" class="menuCenter_img-link">
-                    <img class="menuCenter_social-img" src="img/facebook_menu.svg" alt="facebook logo">
-                </a>
-                <a href="#" class="menuCenter_img-link">
-                    <img class="menuCenter_social-img" src="img/instagram_menu.svg" alt="instagram logo">
-                </a>
+            <div class="menuCenter">
+                <div class="menuCenter_logo">
+                    <a href="index.html" class="menuCenter_img-link">
+                        <img class="menuCenter_logo-img" src="img/logo.png" alt="Wyprawiam Dobre logo">
+                    </a>
+                </div>
+                <ul class="menuCenter_list">
+                    <li class="menuCenter_list-item">
+                        <a class="menuCenter_list-item--link" href="index.html">główna</a>
+                    </li>
+                    <li class="menuCenter_list-item">
+                        <a class="menuCenter_list-item--link menuCenter_list-active" href="recipes.html">przepisy</a>
+                    </li>
+                    <li class="menuCenter_list-item">
+                        <a class="menuCenter_list-item--link" href="blog.html">blog</a>
+                    </li>
+                    <li class="menuCenter_list-item">
+                        <a class="menuCenter_list-item--link" href="about.html">o nas</a>
+                    </li>
+                    <li class="menuCenter_list-item">
+                        <a class="menuCenter_list-item--link" href="contact.html">kontakt</a>
+                    </li>
+                </ul>
+                <div class="menuCenter_social">
+                    <a href="#" class="menuCenter_img-link">
+                        <img class="menuCenter_social-img" src="img/facebook_menu.svg" alt="facebook logo">
+                    </a>
+                    <a href="#" class="menuCenter_img-link">
+                        <img class="menuCenter_social-img" src="img/instagram_menu.svg" alt="instagram logo">
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -97,21 +99,36 @@
         </div>
 
         <div class="center_infoBox">
-            <form class="input_container search" method="get" action="">
-                <label for="search" class="input_container-label label_center"> Wpisz frazę która Cię interesuje:</label>
+            <form class="input_container input_container-center search" method="get" action="">
+                <label for="search" class="input_container-label label_center"> Wpisz frazę która Cię
+                    interesuje:</label>
                 <fieldset class="fieldset_input-center">
                     <button class="input_container-btn">
                         <img class="input_container-btn--img" src="img/loupe.png" alt="ikona lupki">
                         <span class="input_container-btn--text">szukaj</span>
                     </button>
                     <input class="input_container-roll" type="search" id="search" name="search"
-                        placeholder="Co dziś ugotujemy?">
+                        placeholder="np. sałatka">
                 </fieldset>
             </form>
             <p class="center_infoBox-description">
-                lub wybierz rodzaj posiłku
+                Wybierz rodzaj posiłku:
             </p>
+            <ul class="center_infoBox-list">
+                <a href="#" class="center_infoBox-list--link"><li>Wszystkie</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Śniadania</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Obiad</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Przystawki</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Zupy</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Główne</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Deser</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Sałatki</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Kolacja</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Wege</li></a>
+                <a href="#" class="center_infoBox-list--link"><li>Wegan</li></a>
+            </ul>
         </div>
+
 
 
         <div class="recipe">

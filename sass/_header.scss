@@ -1,3 +1,8 @@
+header {
+	position: relative;
+	display: block;
+	top: 0;
+}
 .nav {
 	display: flex;
 	justify-content: space-between;
@@ -12,6 +17,7 @@
 		font-size: 20px;
 		position: fixed;
 		display: inline-block;
+		top: 0;
 		right: 2%;
 		width: 2em;
 		height: 2em;
@@ -206,7 +212,8 @@
 
 //DESKTOP CENTER MENU FULL WIDTH
 .menuCenter {
-	display: flex !important;
+	display: none;
+	//display: flex !important;
 	justify-content: space-between;
 	width: 100%;
 	height: 30px;

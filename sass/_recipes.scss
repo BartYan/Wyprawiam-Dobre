@@ -1,4 +1,38 @@
 .center_infoBox {
-    width: 50%;
-    margin: 0 auto 0 auto;
+    .input_container-center {
+        width: 100%;
+        margin: 0 auto 0 auto;
+    }
+    
+    .fieldset_input-center {
+        position: relative;
+    }
+    
+    .label_center {
+        text-align:left;
+        margin: 0;
+        display: block;
+    }
+    
+    .center_infoBox-description {
+        text-align: left;
+        padding: 25px 0 0 20px;
+    }
+    &-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        &--link {
+            text-decoration: none;
+            list-style-type: none;
+            padding: 20px;
+            font-size: 14px;
+            color: $navyBlue-color;
+        }
+        &--link:hover {
+            color: $orange-color;
+        }
+    }
 }
+
