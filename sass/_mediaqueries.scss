@@ -107,15 +107,14 @@
 
 		.center_infoBox-description {
 			text-align: center;
-			padding-top: 25px;
-		}
-
-		&-list {
-			width: 80% !important;
-			margin: 30px auto 0 auto;
-			justify-content: center;
+			padding: 30px 0 0 0;
+			margin: 0;
 		}
 	}
+	//recipe sites 
+	.recipe_column {
+		padding: 0 40px !important;
+	} 
 }
 
 @media (min-width: 1024px) {
@@ -169,7 +168,9 @@
 	.leaf-left {
 		display: block;
 	}
-
+	.leaf-left--nav {
+		display: block;
+	}
 	.leaf-right {
 		display: block;
 	}

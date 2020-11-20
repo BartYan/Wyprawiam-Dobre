@@ -88,6 +88,8 @@
                 </div>
             </div>
         </nav>
+        <!--TOP LEAFs DECORATION-->
+        <img class="leaf-left--nav" src="img/leaf-left.png" alt="leaf icon">
     </header>
 
     <!--RECIPES SECTION-->
@@ -112,96 +114,197 @@
                 </fieldset>
             </form>
             <p class="center_infoBox-description">
-                Wybierz rodzaj posiłku:
+                Nasze propozycje:
             </p>
-            <ul class="center_infoBox-list">
-                <a href="#" class="center_infoBox-list--link"><li>Wszystkie</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Śniadania</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Obiad</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Przystawki</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Zupy</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Główne</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Deser</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Sałatki</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Kolacja</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Wege</li></a>
-                <a href="#" class="center_infoBox-list--link"><li>Wegan</li></a>
-            </ul>
         </div>
-
-
-
-        <div class="recipe">
-            <!--RECIPE CARD-->
-            <div class="recipe_box">
-                <img class="recipe_box-img" src="img/photos/orangepancake.jpg" alt="Naleśniki Pomarańczowe">
-
-                <h5 class="recipe_box-title">Naleśniki Pomarańczowe</h5>
-
-                <img class="recipe_box-icon level" src="img/chefLvl.png" alt="poziom trudności">
-                <span class="recipe_box-iconTxt">proste</span>
-
-                <img class="recipe_box-icon clock" src="img/clock.png" alt="czas">
-                <span class="recipe_box-iconTxt">10min</span>
-
-                <img class="recipe_box-icon serve" src="img/serve.png" alt="ilość osób">
-                <span class="recipe_box-iconTxt">1os.</span>
-
-                <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-
-                <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
-                        aria-hidden="true">&#8594</i></button>
-            </div>
-            <!--RECIPE CARD THE END-->
-            <!--RECIPE CARD-->
-            <div class="recipe_box">
-                <img class="recipe_box-img" src="img/photos/egg.jpg" alt="jajko w koszulce">
-
-                <h5 class="recipe_box-title">Jajko w Koszulce</h5>
-
-                <img class="recipe_box-icon level" src="img/chefLvl.png" alt="poziom trudności">
-                <span class="recipe_box-iconTxt">proste</span>
-
-                <img class="recipe_box-icon clock" src="img/clock.png" alt="czas">
-                <span class="recipe_box-iconTxt">10min</span>
-
-                <img class="recipe_box-icon serve" src="img/serve.png" alt="ilość osób">
-                <span class="recipe_box-iconTxt">1os.</span>
-
-                <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-
-                <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
-                        aria-hidden="true">&#8594</i></button>
-            </div>
-            <!--RECIPE CARD THE END-->
-            <!--RECIPE CARD-->
-            <div class="recipe_box">
-                <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="Owsianka z Owocami">
-
-                <h5 class="recipe_box-title">Owsianka z Owocami</h5>
-
-                <img class="recipe_box-icon level" src="img/chefLvl.png" alt="poziom trudności">
-                <span class="recipe_box-iconTxt">proste</span>
-
-                <img class="recipe_box-icon clock" src="img/clock.png" alt="czas">
-                <span class="recipe_box-iconTxt">10min</span>
-
-                <img class="recipe_box-icon serve" src="img/serve.png" alt="ilość osób">
-                <span class="recipe_box-iconTxt">1os.</span>
-
-                <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-
-                <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
-                        aria-hidden="true">&#8594</i>
-                </button>
-            </div>
-            <!--RECIPE CARD THE END-->
-        </div>
-
-        <img class="leaf-left" src="img/leaf-left.png" alt="leaf icon">
+        <!--BOTTOM LEAFs DECORATION-->
         <img class="leaf-right" src="img/leaf-right.png" alt="leaf icon">
-    </section>
 
+        <!--RECIPES FILTER-->
+        <!--recipes_filters BUTTONS-->
+        <div id="recipes_filters">
+            <button id="filter_all" class="recipe_filter tag--active">Wszystkie</button>
+            <button id="filter_breakfast" class="recipe_filter">Śniadania</button>
+            <button id="filter_dinner" class="recipe_filter">Obiady</button>
+            <button id="filter_starter" class="recipe_filter">Przystawki</button>
+            <button id="filter_soup" class="recipe_filter">Zupy</button>
+            <button id="filter_main" class="recipe_filter">Główne</button>
+            <button id="filter_desser" class="recipe_filter">Deser</button>
+            <button id="filter_salad" class="recipe_filter">Sałatki</button>
+            <button id="filter_supper" class="recipe_filter">Kolacje</button>
+            <button id="filter_wege" class="recipe_filter">Wege</button>
+            <button id="filter_vegan" class="recipe_filter">Vegan</button>
+
+            <p id="recipes_filters-message">Przepraszamy, filtry nie będą działać bez włączonej obsługi JavaScript.</br> Wciąż możesz wybrać przepis bez sortowania!</p>
+        </div>
+        <!--recipes_filters BUTTONS THE END-->
+
+        <!--recipe_row-->
+        <div class="recipe_row">
+
+            <!--recipe_column-->
+            <div class="recipe_column filter--show tag-breakfast">
+                <!--RECIPE CARD-->
+                <div class="recipe_box">
+                    <img class="recipe_box-img" src="img/photos/egg.jpg" alt="jajko w koszulce">
+
+                    <h5 class="recipe_box-title">Jajko w Koszulce</h5>
+
+                    <img class="recipe_box-icon level" src="img/chefLvl.png" alt="poziom trudności">
+                    <span class="recipe_box-iconTxt">proste</span>
+
+                    <img class="recipe_box-icon clock" src="img/clock.png" alt="czas">
+                    <span class="recipe_box-iconTxt">10min</span>
+
+                    <img class="recipe_box-icon serve" src="img/serve.png" alt="ilość osób">
+                    <span class="recipe_box-iconTxt">1os.</span>
+
+                    <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+
+                    <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+                            aria-hidden="true">&#8594</i></button>
+                </div>
+                <!--RECIPE CARD THE END-->
+            </div>
+            <!--recipe_column THE END-->
+
+            <!--recipe_column-->
+            <div class="recipe_column filter--show tag-main tag-desser tag-supper">
+                <!--RECIPE CARD-->
+                <div class="recipe_box">
+                    <img class="recipe_box-img" src="img/photos/orangepancake.jpg" alt="Naleśniki Pomarańczowe">
+
+                    <h5 class="recipe_box-title">Naleśniki Pomarańczowe</h5>
+
+                    <img class="recipe_box-icon level" src="img/chefLvl.png" alt="poziom trudności">
+                    <span class="recipe_box-iconTxt">proste</span>
+
+                    <img class="recipe_box-icon clock" src="img/clock.png" alt="czas">
+                    <span class="recipe_box-iconTxt">10min</span>
+
+                    <img class="recipe_box-icon serve" src="img/serve.png" alt="ilość osób">
+                    <span class="recipe_box-iconTxt">1os.</span>
+
+                    <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+
+                    <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+                            aria-hidden="true">&#8594</i></button>
+                </div>
+                <!--RECIPE CARD THE END-->
+            </div>
+            <!--recipe_column THE END-->
+
+            <!--recipe_column-->
+            <div class="recipe_column filter--show tag-breakfast tag-starter">
+                <!--RECIPE CARD-->
+                <div class="recipe_box">
+                    <img class="recipe_box-img" src="img/photos/egg.jpg" alt="jajko w koszulce">
+
+                    <h5 class="recipe_box-title">Jajko w Koszulce</h5>
+
+                    <img class="recipe_box-icon level" src="img/chefLvl.png" alt="poziom trudności">
+                    <span class="recipe_box-iconTxt">proste</span>
+
+                    <img class="recipe_box-icon clock" src="img/clock.png" alt="czas">
+                    <span class="recipe_box-iconTxt">10min</span>
+
+                    <img class="recipe_box-icon serve" src="img/serve.png" alt="ilość osób">
+                    <span class="recipe_box-iconTxt">1os.</span>
+
+                    <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+
+                    <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+                            aria-hidden="true">&#8594</i></button>
+                </div>
+                <!--RECIPE CARD THE END-->
+            </div>
+            <!--recipe_column THE END-->
+
+            <!--recipe_column-->
+            <div class="recipe_column filter--show tag-breakfast tag-starter">
+                <!--RECIPE CARD-->
+                <div class="recipe_box">
+                    <img class="recipe_box-img" src="img/photos/egg.jpg" alt="jajko w koszulce">
+
+                    <h5 class="recipe_box-title">Jajko w Koszulce</h5>
+
+                    <img class="recipe_box-icon level" src="img/chefLvl.png" alt="poziom trudności">
+                    <span class="recipe_box-iconTxt">proste</span>
+
+                    <img class="recipe_box-icon clock" src="img/clock.png" alt="czas">
+                    <span class="recipe_box-iconTxt">10min</span>
+
+                    <img class="recipe_box-icon serve" src="img/serve.png" alt="ilość osób">
+                    <span class="recipe_box-iconTxt">1os.</span>
+
+                    <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+
+                    <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+                            aria-hidden="true">&#8594</i></button>
+                </div>
+                <!--RECIPE CARD THE END-->
+            </div>
+            <!--recipe_column THE END-->
+
+            <!--recipe_column-->
+            <div class="recipe_column filter--show tag-breakfast">
+                <!--RECIPE CARD-->
+                <div class="recipe_box">
+                    <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="Owsianka z Owocami">
+
+                    <h5 class="recipe_box-title">Owsianka z Owocami</h5>
+
+                    <img class="recipe_box-icon level" src="img/chefLvl.png" alt="poziom trudności">
+                    <span class="recipe_box-iconTxt">proste</span>
+
+                    <img class="recipe_box-icon clock" src="img/clock.png" alt="czas">
+                    <span class="recipe_box-iconTxt">10min</span>
+
+                    <img class="recipe_box-icon serve" src="img/serve.png" alt="ilość osób">
+                    <span class="recipe_box-iconTxt">1os.</span>
+
+                    <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+
+                    <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+                            aria-hidden="true">&#8594</i>
+                    </button>
+                </div>
+                <!--RECIPE CARD THE END-->
+            </div>
+            <!--recipe_column THE END-->
+
+            <!--recipe_column-->
+            <div class="recipe_column filter--show tag-breakfast tag-wege">
+                <!--RECIPE CARD-->
+                <div class="recipe_box">
+                    <img class="recipe_box-img" src="img/photos/owsianka.jpg" alt="Owsianka z Owocami">
+
+                    <h5 class="recipe_box-title">Owsianka z Owocami</h5>
+
+                    <img class="recipe_box-icon level" src="img/chefLvl.png" alt="poziom trudności">
+                    <span class="recipe_box-iconTxt">proste</span>
+
+                    <img class="recipe_box-icon clock" src="img/clock.png" alt="czas">
+                    <span class="recipe_box-iconTxt">10min</span>
+
+                    <img class="recipe_box-icon serve" src="img/serve.png" alt="ilość osób">
+                    <span class="recipe_box-iconTxt">1os.</span>
+
+                    <p class="recipe_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
+
+                    <button class="recipe_box-button" type="button">zobacz przepis <i class="recipe_box-button--arrow"
+                            aria-hidden="true">&#8594</i>
+                    </button>
+                </div>
+                <!--RECIPE CARD THE END-->
+            </div>
+            <!--recipe_column THE END-->
+        </div>
+        <!--recipe_row THE END-->
+        <!--RECIPES FILTER THE END-->
+    </section>
+    <!--RECIPE SECTION THE END-->
+    
     <!--FOOTER SECTION-->
     <section class="footer">
         <div class="footer_top">
@@ -246,6 +349,7 @@
     <script src="js/buttonRoller.js"></script>
     <script src="js/hamburger_overlay.js"></script>
     <script src="js/backToTopButton.js"></script>
+    <script src="js/recipes_filter.js"></script>
 </body>
 
 </html>

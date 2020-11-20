@@ -592,6 +592,17 @@ body {
 	overflow-x: hidden;
 }
 
+.leaf-left--nav {
+	display: none;
+	position: absolute;
+	width: 150px;
+	margin-top: 15%;
+	left: 0;
+	margin-left: -20px;
+	z-index: -1;
+	overflow-x: hidden;
+}
+
 .leaf-right {
 	display: none;
 	position: absolute;
