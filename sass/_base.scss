@@ -147,6 +147,9 @@ body {
 				list-style-type: none;
 				padding-top: 10px;
 			}
+			&--item:hover .infoBox_top-subMenu--txtSpan {
+				color: $orange-color;
+			}
 
 			&--link {
 				text-decoration: none;
@@ -159,7 +162,7 @@ body {
 				font-weight: 500;
 				color: black;
 				margin: -15px 0 0 40px;
-				text-transform: uppercase;
+				text-transform: capitalize;
 			}
 
 			&--txtSpan {
@@ -424,6 +427,7 @@ body {
 //RECIPES SECTION
 .recipe_section {
 	position: relative;
+	margin: 0 0 140px 0;
 }
 
 .recipe {
@@ -515,6 +519,9 @@ body {
 			font-size: 18px;
 			font-family: 'Quicksand', sans-serif;
 			font-weight: 500;
+			text-decoration: none;
+			text-align: center;
+			color: #000;
 			border: none;
 			background-color: $white-color;
 			transition: .5s ease;
@@ -537,6 +544,29 @@ body {
 			border: none;
 		}
 	}
+	//zobacz wszystkie button
+	&-button {
+		position: absolute;
+		bottom: -50px;
+		right: 45px;
+		font-size: 14px;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 500;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		text-decoration: none;
+		text-transform: capitalize;
+		color: #000;
+	}
+	&-button:hover {
+		color: $orange-color;
+	}
+	&-button:focus {
+		outline: none;
+		border: none;
+	}
+	// zobacz wszystkie button the end
 }
 
 .recipe_box:hover {
@@ -719,7 +749,8 @@ body {
 //BACK TO TOP BUTTON
 #topBtn {
 	display: none;
-	width: 50px;
+	width: 48px;
+	height: 48px;
 	opacity: 0;
 	position: fixed;
 	bottom: 20px;
@@ -731,7 +762,7 @@ body {
 	background-color: $navyBlue-color;
 	color: white;
 	cursor: pointer;
-	padding: 15px;
+	padding: 12px;
 	border-radius: 50%;
 	-webkit-transition: 0.2s ease-in-out, ;
 	-moz-transition: 0.2s ease-in-out;
