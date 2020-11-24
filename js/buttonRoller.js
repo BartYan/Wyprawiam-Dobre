@@ -1,4 +1,4 @@
-const animeInput = document.getElementsByClassName("input_container-roll");
+const animeInput = document.getElementsByClassName("input_container-field");
     const animeBtn = document.getElementsByClassName("input_container-btn");
     const animeTxt = document.getElementsByClassName("input_container-btn--text");
 

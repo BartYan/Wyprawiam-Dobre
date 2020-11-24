@@ -342,7 +342,7 @@ body {
 		/* rest */
 	}
 
-	&-roll {
+	&-field {
 		width: 50%;
 		height: 40px;
 		border: none;
@@ -353,7 +353,7 @@ body {
 		padding: 0 0 0 25px;
 	}
 
-	&-roll:focus {
+	&-field:focus {
 		border: none;
 		border-bottom: 3px solid $orange-color;
 	}
