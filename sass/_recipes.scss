@@ -20,8 +20,41 @@
   }
 
   //contact.html
+  .label_padd {
+    padding: 50px 0 0 0;
+  }
+
   .center_field {
     text-align: center;
+  }
+
+  .textarea {
+    height:200px;
+    margin-top: 15px;
+  }
+
+  .input_container-submit {
+    position: absolute;
+    bottom: -30px;
+    right: 150px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+  }
+
+  .input_container-submit:hover {
+    color: $orange-color;
+  }
+
+  .input_container-submit:focus {
+    outline: none;
+    border: none;
   }
 }
 
@@ -36,7 +69,7 @@
   padding: 20px;
   outline: none;
   font-family: 'Quicksand', sans-serif;
-  font-size:14px;
+  font-size: 14px;
   font-weight: 400;
   color: #000;
   text-decoration: none;
@@ -78,4 +111,5 @@
   background-color: rgba(235, 209, 143, .6);
   padding: 10px;
 }
+
 //RECIPES FILTER SECTION THE END

@@ -104,20 +104,20 @@
         <div class="center_infoBox">
             <form class="input_container input_container-center center_field" action="action_page.php">
 
-                <label for="fname" class="input_container-label label_center">Twój email</label>
-                <input type="text" class="input_container-field" id="fname" name="firstname" placeholder="imię">
+                <label for="fname" class="input_container-label label_center label_padd">Twój email</label>
+                <input class="input_container-field" type="email" id="email-contact" name="email-contact" placeholder="Twój adres email">
 
-                <label for="subject" class="input_container-label label_center">Co Ci chodzi po głowie?</label>
-                <textarea id="subject" class="input_container-field" name="subject" placeholder="Napisz do nas"
-                    style="height:200px"></textarea>
+                <label for="subject" class="input_container-label label_center label_padd">Napisz do nas</label>
+                
+                <textarea id="subject" class="input_container-field textarea" name="subject" placeholder="Treść wiadomości"></textarea>
 
-                <input type="submit" value="Submit">
+                <input class="input_container-submit" type="submit" value="Wyślij wiadomość">
 
             </form>
         </div>
     </section>
 
-    <!--NEWSLETTER SECTION-->
+   <!--NEWSLETTER SECTION-->
   <section class="section">
     <div class="infoBox infoBox_newsLetter">
       <div class="infoBox_top">
@@ -129,10 +129,10 @@
         <form class="input_container" method="" action="">
           <label for="" class="input_container-label"> Dziękujemy, że jesteś tu razem z nami!</label>
           <fieldset>
-            <input class="input_container-field" type="email" id="email" name="email" placeholder="Twój adres email">
-            <button class="input_container-btn">
+            <input class="input_container-field anime_mail" type="email" id="email" name="email" placeholder="Twój adres email">
+            <button class="input_container-btn anime_mail-btn">
               <img class="input_container-btn--img" src="img/email.png" alt="ikonka email">
-              <span class="input_container-btn--text">wyślij</span>
+              <span class="input_container-btn--text anime_mail-txt">wyślij</span>
             </button>
           </fieldset>
         </form>
@@ -200,10 +200,9 @@
     <button id="topBtn" title="Go to top">&uarr;</button>
 
     <!--JS-->
-    <script src="js/buttonRoller.js"></script>
+    <script src="js/mailRoller.js"></script>
     <script src="js/hamburger_overlay.js"></script>
     <script src="js/backToTopButton.js"></script>
-    <script src="js/recipes_filter.js"></script>
 </body>
 
 </html>
