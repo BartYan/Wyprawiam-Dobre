@@ -111,10 +111,11 @@
 			margin: 0;
 		}
 	}
+
 	//recipe sites 
 	.recipe_column {
 		padding: 0 40px !important;
-	} 
+	}
 }
 
 @media (min-width: 1024px) {
@@ -134,16 +135,18 @@
 		display: flex !important;
 	}
 
+	//1024px display flex - split the window into two parts
 	.section {
 		display: flex;
 	}
 
 	.infoBox {
+		width: 60%;
 		height: 800px;
 	}
 
 	.patternBox {
-		width: 70%;
+		width: 40%;
 		height: auto;
 
 		&_white {
@@ -168,9 +171,11 @@
 	.leaf-left {
 		display: block;
 	}
+
 	.leaf-left--nav {
 		display: block;
 	}
+
 	.leaf-right {
 		display: block;
 	}
@@ -178,6 +183,31 @@
 	//About site
 	.aboutImg {
 		width: 200px !important;
+	}
+
+	//recipe-post site
+	.leftBox {
+		width: 40%;
+
+		&_item {
+			margin: 10% auto 0 auto;
+		}
+	}
+
+	.infoBoxPost {
+		width: 60%;
+
+		.iconSet {
+			margin: 6% 0 70px 0;
+		}
+
+		&_head {
+			padding: 50px 20px 0 20px;
+		}
+	}
+	
+	.recipePost_recipe {
+		margin: 0 0 0 5%;
 	}
 }
 

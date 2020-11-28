@@ -47,6 +47,7 @@ body {
 	margin-top: 15px;
 }
 
+//1024px display flex - split the window into two parts
 .section {
 	width: 100%;
 }
@@ -216,8 +217,8 @@ body {
 				display: flex;
 
 				&--img {
-					max-width: 140px;
-					min-width: 140px;
+					max-width: 141px;
+					min-width: 141px;
 					height: 140px;
 					padding: 10px;
 				}
@@ -474,22 +475,6 @@ body {
 			margin: 10px auto 0 18px;
 		}
 
-		.level {
-			height: 18px;
-			width: 18px;
-
-		}
-
-		.clock {
-			width: 18px;
-			height: 18px;
-		}
-
-		.serve {
-			width: 24px;
-			height: 18px;
-		}
-
 		&-iconTxt {
 			float: left;
 			margin: 12px 15px 0px 5px;
@@ -568,6 +553,22 @@ body {
 		border: none;
 	}
 	// zobacz wszystkie button the end
+}
+
+.level {
+	height: 18px;
+	width: 18px;
+
+}
+
+.clock {
+	width: 18px;
+	height: 18px;
+}
+
+.serve {
+	width: 24px;
+	height: 18px;
 }
 
 .recipe_box:hover {
