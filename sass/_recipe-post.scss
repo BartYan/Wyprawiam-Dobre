@@ -8,8 +8,10 @@
     width: 70%;
 
     &-img {
+      display: block;
       width: 100%;
       height: auto;
+      margin: 0 auto;
     }
   }
 
@@ -68,13 +70,45 @@
   }
 
   &_description {
-    width: 80%;
+    width: 90%;
     font-size: 16px;
     font-weight: lighter;
     padding: 25px 20px;
+    //margin: 0 auto;
   }
 }
 
-.recipePost_recipe {
-  width: 100%;
-}
+// .recipePost_recipe {
+//   width: 100%;
+// }
+
+.gallery {
+    width: 100%;
+
+    &_left {
+      width: 90%;
+      margin: 20px auto;
+      align-items: center !important;
+
+      &-image {
+        width: 80%;
+        margin: 0px auto;
+        display: block;
+      }
+    }
+    &_right {
+      position: relative;
+      width: 90%;
+      margin: 40px auto 200px auto;
+  
+      &-image {
+        width: 60%;
+      }
+      &-image2 {
+        position: absolute;
+        top: 25%;
+        left:40%;
+        width: 60%;
+      }
+    }
+  }

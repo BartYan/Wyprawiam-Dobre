@@ -205,9 +205,26 @@
 			padding: 50px 20px 0 20px;
 		}
 	}
-	
+
 	.recipePost_recipe {
 		margin: 0 0 0 5%;
+	}
+
+	.gallery {
+		width: 80%;
+		display: flex;
+		margin: 100px auto;
+
+		&_left {
+			width: 50%;
+			align-items: center;
+			margin: 0 auto;
+		}
+
+		&_right {
+			width: 50%;
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -278,6 +295,11 @@
 
 	.carousel {
 		bottom: 80px;
+	}
+
+	//recipe-post first image
+	.leftBox_item-img {
+		width: 50%;
 	}
 }
 
