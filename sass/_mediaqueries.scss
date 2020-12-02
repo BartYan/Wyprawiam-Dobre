@@ -185,7 +185,17 @@
 		width: 200px !important;
 	}
 
+	.blueBerry {
+		display: block;
+	}
+
 	//recipe-post site
+	.title_mobile {
+		display: none;
+	  }
+	  .title_desktop {
+		display: block;
+	  }
 	.leftBox {
 		width: 40%;
 

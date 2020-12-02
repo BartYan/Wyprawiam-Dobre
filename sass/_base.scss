@@ -7,7 +7,7 @@ body {
 	margin: 0px !important;
 	padding: 0px !important;
 	overflow-x: hidden;
-	font-family: 'Quicksand', sans-serif;
+	font-family: $font;
 	box-sizing: border-box;
 }
 
@@ -190,7 +190,7 @@ body {
 		overflow: hidden;
 
 		&_btn {
-			font-family: 'Quicksand', sans-serif;
+			font-family: $font;
 			font-size: 20px;
 			font-weight: 600;
 			color: #000;
@@ -231,7 +231,7 @@ body {
 					.carosuel-cat {
 						max-width: 140px;
 						min-width: 140px;
-						font-family: 'Quicksand', sans-serif;
+						font-family: $font;
 						font-size: 14px;
 						font-weight: bold;
 						text-align: center;
@@ -254,7 +254,7 @@ body {
 					.carosuel-txt {
 						max-width: 140px;
 						min-width: 140px;
-						font-family: 'Quicksand', sans-serif;
+						font-family: $font;
 						font-weight: 200;
 						padding: 15px 0 0 0;
 						font-size: 14px;
@@ -352,7 +352,7 @@ body {
 		outline: none;
 		margin-left: 25px;
 		padding: 0 0 0 25px;
-		font-family: 'Quicksand', sans-serif;
+		font-family: $font;
 	}
 
 	&-field:focus {
@@ -503,7 +503,7 @@ body {
 			margin-left: auto;
 			margin-right: auto;
 			font-size: 18px;
-			font-family: 'Quicksand', sans-serif;
+			font-family: $font;
 			font-weight: 500;
 			text-decoration: none;
 			text-align: center;
@@ -536,7 +536,7 @@ body {
 		bottom: -50px;
 		right: 45px;
 		font-size: 14px;
-		font-family: 'Quicksand', sans-serif;
+		font-family: $font;
 		font-weight: 500;
 		border: none;
 		background-color: transparent;

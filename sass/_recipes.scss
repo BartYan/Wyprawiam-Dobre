@@ -32,30 +32,6 @@
     height:200px;
     margin-top: 15px;
   }
-
-  .input_container-submit {
-    position: absolute;
-    bottom: -30px;
-    right: 150px;
-    font-size: 14px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    text-decoration: none;
-    text-transform: capitalize;
-    color: #000;
-  }
-
-  .input_container-submit:hover {
-    color: $orange-color;
-  }
-
-  .input_container-submit:focus {
-    outline: none;
-    border: none;
-  }
 }
 
 //RECIPES FILTER SECTION
