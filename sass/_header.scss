@@ -126,7 +126,7 @@ header {
 		&-white {
 			display: block;
 			width: 75%;
-			height: 80%;
+			height: 85%;
 			position: absolute;
 			left: 50%;
 			top: 50%;
@@ -147,6 +147,8 @@ header {
 			position: absolute;
 			left: 50%;
 			top: 50%;
+			width: 100%;
+			max-height: 80vh !important;
 			-webkit-transform: translate(-50%, -50%);
 			/* Safari 4+ */
 			-moz-transform: translate(-50%, -50%);
@@ -159,7 +161,7 @@ header {
 			text-align: center;
 
 			&--link {
-				padding: 25px 8px;
+				padding: 10px 8px;
 				text-decoration: none;
 				font-size: 20px;
 				color: $navyBlue-color;
@@ -175,7 +177,7 @@ header {
 
 				.social_menu-link {
 					width: 40px;
-					padding: 20px !important;
+					padding: 5px 10px !important;
 				}
 			}
 		}

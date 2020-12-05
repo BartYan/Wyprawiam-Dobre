@@ -63,19 +63,33 @@ body {
 	&_white {
 		@include centered;
 		background-color: $white-color;
-		width: 60%;
-		height: 80%;
+		width: 75%;
+		height: 85%;
 		-webkit-box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
 		-moz-box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
 		box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
 
 		&-items {
-			@include centered;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			/* Safari 4+ */
+			-moz-transform: translate(-50%, -50%);
+			/* Fx 5+ */
+			-o-transform: translate(-50%, -50%);
+			/* Opera 12+ */
+			-ms-transform: translate(-50%, -50%);
+			/*IE11 & Microsoft Edge*/
+			transform: translate(-50%, -50%);
+			/* IE 10+, Fx 29+ */
+			z-index: 9;
 
 			.image {
 				@include centerBlock;
 				margin-top: 5px;
-				width: 100px;
+				max-width: 70% !important;
+				max-height: 50vh;
 			}
 
 			.stars {
@@ -148,6 +162,7 @@ body {
 				list-style-type: none;
 				padding-top: 10px;
 			}
+
 			&--item:hover .infoBox_top-subMenu--txtSpan {
 				color: $orange-color;
 			}
@@ -530,6 +545,7 @@ body {
 			border: none;
 		}
 	}
+
 	//zobacz wszystkie button
 	&-button {
 		position: absolute;
@@ -545,13 +561,16 @@ body {
 		text-transform: capitalize;
 		color: #000;
 	}
+
 	&-button:hover {
 		color: $orange-color;
 	}
+
 	&-button:focus {
 		outline: none;
 		border: none;
 	}
+
 	// zobacz wszystkie button the end
 }
 
