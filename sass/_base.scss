@@ -442,109 +442,16 @@ body {
 
 
 //RECIPES SECTION
-.recipe_section {
+.cards_section {
 	position: relative;
 	margin: 0 0 140px 0;
 }
 
-.recipe {
+.cards {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-
-	/* RECIPES CARD */
-	&_box {
-		position: relative;
-		width: 280px;
-		height: 480px;
-		//padding: 25px;
-		//border: 4px solid $lightGrey-color;
-		transition: 0.5s ease;
-		margin: 100px auto 0 auto;
-		cursor: default;
-		background-color: $white-color;
-		box-shadow: -1px 0px 21px -13px rgba(0, 0, 0, 0.47);
-		-webkit-box-shadow: -1px 0px 21px -13px rgba(0, 0, 0, 0.47);
-		-moz-box-shadow: -1px 0px 21px -13px rgba(0, 0, 0, 0.47);
-
-		&-img {
-			width: 100%;
-			margin: 0px;
-			padding: 0px;
-			transition: 0.5s ease;
-		}
-
-		&-title {
-			margin-top: 15px;
-			padding: 0 20px 0 20px;
-			font-size: 25px;
-			text-align: center;
-			//text-transform: uppercase;
-			font-family: $fontSerif;
-			font-weight: 300;
-		}
-
-		&-icon {
-			float: left;
-			margin: 10px auto 0 18px;
-		}
-
-		&-iconTxt {
-			float: left;
-			margin: 12px 15px 0px 5px;
-			font-weight: 400;
-			font-size: 14px;
-		}
-
-		&-text {
-			visibility: hidden;
-			opacity: 0;
-			padding: 50px 20px 0 20px;
-			font-weight: 300;
-			font-size: 18px;
-			transition: 0.3s ease;
-			z-index: 10;
-			color: $grey-color;
-		}
-
-		&-button {
-			position: absolute;
-			display: block;
-			bottom: 4%;
-			width: 70%;
-			left: 0;
-			right: 0;
-			margin-left: auto;
-			margin-right: auto;
-			font-size: 18px;
-			font-family: $font;
-			font-weight: 500;
-			text-decoration: none;
-			text-align: center;
-			color: #000;
-			border: none;
-			background-color: $white-color;
-			transition: .5s ease;
-			cursor: pointer;
-
-			&--arrow {
-				position: absolute;
-				display: none;
-				margin-left: 5px;
-			}
-		}
-
-		&-button:hover {
-			left: -20px;
-			transition: .5s ease;
-		}
-
-		&-button:focus {
-			outline: none;
-			border: none;
-		}
-	}
 
 	//zobacz wszystkie button
 	&-button {
@@ -570,7 +477,6 @@ body {
 		outline: none;
 		border: none;
 	}
-
 	// zobacz wszystkie button the end
 }
 
@@ -590,7 +496,100 @@ body {
 	height: 18px;
 }
 
-.recipe_box:hover {
+/* RECIPES & BLOG CARD */
+.card_box {
+	position: relative;
+	width: 280px;
+	height: 480px;
+	//padding: 25px;
+	//border: 4px solid $lightGrey-color;
+	transition: 0.5s ease;
+	margin: 100px auto 0 auto;
+	cursor: default;
+	background-color: $white-color;
+	box-shadow: -1px 0px 21px -13px rgba(0, 0, 0, 0.47);
+	-webkit-box-shadow: -1px 0px 21px -13px rgba(0, 0, 0, 0.47);
+	-moz-box-shadow: -1px 0px 21px -13px rgba(0, 0, 0, 0.47);
+
+	&-img {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		transition: 0.5s ease;
+	}
+
+	&-title {
+		margin-top: 15px;
+		padding: 0 20px 0 20px;
+		font-size: 25px;
+		text-align: center;
+		//text-transform: uppercase;
+		font-family: $fontSerif;
+		font-weight: 300;
+	}
+
+	&-icon {
+		float: left;
+		margin: 10px auto 0 18px;
+	}
+
+	&-iconTxt {
+		float: left;
+		margin: 12px 15px 0px 5px;
+		font-weight: 400;
+		font-size: 14px;
+	}
+
+	&-text {
+		visibility: hidden;
+		opacity: 0;
+		padding: 50px 20px 0 20px;
+		font-weight: 300;
+		font-size: 18px;
+		transition: 0.3s ease;
+		z-index: 10;
+		color: $grey-color;
+	}
+
+	&-button {
+		position: absolute;
+		display: block;
+		bottom: 4%;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 18px;
+		font-family: $font;
+		font-weight: 500;
+		text-decoration: none;
+		text-align: center;
+		color: #000;
+		border: none;
+		background-color: $white-color;
+		transition: .5s ease;
+		cursor: pointer;
+
+		&--arrow {
+			position: absolute;
+			display: none;
+			margin-left: 5px;
+		}
+	}
+
+	&-button:hover {
+		left: -20px;
+		transition: .5s ease;
+	}
+
+	&-button:focus {
+		outline: none;
+		border: none;
+	}
+}
+
+.card_box:hover {
 	-webkit-transform: scale(1.05);
 	/* Safari 4+ */
 	-moz-transform: scale(1.05);
@@ -607,17 +606,17 @@ body {
 	box-shadow: 0px 0px 49px -20px rgba(0, 0, 0, 0.4);
 }
 
-.recipe_box:hover .recipe_box-img {
+.card_box:hover .card_box-img {
 	margin-top: -80px;
 	transition: .5s ease;
 }
 
-.recipe_box:hover .recipe_box-text {
+.card_box:hover .card_box-text {
 	visibility: visible;
 	opacity: 10;
 }
 
-.recipe_box-button:hover .recipe_box-button--arrow {
+.card_box-button:hover .card_box-button--arrow {
 	display: inline-block;
 
 	-webkit-animation: slideArrow 1s ease-in-out infinite;
@@ -736,6 +735,7 @@ body {
 
 
 //FOOTER & MENU OVERLAY SVG SOCIAL MEDIA ICONS
+//footersocial media icons
 .footer-icon {
 	display: block;
 	width: 50px;
