@@ -119,8 +119,18 @@
 		display: block;
 	}
 
-	.nav_hamburger {
-		display: none;
+	.nav {
+		position: absolute;
+		left: 41%;
+		width: 60%;
+		justify-content: left;
+		
+		&_mobileLogo {
+			display: none;
+		}
+		&_hamburger {
+			display: none;
+		}
 	}
 
 	.menu {
