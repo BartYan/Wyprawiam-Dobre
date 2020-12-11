@@ -51,10 +51,12 @@
 
   .iconSet {
     position: relative;
-    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
     height: 10px;
     cursor: default;
-    margin: 40px auto -10px auto;
+    margin: 40px auto 50px auto;
 
     &_icon {
       float: left;
@@ -69,8 +71,20 @@
     }
   }
 
+  .print {
+    padding: 12px 0 0 0;
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+  }
+  .print:hover {
+    color: $orange-color;
+  }
+
   &_head {
-    width: 80%;
+    width: 90%;
     font-size: 16px;
     font-weight: bold;
     padding: 25px 20px 0 20px;

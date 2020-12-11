@@ -124,10 +124,11 @@
 		left: 41%;
 		width: 60%;
 		justify-content: left;
-		
+
 		&_mobileLogo {
 			display: none;
 		}
+
 		&_hamburger {
 			display: none;
 		}
@@ -198,10 +199,12 @@
 	//recipe-post site
 	.title_mobile {
 		display: none;
-	  }
-	  .title_desktop {
+	}
+
+	.title_desktop {
 		display: block;
-	  }
+	}
+
 	.leftBox {
 		width: 40%;
 
@@ -358,5 +361,15 @@
 
 	.infoBox_newsLetter {
 		height: 1080px;
+	}
+}
+
+@media print {
+	.noprint {
+		display: none;
+	}
+
+	.title_desktop {
+		display: block;
 	}
 }

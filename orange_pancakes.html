@@ -27,7 +27,7 @@
 
 <body>
   <!--HEADER SECTION-->
-  <header>
+  <header class="noprint">
     <nav>
       <!--MOBILE HEADER-->
       <a href="index.html" class="">
@@ -96,13 +96,13 @@
   <section class="section">
 
     <!--MOBILE TITLE-->
-    <div class="infoBoxPost title_mobile">
+    <div class="infoBoxPost title_mobile noprint">
       <div class="section_title">
         <span class="section_title-span">Pomarańczowe</span>
         <h1 class="section_title-head">Naleśniki</h1>
         <img class="section_title-stars" src="img/stars.png" alt="ikonka gwiazdek">
       </div>
-      <div class="iconSet">
+      <!-- <div class="iconSet">
         <img class="iconSet_icon level" src="img/chefLvl.png" alt="poziom trudności">
         <span class="iconSet_iconTxt">proste</span>
 
@@ -111,11 +111,11 @@
 
         <img class="iconSet_icon serve" src="img/serve.png" alt="ilość osób">
         <span class="iconSet_iconTxt">1os.</span>
-      </div>
+      </div> -->
     </div>
 
     <div class="leftBox">
-      <div class="leftBox_item">
+      <div class="leftBox_item noprint">
         <img class="leftBox_item-img" src="img/photos/pancake3.jpg" alt="tost">
       </div>
       <div class="leftBox_item leftBox_itemColor">
@@ -136,6 +136,7 @@
     <div class="infoBoxPost">
       <!--DESKTOP TITLE-->
       <div class="iconSet title_desktop">
+        <div>
         <img class="iconSet_icon level" src="img/chefLvl.png" alt="poziom trudności">
         <span class="iconSet_iconTxt">proste</span>
 
@@ -145,12 +146,9 @@
         <img class="iconSet_icon serve" src="img/serve.png" alt="ilość osób">
         <span class="iconSet_iconTxt">1os.</span>
       </div>
-      <!-- <div class="print">
-        <a title="print screen" alt="wydrukuj" onclick="window.print()" target="_blank">
-        <img class="iconSet_icon level" src="img/chefLvl.png" alt="poziom trudności">
-        <span class="iconSet_iconTxt">wydrukuj</span>
+        <a class="print" href="javascript:window.print()">Drukuj Przepis
         </a>
-      </div> -->
+      </div>
 
       <div class="section_title title_desktop">
         <span class="section_title-span">Pomarańczowe</span>
@@ -211,7 +209,7 @@
   </section>
 
   <!--MORE RECIPES SECTION-->
-  <<section class="cards_section">
+  <section class="cards_section noprint">
     <div class="section_title">
         <span class="section_title-span">Inne</span>
         <h2 class="section_title-head">Przepisy</h2>
@@ -292,7 +290,7 @@
 </section>
 
   <!--NEWSLETTER SECTION-->
-  <section class="section">
+  <section class="section noprint">
     <div class="infoBox infoBox_newsLetter">
       <div class="infoBox_top">
         <div class="section_title">
@@ -333,7 +331,7 @@
   </section>
 
   <!--FOOTER SECTION-->
-  <section class="footer">
+  <section class="footer noprint">
     <div class="footer_top">
       <div class="footer_box">
         <div class="footer_boxCenter">
