@@ -10,7 +10,7 @@
   height: auto;
 
   &_item {
-    margin: 20% auto 0 auto;
+    margin: 10% auto 0 auto;
     background-color: $white-color;
     width: 70%;
 
@@ -53,19 +53,19 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     height: 10px;
     cursor: default;
     margin: 40px auto 50px auto;
 
     &_icon {
       float: left;
-      margin: 10px auto 0 18px;
+      margin: 10px 0 0 0;
     }
 
     &_iconTxt {
       float: left;
-      margin: 12px 15px 0px 5px;
+      margin: 12px 15px 0 5px;
       font-weight: 400;
       font-size: 14px;
     }
@@ -87,21 +87,16 @@
     width: 90%;
     font-size: 16px;
     font-weight: bold;
-    padding: 25px 20px 0 20px;
+    padding: 25px 10px 0 10px;
   }
 
   &_description {
-    width: 90%;
+    width: 95%;
     font-size: 16px;
     font-weight: lighter;
-    padding: 25px 20px;
-    //margin: 0 auto;
+    padding: 25px 10px;
   }
 }
-
-// .recipePost_recipe {
-//   width: 100%;
-// }
 
 .gallery {
     width: 100%;
