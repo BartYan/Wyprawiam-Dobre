@@ -346,6 +346,8 @@ body {
 
 	//fieldset styles
 	fieldset {
+		position: relative;
+		max-width: 600px;
 		border: none;
 	}
 
@@ -509,7 +511,8 @@ body {
 		font-family: $fontSerif;
 		font-weight: 300;
 	}
-	&-icons{
+
+	&-icons {
 		display: flex;
 		justify-content: space-between;
 		width: 70%;
@@ -626,6 +629,10 @@ body {
 	/*IE11 & Microsoft Edge*/
 	animation: slideArrow 1s ease-in-out infinite;
 	/* IE 10+, Fx 29+ */
+}
+
+.blog-cardTxt {
+	padding-top: 25px;
 }
 
 .leaf-left {

@@ -4,10 +4,6 @@
     margin: 0 auto 0 auto;
   }
 
-  .fieldset_input-center {
-    position: relative;
-  }
-
   .label_center {
     text-align: center;
     margin: 20px 0 0 0;
@@ -29,7 +25,7 @@
   }
 
   .textarea {
-    height:200px;
+    height: 200px;
     margin-top: 15px;
   }
 }
@@ -89,3 +85,31 @@
 }
 
 //RECIPES FILTER SECTION THE END
+
+
+//Used in recipes site. Mobile infoBox text-align: left. For 768px & more is centered 
+.infoBox_leftCenter {
+  width: 100%;
+  position: relative;
+
+  .fieldset_input {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .label_leftCenter {
+    text-align: left;
+    margin: 20px 0 0 0;
+    display: block;
+  }
+  
+  .description_leftCenter {
+    text-align: left;
+    padding: 25px 0 0 20px;
+  }
+}
+
+
+
+
+

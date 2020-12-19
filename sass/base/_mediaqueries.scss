@@ -108,6 +108,29 @@
 		}
 	}
 
+	//Used in recipes site. Mobile infoBox text-align: left. For 768px & more is centered
+	
+	.infoBox_leftCenter {
+		max-width: 600px;
+		margin: 0 auto 0 auto;
+
+		.fieldset_leftCenter {
+			left: 21%
+		}
+		
+		.label_leftCenter {
+			text-align: center;
+			padding: 25px 0 25px 0;
+			margin: 0 auto 0 auto;
+		}
+	
+		.description_leftCenter {
+			text-align: center;
+			padding: 25px 0 0 0;
+			margin: 0 auto 0 auto;
+		}
+	}
+
 	//recipe sites 
 	.recipe_column {
 		padding: 0 40px !important;
