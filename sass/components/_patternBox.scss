@@ -1,0 +1,57 @@
+.patternBox {
+	@include bg-pattern;
+	position: relative;
+
+	&_white {
+		@include centered;
+		background-color: $white-color;
+		width: 75%;
+		height: 85%;
+		-webkit-box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
+		box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
+
+		&-items {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			/* Safari 4+ */
+			-moz-transform: translate(-50%, -50%);
+			/* Fx 5+ */
+			-o-transform: translate(-50%, -50%);
+			/* Opera 12+ */
+			-ms-transform: translate(-50%, -50%);
+			/*IE11 & Microsoft Edge*/
+			transform: translate(-50%, -50%);
+			/* IE 10+, Fx 29+ */
+			z-index: 9;
+
+			.image {
+				@include centerBlock;
+				margin-top: 5px;
+				max-width: 70% !important;
+				max-height: 50vh;
+			}
+
+			.stars {
+				@include centerBlock;
+				@include stars;
+			}
+
+			.blogTitle {
+				color: $orange-color;
+				text-align: center;
+				margin-top: 15px;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: bold;
+				letter-spacing: 3px;
+			}
+		}
+	}
+}
+
+.patternNewsletter {
+	display: none;
+}
