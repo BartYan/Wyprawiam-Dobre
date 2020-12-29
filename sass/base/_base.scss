@@ -14,6 +14,10 @@ body {
 //1024px display flex - split the window into two parts
 .section {
 	width: 100%;
+
+	@media (min-width: 1024px) {
+		display: flex;
+	}
 }
 
 //Titles - all sections 
@@ -29,6 +33,16 @@ body {
 		text-align: center;
 		margin-top: 70px;
 		padding-top: 10px;
+
+		@media (min-width: 768px) {
+			font-size: 60px;
+			margin-top: 50px;
+			padding-top: 25px;
+		}
+		@media (min-width: 1800px) {
+			font-size: 70px;
+			padding-top: 30px;
+		}
 	}
 
 	&-span {
@@ -38,10 +52,28 @@ body {
 		font-family: $fontWrite;
 		font-size: 25px;
 		color: $orange-color;
+
+		@media (min-width: 768px) {
+			font-size: 50px;
+		}
+		@media (min-width: 1800px) {
+			font-size: 60px;
+		}
 	}
 
 	&-stars {
 		@include centerBlock;
 		@include stars;
+	}
+}
+
+//Hide and show elements after click on the print button
+@media print {
+	.noprint {
+		display: none;
+	}
+
+	.title_desktop {
+		display: block;
 	}
 }

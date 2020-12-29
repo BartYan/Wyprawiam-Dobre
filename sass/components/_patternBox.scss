@@ -2,6 +2,23 @@
 	@include bg-pattern;
 	position: relative;
 
+	@media (min-width: 1024px) {
+		width: 40%;
+		height: auto;
+	}
+
+	@media (min-width: 2048px) {
+		height: 1080px;
+	}
+
+	@media (min-width: 2560px) {
+		height: 1200px;
+	}
+
+	@media (min-width: 2560px) and (device-height: 1080px) {
+		height: 1080px;
+	}
+
 	&_white {
 		@include centered;
 		background-color: $white-color;
@@ -32,11 +49,23 @@
 				margin-top: 5px;
 				max-width: 70% !important;
 				max-height: 50vh;
+
+				@media (min-width: 1024px) {
+					width: 200px;
+				}
+
+				@media (min-width: 1800px) {
+					width: 300px;
+				}
 			}
 
 			.stars {
 				@include centerBlock;
 				@include stars;
+
+				@media (min-width: 768px) {
+					margin-top: 25px;
+				}
 			}
 
 			.blogTitle {
@@ -47,6 +76,10 @@
 				font-size: 14px;
 				font-weight: bold;
 				letter-spacing: 3px;
+
+				@media (min-width: 1800px) {
+					font-size: 22px;
+				}
 			}
 		}
 	}
@@ -54,4 +87,8 @@
 
 .patternNewsletter {
 	display: none;
+
+	@media (min-width: 1024px) {
+		display: block;
+	}
 }

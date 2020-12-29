@@ -7,7 +7,12 @@
 	margin-left: -20px;
 	z-index: -1;
 	overflow-x: hidden;
+
+	@media (min-width: 1024px) {
+		display: block;
+	}
 }
+
 .leaf-right {
 	display: none;
 	position: absolute;
@@ -17,6 +22,10 @@
 	margin-right: -20px;
 	z-index: -1;
 	overflow-x: hidden;
+
+	@media (min-width: 1024px) {
+		display: block;
+	}
 }
 
 .leaf-left--nav {
@@ -28,4 +37,8 @@
 	margin-left: -20px;
 	z-index: -1;
 	overflow-x: hidden;
+
+	@media (min-width: 1024px) {
+		display: block;
+	}
 }

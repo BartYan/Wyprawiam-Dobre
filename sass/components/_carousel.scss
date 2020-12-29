@@ -7,6 +7,18 @@
 		margin: auto;
 		overflow: hidden;
 
+		@media (max-width: 318px) {
+			display: none;
+		}
+
+		@media (min-width: 768px) {
+			bottom: 50px !important;
+		}
+
+		@media (min-width: 1800px) {
+			bottom: 80px;
+		}
+
 		&_btn {
 			font-family: $font;
 			font-size: 20px;

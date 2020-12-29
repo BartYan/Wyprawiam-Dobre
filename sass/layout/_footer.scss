@@ -7,12 +7,22 @@
 	padding: 0px !important;
 	border-top: 2px solid $orange-color;
 
+	&_top {
+		@media (min-width: 768px) {
+			display: flex;
+		}
+	}
+
 	&_box {
 		position: relative;
 		height: 180px;
 		padding: 0px !important;
 		margin: 0px;
 		width: 100%;
+
+		@media (min-width: 768px) {
+			height: 350px;
+		}
 
 		.footer_boxCenter {
 			@include centered;
@@ -22,11 +32,19 @@
 			width: 100px;
 			margin-top: 100px;
 			margin-bottom: 25px;
+
+			@media (min-width: 768px) {
+				margin: 0 0 0 0;
+			}
 		}
 
 		&-txt {
 			color: $navyBlue-color;
 			font-size: 17px;
+
+			@media (min-width: 768px) {
+				padding-top: 10px;
+			}
 		}
 
 		&-stars {
@@ -39,6 +57,11 @@
 			justify-content: center;
 			width: 100%;
 			margin-top: -100px;
+
+			@media (min-width: 768px) {
+				margin: 0;
+				padding: 0;
+			}
 
 			&--link {
 				width: 50px;

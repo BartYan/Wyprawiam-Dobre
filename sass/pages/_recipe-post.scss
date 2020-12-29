@@ -1,24 +1,45 @@
 .title_mobile {
   display: block;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
+
 .title_desktop {
   display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
 }
 
 .leftBox {
   width: 100%;
   height: auto;
 
+  @media (min-width: 1024px) {
+    width: 40%;
+  }
+
   &_item {
     margin: 10% auto 0 auto;
     background-color: $white-color;
     width: 70%;
+
+    @media (min-width: 1024px) {
+      margin: 10% auto 0 auto;
+    }
 
     &-img {
       display: block;
       width: 100%;
       height: auto;
       margin: 0 auto;
+
+      @media (min-width: 1800px) {
+        width: 50%;
+      }
     }
   }
 
@@ -49,6 +70,10 @@
   width: 100%;
   position: relative;
 
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
+
   .iconSet {
     position: relative;
     display: flex;
@@ -57,6 +82,8 @@
     height: 10px;
     cursor: default;
     margin: 40px auto 50px auto;
+
+    @media (min-width: 1024px) {}
 
     &_icon {
       float: left;
@@ -79,6 +106,7 @@
     font-weight: 400;
     color: #000;
   }
+
   .print:hover {
     color: $orange-color;
   }
@@ -88,6 +116,10 @@
     font-size: 16px;
     font-weight: bold;
     padding: 25px 10px 0 10px;
+
+    @media (min-width: 1024px) {
+      padding: 50px 0 0 0;
+    }
   }
 
   &_description {
@@ -95,36 +127,59 @@
     font-size: 16px;
     font-weight: lighter;
     padding: 25px 10px;
+
+    @media (min-width: 1024px) {
+      padding: 25px 0;
+    }
   }
 }
 
 .gallery {
-    width: 100%;
+  width: 100%;
 
-    &_left {
-      width: 90%;
-      margin: 20px auto;
-      align-items: center !important;
+  @media (min-width: 1024px) {
+    width: 80%;
+    display: flex;
+    margin: 100px auto;
+  }
 
-      &-image {
-        width: 80%;
-        margin: 0px auto;
-        display: block;
-      }
+  &_left {
+    width: 90%;
+    margin: 20px auto;
+    align-items: center !important;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+      align-items: center;
+      margin: 0 auto;
     }
-    &_right {
-      position: relative;
-      width: 90%;
-      margin: 40px auto 200px auto;
-  
-      &-image {
-        width: 60%;
-      }
-      &-image2 {
-        position: absolute;
-        top: 25%;
-        left:40%;
-        width: 60%;
-      }
+
+    &-image {
+      width: 80%;
+      margin: 0px auto;
+      display: block;
     }
   }
+
+  &_right {
+    position: relative;
+    width: 90%;
+    margin: 40px auto 200px auto;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    &-image {
+      width: 60%;
+    }
+
+    &-image2 {
+      position: absolute;
+      top: 25%;
+      left: 40%;
+      width: 60%;
+    }
+  }
+}
