@@ -46,9 +46,9 @@
 
 			.image {
 				@include centerBlock;
-				margin-top: 5px;
-				max-width: 70% !important;
+				max-width: 40%;
 				max-height: 50vh;
+				margin-top: 5px;
 
 				@media (min-width: 1024px) {
 					width: 200px;

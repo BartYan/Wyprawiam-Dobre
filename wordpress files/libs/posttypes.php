@@ -34,7 +34,7 @@
             'supports' => array(
                 'title','editor','author','thumbnail','excerpt','comments','custom-fields'
             ),
-            'has_archive' => true            
+            'has_archive' => true           
         );
         
         register_post_type('recipes', $recipes_args);
