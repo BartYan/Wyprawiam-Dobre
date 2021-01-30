@@ -62,7 +62,7 @@
       <!--RECIPE CARD-->
       <div id="recipes-<?php the_ID(); ?>" <?php post_class('card_box'); ?>>
         <a href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail(); ?>
+        <?php the_post_thumbnail('post-thumbnail', ['class' => 'card_box-img']); ?>
         </a>
 
         <h5 class="card_box-title"><?php the_title(); ?></h5>
@@ -71,18 +71,18 @@
           <div>
             <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/firstIcon.png"
               alt="poziom trudności">
-            <span class="card_box-iconTxt">łatwe</span>
+            <span class="card_box-iconTxt"><?php printDishCategories($post->ID) ?></span>
           </div>
           <!-- preparation time -->
           <div>
             <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/secondIcon.png" alt="czas">
-            <span class="card_box-iconTxt">10min</span>
+            <span class="card_box-iconTxt"><?php echo get_post_meta($post->ID, 'czas', true); ?></span>
           </div>
           <!-- calories -->
           <div>
             <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/thirdIcon.png"
               alt="ilość osób">
-            <span class="card_box-iconTxt">1200kcal</span>
+            <span class="card_box-iconTxt"><?php echo get_post_meta($post->ID, 'kalorie', true); ?></span>
           </div>
         </div>
         <p class="card_box-text"><?php the_excerpt_max_charlength(100); ?></p>
