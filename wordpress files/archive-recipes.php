@@ -10,16 +10,19 @@
   </div>
 
   <div class="infoBox_leftCenter">
-    <form class="input_container search" method="get" action="">
+
+  <?php $search = getQuerySingleParam('search'); ?>
+
+    <form class="input_container search" method="get" action="<?php getCurrentPageUrl(); ?>">
       <label for="search" class="input_container-label label_leftCenter"> Wpisz frazę która Cię
         interesuje:</label>
       <fieldset class="fieldset_leftCenter">
-        <input class="input_container-field anime_input" type="search" id="search" name="search"
-          placeholder="np. sałatka">
-        <button class="input_container-btn anime_input-btn">
+        <input class="input_container-field anime_input" type="text" id="search" name="search" value="<?php echo $search ?>" placeholder="np. sałatka">
+        <button class="input_container-btn anime_input-btn" type="submit" value="">
           <img class="input_container-btn--img" src="<?php echo get_stylesheet_directory_uri() ?>/img/loupe.png"
             alt="ikona lupki">
           <span class="input_container-btn--text anime_input-text ">szukaj</span>
+        </button>
       </fieldset>
     </form>
     <p class="description_leftCenter">
@@ -46,16 +49,29 @@
 
     <p id="recipes_filters-message">Przepraszamy, filtry nie będą działać bez włączonej obsługi JavaScript.</br>
       Wciąż możesz wybrać przepis bez sortowania!</p>
+
+    <?php if(isset($search)): ?>
+      <h3 class="description_leftCenter">Wyniki wyszukiwania:</h3>
+    <?php endif; ?>
   </div>
-  <!--recipes_filters BUTTONS THE END-->
+    <!--recipes_filters BUTTONS THE END-->
+
+    <!--search php-->
+    <?php
+      $query_params = getQueryParams();
+      if(isset($query_params['search'])) {
+      $query_params['post_title_like'] = $query_params['search'];
+      unset($query_params['search']);
+      }
+
+      $loop = new WP_Query($query_params);
+	?>
 
   <!--recipe_row-->
   <div class="recipe_row">
 
-    <?php if(have_posts()) :?>
-    
-    <?php while (have_posts()) : the_post(); ?>
-
+    <?php if($loop->have_posts()) :?>
+    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
 
     <!--recipe_column-->
     <div class="recipe_column filter--show tag-breakfast">
@@ -88,191 +104,6 @@
         <p class="card_box-text"><?php the_excerpt_max_charlength(100); ?></p>
 
         <a href="<?php the_permalink(); ?>" class="card_box-button">zobacz przepis <i class="card_box-button--arrow"
-            aria-hidden="true">&#8594</i></a>
-      </div>
-      <!--RECIPE CARD THE END-->
-    </div>
-    <!--recipe_column THE END-->
-
-    <!--recipe_column-->
-    <div class="recipe_column filter--show tag-main tag-desser tag-supper">
-      <!--RECIPE CARD-->
-      <div class="card_box">
-        <img class="card_box-img" src="<?php echo get_stylesheet_directory_uri() ?>/img/photos/orangepancake.jpg"
-          alt="Naleśniki Pomarańczowe">
-
-        <h5 class="card_box-title">Naleśniki Pomarańczowe</h5>
-
-        <!-- dish category -->
-        <div class="card_box-icons">
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/firstIcon.png"
-              alt="poziom trudności">
-            <span class="card_box-iconTxt">łatwe</span>
-          </div>
-          <!-- preparation time -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/secondIcon.png" alt="czas">
-            <span class="card_box-iconTxt">10min</span>
-          </div>
-          <!-- calories -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/thirdIcon.png"
-              alt="ilość osób">
-            <span class="card_box-iconTxt">1200kcal</span>
-          </div>
-        </div>
-        <p class="card_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-
-        <a href="orange_pancakes.html" class="card_box-button">zobacz przepis <i class="card_box-button--arrow"
-            aria-hidden="true">&#8594</i></a>
-      </div>
-      <!--RECIPE CARD THE END-->
-    </div>
-    <!--recipe_column THE END-->
-
-    <!--recipe_column-->
-    <div class="recipe_column filter--show tag-breakfast tag-starter">
-      <!--RECIPE CARD-->
-      <div class="card_box">
-        <img class="card_box-img" src="<?php echo get_stylesheet_directory_uri() ?>/img/photos/egg.jpg"
-          alt="jajko w koszulce">
-
-        <h5 class="card_box-title">Jajko w Koszulce</h5>
-
-        <!-- dish category -->
-        <div class="card_box-icons">
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/firstIcon.png"
-              alt="poziom trudności">
-            <span class="card_box-iconTxt">łatwe</span>
-          </div>
-          <!-- preparation time -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/secondIcon.png" alt="czas">
-            <span class="card_box-iconTxt">10min</span>
-          </div>
-          <!-- calories -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/thirdIcon.png"
-              alt="ilość osób">
-            <span class="card_box-iconTxt">1200kcal</span>
-          </div>
-        </div>
-        <p class="card_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-
-        <a href="orange_pancakes.html" class="card_box-button">zobacz przepis <i class="card_box-button--arrow"
-            aria-hidden="true">&#8594</i></a>
-      </div>
-      <!--RECIPE CARD THE END-->
-    </div>
-    <!--recipe_column THE END-->
-
-    <!--recipe_column-->
-    <div class="recipe_column filter--show tag-breakfast tag-starter">
-      <!--RECIPE CARD-->
-      <div class="card_box">
-        <img class="card_box-img" src="<?php echo get_stylesheet_directory_uri() ?>/img/photos/egg.jpg"
-          alt="jajko w koszulce">
-
-        <h5 class="card_box-title">Jajko w Koszulce</h5>
-
-        <!-- dish category -->
-        <div class="card_box-icons">
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/firstIcon.png"
-              alt="poziom trudności">
-            <span class="card_box-iconTxt">łatwe</span>
-          </div>
-          <!-- preparation time -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/secondIcon.png" alt="czas">
-            <span class="card_box-iconTxt">10min</span>
-          </div>
-          <!-- calories -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/thirdIcon.png"
-              alt="ilość osób">
-            <span class="card_box-iconTxt">1200kcal</span>
-          </div>
-        </div>
-        <p class="card_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-
-        <a href="orange_pancakes.html" class="card_box-button">zobacz przepis <i class="card_box-button--arrow"
-            aria-hidden="true">&#8594</i></a>
-      </div>
-      <!--RECIPE CARD THE END-->
-    </div>
-    <!--recipe_column THE END-->
-
-    <!--recipe_column-->
-    <div class="recipe_column filter--show tag-breakfast">
-      <!--RECIPE CARD-->
-      <div class="card_box">
-        <img class="card_box-img" src="<?php echo get_stylesheet_directory_uri() ?>/img/photos/owsianka.jpg"
-          alt="Owsianka z Owocami">
-
-        <h5 class="card_box-title">Owsianka z Owocami</h5>
-
-        <!-- dish category -->
-        <div class="card_box-icons">
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/firstIcon.png"
-              alt="poziom trudności">
-            <span class="card_box-iconTxt">łatwe</span>
-          </div>
-          <!-- preparation time -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/secondIcon.png" alt="czas">
-            <span class="card_box-iconTxt">10min</span>
-          </div>
-          <!-- calories -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/thirdIcon.png"
-              alt="ilość osób">
-            <span class="card_box-iconTxt">1200kcal</span>
-          </div>
-        </div>
-        <p class="card_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-
-        <a href="orange_pancakes.html" class="card_box-button">zobacz przepis <i class="card_box-button--arrow"
-            aria-hidden="true">&#8594</i></a>
-      </div>
-      <!--RECIPE CARD THE END-->
-    </div>
-    <!--recipe_column THE END-->
-
-    <!--recipe_column-->
-    <div class="recipe_column filter--show tag-breakfast tag-wege">
-      <!--RECIPE CARD-->
-      <div class="card_box">
-        <img class="card_box-img" src="<?php echo get_stylesheet_directory_uri() ?>/img/photos/owsianka.jpg"
-          alt="Owsianka z Owocami">
-
-        <h5 class="card_box-title">Owsianka z Owocami</h5>
-
-        <!-- dish category -->
-        <div class="card_box-icons">
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/firstIcon.png"
-              alt="poziom trudności">
-            <span class="card_box-iconTxt">łatwe</span>
-          </div>
-          <!-- preparation time -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/secondIcon.png" alt="czas">
-            <span class="card_box-iconTxt">10min</span>
-          </div>
-          <!-- calories -->
-          <div>
-            <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/thirdIcon.png"
-              alt="ilość osób">
-            <span class="card_box-iconTxt">1200kcal</span>
-          </div>
-        </div>
-        <p class="card_box-text">Kakaowa owsianka z owocami i Twoimi ulubionymi dodatkami. Mniam!</p>
-
-        <a href="orange_pancakes.html" class="card_box-button">zobacz przepis <i class="card_box-button--arrow"
             aria-hidden="true">&#8594</i></a>
       </div>
       <!--RECIPE CARD THE END-->
