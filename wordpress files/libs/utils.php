@@ -82,20 +82,20 @@ function title_like_posts_where( $where, $wp_query ) {
     
     return $where;
 }
-            function generatePagination($paged, $loop) {
+            // function generatePagination($paged, $loop) {
             
-                    $big = 999999999; // need an unlikely integer
+            //         $big = 999999999; // need an unlikely integer
 
-                        echo paginate_links( array(
-                            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-                            'format' => '?paged=%#%',
-                            'current' => max( 1, $paged ),
-                            'total' => $loop->max_num_pages,
-                            'prev_text' => '«',
-                            'next_text' => '»',
-                            'type' => 'list'
-                        ) );
-            }
+            //             echo paginate_links( array(
+            //                 'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+            //                 'format' => '?paged=%#%',
+            //                 'current' => max( 1, $paged ),
+            //                 'total' => $loop->max_num_pages,
+            //                 'prev_text' => '«',
+            //                 'next_text' => '»',
+            //                 'type' => 'list'
+            //             ) );
+            // }
 
 
 
