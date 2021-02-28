@@ -1,6 +1,6 @@
 <?php
 
-//ajax category filter // inspired by Ryan McGovern - https://www.youtube.com/watch?v=mtz8MdQXhno&list=PLSeCxQ7f7r87ayYuHVdomXZ3d6YbI5mwo&ab_channel=RyanMcGovern
+//ajax category filter (archive-recipes.php) // inspired by Ryan McGovern - https://www.youtube.com/watch?v=mtz8MdQXhno&list=PLSeCxQ7f7r87ayYuHVdomXZ3d6YbI5mwo&ab_channel=RyanMcGovern
 require_once('inc/scripts.php');
 require_once('inc/ajax/example.php');
 
