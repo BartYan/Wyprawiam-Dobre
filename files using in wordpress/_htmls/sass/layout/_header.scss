@@ -1,0 +1,311 @@
+header {
+	position: relative;
+	display: block;
+	top: 0;
+}
+
+//Mobile menu
+.nav {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	z-index: 100;
+
+	@media (min-width: 1024px) {
+		position: absolute;
+		left: 41%;
+		width: 60%;
+		justify-content: left;
+	}
+
+
+	&_mobileLogo {
+		position: fixed;
+		display: block;
+		top: 0;
+		z-index: 100 !important;
+		max-width: 50px;
+		height: auto;
+		padding: 10px 0 0 3px;
+
+		@media (min-width: 1024px) {
+			display: none;
+		}
+	}
+
+	//HAMBURGER CLASSES
+	&_hamburger {
+		font-size: 20px;
+		position: fixed;
+		display: inline-block;
+		top: 0;
+		right: 2%;
+		width: 2em;
+		height: 2em;
+		cursor: pointer;
+		z-index: 100;
+
+		@media (min-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&_hamburger span {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 0.2em;
+		margin-top: 5px;
+		background-color: $navyBlue-color;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-transition: background-color 0.3s;
+		transition: background-color 0.3s;
+	}
+
+
+	&_hamburger span:after,
+	&_hamburger span:before {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $navyBlue-color;
+		content: '';
+		-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.3s;
+	}
+
+	&_hamburger span:before {
+		-webkit-transform: translateY(-0.5em);
+		/* Safari 4+ */
+		-moz-transform: translateY(-0.5em);
+		/* Fx 5+ */
+		-o-transform: translateY(-0.5em);
+		/* Opera 12+ */
+		-ms-transform: translateY(-0.5em);
+		/*IE11 & Microsoft Edge*/
+		transform: translateY(-0.5em);
+		/* IE 10+, Fx 29+ */
+	}
+
+	&_hamburger span:after {
+
+		-webkit-transform: translateY(0.5em);
+		/* Safari 4+ */
+		-moz-transform: translateY(0.5em);
+		/* Fx 5+ */
+		-o-transform: translateY(0.5em);
+		/* Opera 12+ */
+		-ms-transform: translateY(0.5em);
+		/*IE11 & Microsoft Edge*/
+		transform: translateY(0.5em);
+		/* IE 10+, Fx 29+ */
+	}
+
+	&_hamburger.nav_hamburger-open span:before {
+
+		-webkit-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/* Safari 4+ */
+		-moz-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/* Fx 5+ */
+		-o-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/* Opera 12+ */
+		-ms-transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/*IE11 & Microsoft Edge*/
+		transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+		/* IE 10+, Fx 29+ */
+	}
+
+	&_hamburger.nav_hamburger-open span:after {
+
+		-webkit-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/* Safari 4+ */
+		-moz-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/* Fx 5+ */
+		-o-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/* Opera 12+ */
+		-ms-transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/*IE11 & Microsoft Edge*/
+		transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+		/* IE 10+, Fx 29+ */
+	}
+
+	//MOBILE OVERLAY
+	&_overlay {
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: 99;
+		left: 0;
+		top: 0;
+		background-color: rgba(233, 137, 48, 0.9);
+
+		&-white {
+			display: block;
+			width: 75%;
+			height: 85%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			/* Safari 4+ */
+			-moz-transform: translate(-50%, -50%);
+			/* Fx 5+ */
+			-o-transform: translate(-50%, -50%);
+			/* Opera 12+ */
+			-ms-transform: translate(-50%, -50%);
+			/*IE11 & Microsoft Edge*/
+			transform: translate(-50%, -50%);
+			/* IE 10+, Fx 29+ */
+			background-color: $white-color;
+		}
+
+		&-content {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 100%;
+			max-height: 80vh !important;
+			-webkit-transform: translate(-50%, -50%);
+			/* Safari 4+ */
+			-moz-transform: translate(-50%, -50%);
+			/* Fx 5+ */
+			-o-transform: translate(-50%, -50%);
+			/* Opera 12+ */
+			-ms-transform: translate(-50%, -50%);
+			/*IE11 & Microsoft Edge*/
+			transform: translate(-50%, -50%);
+			text-align: center;
+
+			&--link {
+				padding: 10px 8px;
+				text-decoration: none;
+				font-size: 18px;
+				color: $navyBlue-color;
+				text-transform: uppercase;
+				display: block;
+				transition: 0.3s;
+			}
+
+			&--social {
+				display: flex;
+				justify-content: center;
+				width: 100%;
+
+				.social_menu-link {
+					width: 40px;
+					padding: 10px 10px !important;
+
+					&--icon {
+						@extend .footer-icon;
+						width: 40px;
+						height: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//DESKTOP MENU CLASSES
+.menu {
+	display: none;
+	text-transform: uppercase;
+
+	@media (min-width: 1024px) {
+		display: flex;
+	}
+
+	&_active {
+		color: $orange-color !important;
+	}
+
+	&_item {
+		display: block;
+		list-style: none;
+		padding: 10px 30px 0 5px;
+		font-size: 10px;
+
+		&-link {
+			text-decoration: none;
+			color: $navyBlue-color;
+			cursor: pointer;
+			border: none;
+		}
+
+		&-link:hover {
+			color: $orange-color;
+		}
+	}
+}
+
+//DESKTOP CENTER MENU FULL WIDTH
+.menuCenter {
+	display: none;
+	//display: flex !important;
+	justify-content: space-between;
+	width: 100%;
+	height: 30px;
+	z-index: 100;
+
+	@media (min-width: 1024px) {
+		display: flex !important;
+	}
+
+	&_logo {
+		&-img {
+			width: 50px;
+		}
+	}
+
+	&_list {
+		//display: none;
+		text-transform: uppercase;
+		display: flex;
+
+		&-active {
+			color: $orange-color !important;
+		}
+
+		&-item {
+			display: block;
+			list-style: none;
+			padding: 10px 30px 0 5px;
+			font-size: 10px;
+
+			&--link {
+				text-decoration: none;
+				color: $navyBlue-color;
+				cursor: pointer;
+				border: none;
+			}
+
+			&--link:hover {
+				color: $orange-color;
+			}
+		}
+	}
+
+	&_social {
+		&-img {
+			width: 12px;
+			padding: 8px;
+		}
+	}
+
+	.menuCenter_img-link {
+		text-decoration: none;
+		border: none;
+	}
+}
