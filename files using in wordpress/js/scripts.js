@@ -11,6 +11,7 @@
                 type: 'post',
                 success: function(result) {
                     $('.js-filter').html(result);
+                    //console.log(result);
                 },
                 error: function(result) {
                     console.warn(result);
