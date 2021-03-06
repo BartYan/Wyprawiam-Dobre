@@ -185,7 +185,7 @@
       <div class="card_box-icons">
         <div>
           <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/firstIcon.png"
-            alt="poziom trudności">
+            alt="kategoria">
           <span class="card_box-iconTxt"><?php printDishCategories($post->ID) ?></span>
         </div>
         <!-- preparation time -->

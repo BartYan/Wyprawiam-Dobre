@@ -1,38 +1,8 @@
-<?php
+<?php if($loop->have_posts()) :?>
+    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
 
-add_action( 'wp_ajax_nopriv_filter', 'filter_ajax' );
-add_action( 'wp_ajax_filter', 'filter_ajax' );
-
-function filter_ajax() {
-
-    $category = $_POST['category'];
-
-    $args = array(
-        'post_type' => 'recipes',
-        'posts_per_page' => -1
-      );
-      
-    //This is working for normal posts types
-    //   if(isset($category)) {
-    //       $args['category__in'] = array($category);
-    //   }
-
-    if(!empty($category)) {
-        $args['tax_query'] = array(
-            array(
-                'taxonomy' => 'meal-type',
-                'field'    => 'term_id',
-                'terms'    => $category ,
-            ),
-        );
-    }
-
-      $query = new WP_Query($args);
-    ?>
-      
-    <?php if($query->have_posts()) :?>
-    <?php while ($query->have_posts()) : $query->the_post(); ?>
-
+    <!--recipe_column-->
+    <div class="recipe_column filter--show tag-breakfast">
       <!--RECIPE CARD-->
       <div id="recipes-<?php the_ID(); ?>" <?php post_class('card_box'); ?>>
         <a href="<?php the_permalink(); ?>">
@@ -44,7 +14,7 @@ function filter_ajax() {
         <div class="card_box-icons">
           <div>
             <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/firstIcon.png"
-              alt="kategoria">
+              alt="poziom trudności">
             <span class="card_box-iconTxt"><?php printDishCategories($post->ID) ?></span>
           </div>
           <!-- preparation time -->
@@ -65,16 +35,9 @@ function filter_ajax() {
             aria-hidden="true">&#8594</i></a>
       </div>
       <!--RECIPE CARD THE END-->
+    </div>
+    <!--recipe_column THE END-->
 
     <!--THE END of wordpress loop-->
     <?php endwhile; ?>
     <?php endif; ?>
-    <?php
-      wp_reset_postdata();
-
-    die();
-}
-
-?>
-
-
