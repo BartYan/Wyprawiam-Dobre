@@ -50,4 +50,6 @@ if(function_exists('register_nav_menus')) {
 }
 //Menu Register THE END
 
+add_theme_support('html5', array('search-form'));
+
 

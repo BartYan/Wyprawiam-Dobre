@@ -20,18 +20,8 @@
         <h1 class="section_title-head">Wyprawiam Dobre</h1>
       </div>
 
-      <form class="input_container search" method="get" action="">
-        <label for="search" class="input_container-label"> Wpisz frazę która Cię interesuje:</label>
-        <fieldset>
-          <input class="input_container-field anime_input" type="search" id="search" name="search"
-            placeholder="np. sałatka">
-          <button class="input_container-btn anime_input-btn">
-            <img class="input_container-btn--img" src="<?php echo get_stylesheet_directory_uri() ?>/img/loupe.png"
-              alt="ikona lupki">
-            <span class="input_container-btn--text anime_input-text ">szukaj</span>
-          </button>
-        </fieldset>
-      </form>
+      <label for="search" class="input_container-label"> Wpisz frazę która Cię interesuje:</label>
+      <?php get_search_form(); ?>
 
       <p class="infoBox_top-description">Lub wybierz
         kategorię i zobacz co dla Ciebie przygotowaliśmy :)

@@ -1,4 +1,5 @@
 <?php
+
 //Characters max lenght in recipes cards
 function the_excerpt_max_charlength($charlength) {
     echo cutText(get_the_excerpt(), $charlength);

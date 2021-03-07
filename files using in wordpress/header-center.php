@@ -79,7 +79,7 @@
                         <a class="menuCenter_list-item--link" href="index.html">główna</a>
                     </li>
                     <li class="menuCenter_list-item">
-                        <a class="menuCenter_list-item--link menuCenter_list-active" href="recipes.html">przepisy</a>
+                        <a class="menuCenter_list-item--link" href="recipes.html">przepisy</a>
                     </li>
                     <li class="menuCenter_list-item">
                         <a class="menuCenter_list-item--link" href="blog.html">blog</a>

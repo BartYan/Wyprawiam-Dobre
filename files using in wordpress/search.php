@@ -3,56 +3,36 @@
 <!--RECIPES SECTION-->
 <section class="cards_section">
   <div class="section_title">
-    <span class="section_title-span">Nasze</span>
-    <h2 class="section_title-head">Przepisy</h2>
+    <span class="section_title-span">Znalezione?</span>
+    <h2 class="section_title-head">Wiesz co Dobre!</h2>
     <img class="section_title-stars" src="<?php echo get_stylesheet_directory_uri() ?>/img/stars.png"
       alt="ikonka gwiazdek">
   </div>
 
   <div class="infoBox_leftCenter">
-
-    <label for="search" class="input_container-label"> Wpisz frazę która Cię interesuje:</label>
+    <label for="search" class="input_container-label">Masz na coś jeszcze ochotę?</label>
     <?php get_search_form(); ?>
     <p class="description_leftCenter">
-      Nasze propozycje:
+      Wyniki wyszukiwania dla: <span><strong><?php echo get_search_query() ?></strong></span>
     </p>
   </div>
 
-  <!--AJAX FILTER-->
-  <div id="filter">
-    <nav>
-      <ul>
-        <li class="filter_item"><a class="filter_item-link tag-active" href="">Wszystkie</a></li>
-        <?php
-      $cat_args = array(
-        'exclude' => array(1),
-        'taxonomy' => 'meal-type',
-        'option_all' => 'All'
-      );
+  <!--search php-->
+  <?php
+      $query_params = getQueryParams();
+      if(isset($query_params['search'])) {
+      $query_params['post_title_like'] = $query_params['search'];
+      unset($query_params['search']);
+      }
 
-      $categories = get_categories($cat_args);
-      foreach($categories as $cat) : ?>
-        <li class="filter_item"><a class="filter_item-link" data-category="<?= $cat->term_id; ?>"
-            href="<?= get_category_link($cat->term_id); ?>"><?= $cat->name; ?></a></li>
-        <?php endforeach; ?>
-      </ul>
-    </nav>
-  </div>
+      $loop = new WP_Query($query_params);
+	?>
 
-  <div class="js-filter recipe_row">
-    <?php
+  <!--recipe_row-->
+  <div class="recipe_row">
 
-      $args = array(
-        'post_type' => 'recipes',
-        'posts_per_page' => -1
-      );
-
-      $query = new WP_Query($args);
-      wp_reset_postdata();
-      ?>
-
-    <?php if($query->have_posts()) : ?>
-    <?php  while($query->have_posts()) : $query->the_post();?>
+    <?php if($loop->have_posts()) :?>
+    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
 
     <!--RECIPE CARD-->
     <div id="recipes-<?php the_ID(); ?>" <?php post_class('card_box'); ?>>
@@ -87,16 +67,16 @@
     </div>
     <!--RECIPE CARD THE END-->
 
+    <!--THE END of wordpress loop-->
     <?php endwhile; ?>
-    <?php endif; ?>
-
+    <?php else:  ?>
+    <h4>Nie ma żadnych postów<h4>
+        <?php endif; ?>
   </div>
-  <!--AJAX JS-filter/recipes Row THE END-->
-  <!--AJAX FILTER THE END-->
+  <!--recipe_row THE END-->
 
   <!--BOTTOM LEAFs DECORATION-->
   <img class="leaf-right" src="<?php echo get_stylesheet_directory_uri() ?>/img/leaf-right.png" alt="leaf icon">
-
 </section>
 <!--RECIPE SECTION THE END-->
 
