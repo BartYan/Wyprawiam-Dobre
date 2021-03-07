@@ -29,7 +29,7 @@ function filter_ajax() {
 
       $query = new WP_Query($args);
     ?>
-      
+
     <?php if($query->have_posts()) :?>
     <?php while ($query->have_posts()) : $query->the_post(); ?>
 
@@ -50,13 +50,13 @@ function filter_ajax() {
           <!-- preparation time -->
           <div>
             <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/secondIcon.png" alt="czas">
-            <span class="card_box-iconTxt"><?php echo get_post_meta($post->ID, 'czas', true); ?></span>
+            <span class="card_box-iconTxt"><?php echo $meta_value = get_post_meta( get_the_ID() , 'czas', true ); ?></span>
           </div>
           <!-- calories -->
           <div>
             <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/thirdIcon.png"
               alt="ilość osób">
-            <span class="card_box-iconTxt"><?php echo get_post_meta($post->ID, 'kalorie', true); ?></span>
+            <span class="card_box-iconTxt"><?php echo $meta_value = get_post_meta( get_the_ID() , 'kalorie', true ); ?></span>
           </div>
         </div>
         <p class="card_box-text"><?php the_excerpt_max_charlength(100); ?></p>
@@ -65,10 +65,10 @@ function filter_ajax() {
             aria-hidden="true">&#8594</i></a>
       </div>
       <!--RECIPE CARD THE END-->
-
     <!--THE END of wordpress loop-->
     <?php endwhile; ?>
     <?php endif; ?>
+    
     <?php
       wp_reset_postdata();
 

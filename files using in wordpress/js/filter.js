@@ -1,6 +1,6 @@
 (function($) {
     $(document).ready(function(){
-        $(document).on('click', '.js-filter-item > a', function(e){
+        $(document).on('click', '.filter_item > a', function(e){
             e.preventDefault();
 
             var category = $(this).data('category');

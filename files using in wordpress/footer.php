@@ -47,7 +47,7 @@
   <script src="<?php echo WYPRAWIAMDOBRE_THEME_URL ?>js/hamburger_overlay.js"></script>
   <script src="<?php echo WYPRAWIAMDOBRE_THEME_URL ?>js/carousel.js"></script>
   <script src="<?php echo WYPRAWIAMDOBRE_THEME_URL ?>js/backToTopButton.js"></script>
-  <script src="<?php echo WYPRAWIAMDOBRE_THEME_URL ?>js/recipes_filter.js"></script>
+  <script src="<?php echo WYPRAWIAMDOBRE_THEME_URL ?>js/activeLink_filter.js"></script>
 </body>
 
 </html>
