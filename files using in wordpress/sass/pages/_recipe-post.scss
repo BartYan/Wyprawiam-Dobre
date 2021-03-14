@@ -11,6 +11,7 @@
 
   @media (min-width: 1024px) {
     display: block;
+    margin-bottom: 50px;
   }
 }
 
@@ -81,18 +82,23 @@
     width: 95%;
     height: 10px;
     cursor: default;
-    margin: 40px auto 50px auto;
+    margin: 40px 0 50px 0;
 
     @media (min-width: 1024px) {}
 
+    &_box {
+      display: flex;
+      &-icon {
+        margin-right: 20px;
+        min-width: 80px;
+      }
+    }
     &_icon {
-      float: left;
+      width: 18px;
       margin: 10px 0 0 0;
     }
-
-    &_iconTxt {
-      float: left;
-      margin: 12px 15px 0 5px;
+    &_txt {
+      margin: 0 15px 0 3px;
       font-weight: 400;
       font-size: 14px;
     }
@@ -111,26 +117,11 @@
     color: $orange-color;
   }
 
-  &_head {
-    width: 90%;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 25px 10px 0 10px;
-
-    @media (min-width: 1024px) {
-      padding: 50px 0 0 0;
-    }
-  }
-
   &_description {
     width: 95%;
     font-size: 16px;
     font-weight: lighter;
-    padding: 25px 10px;
-
-    @media (min-width: 1024px) {
-      padding: 25px 0;
-    }
+    margin: 0;
   }
 }
 

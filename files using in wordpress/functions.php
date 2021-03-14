@@ -52,4 +52,43 @@ if(function_exists('register_nav_menus')) {
 
 add_theme_support('html5', array('search-form'));
 
+//print Recipe Ingedients
+function getRecipeIngredients($post_id) {
+    $ingredients = (string)get_post_meta($post_id, 'skladniki', true);
+    
+    $ing_list = explode("\n", trim($ingredients));
+    
+    $return = array();
+    
+    foreach($ing_list as $row) {
+        $parts = explode(":", $row);
+        $name = trim($parts[0]);
+        
+        if(!empty($name)){
+            $return[$name] = trim($parts[1]);
+        }			
+    }
+    
+    return $return;
+}
 
+
+function printRecipeIngredients($post_id) {
+
+    $ingredients = getRecipeIngredients($post_id);
+    
+    echo '<ul class="leftBox_itemColor-list">';
+    
+    if(count($ingredients) < 1) {
+        echo '<li>Brak składników!</li>';
+    } else {
+        
+        foreach($ingredients as $name => $value) {
+            echo "<li>{$name} <span>{$value}</span></li>";
+        }
+        
+    }
+    
+    echo '</ul>';
+
+}

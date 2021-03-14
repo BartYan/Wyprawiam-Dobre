@@ -67,8 +67,8 @@
           </div>
         </div>
       </div>
-      <!--DESKTOP HEADER-->
 
+      <!--DESKTOP HEADER-->
       <?php wp_nav_menu(array(
         'name' => 'Menu Główne'
       )); ?>

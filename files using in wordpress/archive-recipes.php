@@ -1,5 +1,7 @@
 <?php get_header('center'); ?>
 
+<!--TOP LEAFs DECORATION-->
+<img class="leaf-left--nav" src="<?php echo get_stylesheet_directory_uri() ?>/img/leaf-left.png" alt="leaf icon">
 <!--RECIPES SECTION-->
 <section class="cards_section">
   <div class="section_title">
@@ -76,7 +78,7 @@
         <!-- calories -->
         <div>
           <img class="card_box-icon" src="<?php echo get_stylesheet_directory_uri() ?>/img/thirdIcon.png"
-            alt="ilość osób">
+            alt="kalorie">
           <span class="card_box-iconTxt"><?php echo get_post_meta($post->ID, 'kalorie', true); ?></span>
         </div>
       </div>

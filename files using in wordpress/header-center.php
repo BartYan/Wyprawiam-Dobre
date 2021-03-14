@@ -101,6 +101,5 @@
                 </div>
             </div>
         </nav>
-        <!--TOP LEAFs DECORATION-->
-        <img class="leaf-left--nav" src="<?php echo get_stylesheet_directory_uri() ?>/img/leaf-left.png" alt="leaf icon">
+        
     </header>
