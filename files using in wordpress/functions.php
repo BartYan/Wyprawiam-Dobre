@@ -92,3 +92,29 @@ function printRecipeIngredients($post_id) {
     echo '</ul>';
 
 }
+
+
+//COMMENTS FUNCTION
+function wyprawiamdobre_comment_theme($comment, $args, $depth) {
+    $GLOBALS['comment'] = $comment;
+    
+    $tag = $args['style'];
+?>
+
+<<?php echo $tag ?> <?php comment_class(empty($args['has_children']) ? '' : 'parent') ?>
+    id="li-comment-<?php comment_ID() ?>">
+    <div id="div-comment-<?php comment_ID(); ?>" class="inner">
+        <?php echo get_avatar($comment); ?>
+        <h4>
+            <?php echo get_comment_author_link(); ?>
+            <?php echo 'w dniu ' . get_comment_date() . 'o' . get_comment_time() ?>
+            <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+        </h4>
+        <?php comment_text(); ?>
+
+        <?php if($comment->comment_approved == '0') : ?>
+        <div class="comment-awaiting-moderation">Twój komentarz oczekuje na moderację!</div>
+        <?php endif; ?>
+    </div>
+    <?php
+}
