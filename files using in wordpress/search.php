@@ -3,11 +3,32 @@
 <img class="leaf-left--nav" src="<?php echo get_stylesheet_directory_uri() ?>/img/leaf-left.png" alt="leaf icon">
 <!--RECIPES SECTION-->
 <section class="cards_section">
+  <!-- Title loop -->
+  <?php
+      $query_params = getQueryParams();
+      if(isset($query_params['search'])) {
+      $query_params['post_title_like'] = $query_params['search'];
+      unset($query_params['search']);
+      }
+
+      $loop = new WP_Query($query_params);
+	?>
+
   <div class="section_title">
-    <span class="section_title-span">Znalezione?</span>
+    <!-- with posts -->
+    <?php if($loop->have_posts()) :?>
+    <span class="section_title-span">Znalezione.</span>
     <h2 class="section_title-head">Wiesz co Dobre!</h2>
     <img class="section_title-stars" src="<?php echo get_stylesheet_directory_uri() ?>/img/stars.png"
       alt="ikonka gwiazdek">
+    <!-- without posts -->
+    <?php else:  ?>
+    <span class="section_title-span">Ups...</span>
+    <h2 class="section_title-head">Brak wpisów</h2>
+    <img class="section_title-stars" src="<?php echo get_stylesheet_directory_uri() ?>/img/stars.png"
+      alt="ikonka gwiazdek">
+    <?php endif; ?>
+    <!-- Title loop the end-->
   </div>
 
   <div class="infoBox_leftCenter">
@@ -71,7 +92,7 @@
     <!--THE END of wordpress loop-->
     <?php endwhile; ?>
     <?php else:  ?>
-    <h4>Nie ma żadnych postów<h4>
+    <h4>Niestety nie znaleźliśmy postów<h4>
         <?php endif; ?>
   </div>
   <!--recipe_row THE END-->
