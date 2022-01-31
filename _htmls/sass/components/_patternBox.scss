@@ -24,9 +24,9 @@
 		background-color: $white-color;
 		width: 75%;
 		height: 85%;
-		-webkit-box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
-		-moz-box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
-		box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
+		-webkit-box-shadow: 0px 0px 16px -11px rgba(66, 68, 90, 1);
+		-moz-box-shadow: 0px 0px 16px -11px rgba(66, 68, 90, 1);
+		box-shadow: 0px 0px 16px -11px rgba(66, 68, 90, 1);
 
 		&-items {
 			position: relative;
@@ -47,16 +47,16 @@
 			.image {
 				@include centerBlock;
 				margin-top: 5px;
-				max-width: 85% !important;
-				max-height: 60vh;
+				max-width: 70% !important;
+				max-height: 50vh;
 
-				// @media (min-width: 1024px) {
-				// 	width: 200px;
-				// }
+				@media (min-width: 1024px) {
+					width: 200px;
+				}
 
-				// @media (min-width: 1800px) {
-				// 	width: 300px;
-				// }
+				@media (min-width: 1800px) {
+					width: 300px;
+				}
 			}
 
 			.stars {

@@ -1,0 +1,63 @@
+//RECIPES FILTER SECTION
+#recipes_filters {
+  margin: 30px 0 0 0;
+  text-align: center;
+  padding: 0;
+}
+
+.recipe_filter {
+  padding: 20px;
+  outline: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.recipe_filter:hover {
+  color: $orange-color;
+}
+
+.recipe_filter.tag--active {
+  color: $orange-color;
+}
+
+.posts_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 50px auto;
+  padding: 0;
+  width: 90%;
+  order: 1;
+}
+
+.recipe_column {
+  padding: 0;
+  //Hide posts_row by default
+  display: none;
+  
+  @media (min-width: 768px) {
+    padding: 0 40px !important;
+  }
+}
+
+.filter--show {
+  display: block;
+}
+
+#recipes_filters-message {
+  color: #eb3924;
+  background-color: rgba(235, 209, 143, .6);
+  padding: 10px;
+}
+//RECIPES FILTER SECTION THE END
+
+
+
+
+

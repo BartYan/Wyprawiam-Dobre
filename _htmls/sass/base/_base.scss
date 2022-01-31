@@ -19,12 +19,12 @@ body {
 		display: flex;
 	}
 }
-
 .section-post {
 	width: 90%;
 	margin: 0 auto;
 
 	@media (min-width: 1024px) {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -52,19 +52,6 @@ body {
 		@media (min-width: 1800px) {
 			font-size: 70px;
 			padding-top: 30px;
-		}
-	}
-	&-head--bigger {
-		font-size: 100px;
-		line-height: 60px;
-		@media (min-width: 768px) {
-			padding: 0;
-			margin-top: 0;
-			font-size: 150px;
-			line-height: 150px;
-		}
-		@media (min-width: 1800px) {
-			font-size: 200px;
 		}
 	}
 

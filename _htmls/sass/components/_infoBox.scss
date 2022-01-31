@@ -61,11 +61,8 @@
 				padding-top: 10px;
 			}
 
-			&--item:hover .infoBox_top-subMenu--txt {
+			&--item:hover .infoBox_top-subMenu--txtSpan {
 				color: $orange-color;
-				.infoBox_top-subMenu--txtSpan {
-					color: $orange-color;
-				}
 			}
 
 			&--link {
@@ -80,6 +77,9 @@
 				color: black;
 				margin: -15px 0 0 40px;
 				text-transform: capitalize;
+			}
+			&--txt:hover {
+				color: $orange-color;
 			}
 
 			&--txtSpan {
@@ -154,7 +154,7 @@
 	}
 
 	&_newsLetter {
-
+		height: 800px;
 		@media (min-width: 1280px) {
 			height: 100vh;
 		}

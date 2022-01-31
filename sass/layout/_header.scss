@@ -16,7 +16,7 @@ header {
 
 	@media (min-width: 1024px) {
 		position: absolute;
-		left: 41%;
+		left: 40%;
 		width: 60%;
 		justify-content: left;
 	}
@@ -219,6 +219,21 @@ header {
 }
 
 //DESKTOP MENU CLASSES
+
+.nav__desktop {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+	&-list {
+		padding-left: 5px;
+	}
+	&-logo {
+		padding: 5px 5px 0 0;
+		img {
+			width: 50px;
+		}
+	}
+}
 .menu {
 	display: none;
 	text-transform: uppercase;
@@ -231,20 +246,21 @@ header {
 		color: $orange-color !important;
 	}
 
-	&_item {
+	&-item {
 		display: block;
 		list-style: none;
 		padding: 10px 30px 0 5px;
 		font-size: 10px;
+		// font-weight: 500;
 
-		&-link {
+		a {
 			text-decoration: none;
 			color: $navyBlue-color;
 			cursor: pointer;
 			border: none;
 		}
 
-		&-link:hover {
+		a:hover {
 			color: $orange-color;
 		}
 	}
@@ -253,7 +269,6 @@ header {
 //DESKTOP CENTER MENU FULL WIDTH
 .menuCenter {
 	display: none;
-	//display: flex !important;
 	justify-content: space-between;
 	width: 100%;
 	height: 30px;
@@ -266,6 +281,7 @@ header {
 	&_logo {
 		&-img {
 			width: 50px;
+			padding: 5px 0 0 5px;
 		}
 	}
 
@@ -299,7 +315,7 @@ header {
 
 	&_social {
 		&-img {
-			width: 12px;
+			width: 14px;
 			padding: 8px;
 		}
 	}
